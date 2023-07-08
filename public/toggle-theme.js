@@ -11,9 +11,7 @@ function getPreferTheme() {
   if (primaryColorScheme) return primaryColorScheme;
 
   // return user device's prefer color scheme
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
 let themeValue = getPreferTheme();
@@ -44,9 +42,7 @@ window.onload = () => {
 };
 
 // sync with system changes
-window
-  .matchMedia("(prefers-color-scheme: dark)")
-  .addEventListener("change", ({ matches: isDark }) => {
-    themeValue = isDark ? "dark" : "light";
-    setPreference();
-  });
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches: isDark }) => {
+  themeValue = isDark ? "dark" : "light";
+  setPreference();
+});
