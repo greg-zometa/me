@@ -12,7 +12,7 @@
 <li class="my-6">
   <a
     href={href}
-    class="inline-block text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+    class="inline-block text-lg font-medium text-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
   >
   {#if secHeading}
   <h2 class="text-lg font-medium decoration-dashed hover:underline">
