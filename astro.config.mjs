@@ -1,9 +1,9 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import react from "@astrojs/react";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
+import svelte from "@astrojs/svelte";
 import { SITE } from "./src/config";
 
 // https://astro.build/config
@@ -12,11 +12,11 @@ export default defineConfig({
   integrations: [
     tailwind({
       config: {
-        applyBaseStyles: false,
-      },
+        applyBaseStyles: false
+      }
     }),
-    react(),
     sitemap(),
+    svelte()
   ],
   markdown: {
     remarkPlugins: [
@@ -24,19 +24,19 @@ export default defineConfig({
       [
         remarkCollapse,
         {
-          test: "Table of contents",
-        },
-      ],
+          test: "Table of contents"
+        }
+      ]
     ],
     shikiConfig: {
       theme: "one-dark-pro",
-      wrap: true,
+      wrap: true
     },
-    extendDefaultPlugins: true,
+    extendDefaultPlugins: true
   },
   vite: {
     optimizeDeps: {
-      exclude: ["@resvg/resvg-js"],
-    },
-  },
+      exclude: ["@resvg/resvg-js"]
+    }
+  }
 });

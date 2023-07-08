@@ -1,15 +1,8 @@
-function withOpacity(variableName) {
-  return ({ opacityValue }) => {
-    if (opacityValue !== undefined) {
-      return `rgba(var(${variableName}), ${opacityValue})`;
-    }
-    return `rgb(var(${variableName}))`;
-  };
-}
+const withOpacity = (variableName) => ({ opacityValue }) => opacityValue !== undefined ? `rgba(var(${variableName}), ${opacityValue})` : `rgb(var(${variableName}))`;
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  content: ["./src/**/*.{astro,html,md,mdx,svelte,ts}"],
   theme: {
     // Remove the following screen breakpoint or add other breakpoints
     // if one breakpoint is not enough for you

@@ -8,9 +8,7 @@ draft: false
 tags:
   - docs
 ogImage: ""
-description:
-  Some rules & recommendations for creating or adding new posts using AstroPaper
-  theme.
+description: Some rules & recommendations for creating or adding new posts using AstroPaper theme.
 ---
 
 Here are some rules/recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
@@ -19,7 +17,9 @@ Here are some rules/recommendations, tips & ticks for creating new posts in Astr
 
 ## Frontmatter
 
-Frontmatter is the main place to store some important information about the post (article). Frontmatter lies at the top of the article and is written in YAML format. Read more about frontmatter and its usage in [astro documentation](https://docs.astro.build/en/guides/markdown-content/).
+Frontmatter is the main place to store some important information about the post (article). Frontmatter lies at the top
+of the article and is written in YAML format. Read more about frontmatter and its usage in
+[astro documentation](https://docs.astro.build/en/guides/markdown-content/).
 
 Here is the list of frontmatter property for each post.
 
@@ -37,11 +37,16 @@ Here is the list of frontmatter property for each post.
 
 Only `title`, `description` and `pubDatetime` fields in frontmatter must be specified.
 
-Title and description (excerpt) are important for search engine optimization (SEO) and thus AstroPaper encourages to include these in blog posts.
+Title and description (excerpt) are important for search engine optimization (SEO) and thus AstroPaper encourages to
+include these in blog posts.
 
-`slug` is the unique identifier of the url. Thus, `slug` must be unique and different from other posts. The whitespace of `slug` needs to be separated with `-` or `_` but `-` is recommended. However, even if you don't write the correct slug, AstroPaper will automatically slugify your incorrect slug. If slug is not specified, the slugified title of the post will be used as slug.
+`slug` is the unique identifier of the url. Thus, `slug` must be unique and different from other posts. The whitespace
+of `slug` needs to be separated with `-` or `_` but `-` is recommended. However, even if you don't write the correct
+slug, AstroPaper will automatically slugify your incorrect slug. If slug is not specified, the slugified title of the
+post will be used as slug.
 
-If you omit `tags` in a blog post (in other words, if no tag is specified), the default tag `others` will be used as a tag for that post. You can set the default tag in the `/src/content/_schemas.ts` file.
+If you omit `tags` in a blog post (in other words, if no tag is specified), the default tag `others` will be used as a
+tag for that post. You can set the default tag in the `/src/content/_schemas.ts` file.
 
 ```ts
 // src/contents/_schemas.ts
@@ -50,7 +55,7 @@ export const blogSchema = z.object({
   // replace "others" with whatever you want
   tags: z.array(z.string()).default(["others"]),
   ogImage: z.string().optional(),
-  description: z.string(),
+  description: z.string()
 });
 ```
 
@@ -78,11 +83,13 @@ description: This is the example description of the example post.
 
 ## Adding table of contents
 
-By default, a post (article) does not include any table of contents (toc). To include toc, you have to specify it in a specific way.
+By default, a post (article) does not include any table of contents (toc). To include toc, you have to specify it in a
+specific way.
 
 Write `Table of contents` in h2 format (## in markdown) and place it where you want it to be appeared on the post.
 
-For instance, if you want to place your table of contents just under the intro paragraph (like I usually do), you can do that in the following way.
+For instance, if you want to place your table of contents just under the intro paragraph (like I usually do), you can do
+that in the following way.
 
 ```md
 ---
@@ -98,7 +105,8 @@ Here are some recommendations, tips & ticks for creating new posts in AstroPaper
 
 ## Headings
 
-There's one thing to note about headings. The AstroPaper blog posts use title (title in the frontmatter) as the main heading of the post. Therefore, the rest of the heading in the post should be using h2 \~ h6.
+There's one thing to note about headings. The AstroPaper blog posts use title (title in the frontmatter) as the main
+heading of the post. Therefore, the rest of the heading in the post should be using h2 \~ h6.
 
 This rule is not mandatory, but highly recommended for visual, accessibility and SEO purposes.
 
@@ -106,7 +114,8 @@ This rule is not mandatory, but highly recommended for visual, accessibility and
 
 ### Image compression
 
-When you put images in the blog post, it is recommended that the image is compressed. This will affect the overall performance of the website.
+When you put images in the blog post, it is recommended that the image is compressed. This will affect the overall
+performance of the website.
 
 My recommendation for image compression sites.
 
@@ -115,6 +124,8 @@ My recommendation for image compression sites.
 
 ### OG Image
 
-The default OG image will be placed if a post does not specify the OG image. Though not required, OG image related to the post should be specify in the frontmatter. The recommended size for OG image is **_1200 X 640_** px.
+The default OG image will be placed if a post does not specify the OG image. Though not required, OG image related to
+the post should be specify in the frontmatter. The recommended size for OG image is **_1200 X 640_** px.
 
-> Since AstroPaper v1.4.0, OG images will be generated automatically if not specified. Check out [the announcement](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/).
+> Since AstroPaper v1.4.0, OG images will be generated automatically if not specified. Check out
+> [the announcement](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/).
