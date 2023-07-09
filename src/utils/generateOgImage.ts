@@ -18,12 +18,19 @@ const fetchFonts = async () => {
 const { fontRegular, fontBold } = await fetchFonts();
 
 const generateOgImage = async (text = SITE.title) => {
+  // * Will need to keep an eye on base.css
+  // src\styles\base.css
+  const colorFill = "rgb(242, 244, 248)";
+  const colorTextBase = "rgb(76, 86, 106)";
+  const colorAccent = "rgb(94, 129, 172)";
+  const colorBorder = "rgb(170, 184, 206)";
+
   const svg = await satori(
     {
       type: "div",
       props: {
         style: {
-          background: "#fefbfb",
+          background: colorFill,
           width: "100%",
           height: "100%",
           display: "flex",
@@ -38,8 +45,10 @@ const generateOgImage = async (text = SITE.title) => {
                 position: "absolute",
                 top: "-1px",
                 right: "-1px",
-                border: "4px solid #000",
-                background: "#ecebeb",
+                borderWidth: "4px",
+                borderStyle: "solid",
+                borderColor: colorBorder,
+                background: colorFill,
                 opacity: "0.9",
                 borderRadius: "4px",
                 display: "flex",
@@ -54,8 +63,10 @@ const generateOgImage = async (text = SITE.title) => {
             type: "div",
             props: {
               style: {
-                border: "4px solid #000",
-                background: "#fefbfb",
+                borderWidth: "4px",
+                borderStyle: "solid",
+                borderColor: colorBorder,
+                background: colorFill,
                 borderRadius: "4px",
                 display: "flex",
                 justifyContent: "center",
@@ -80,6 +91,7 @@ const generateOgImage = async (text = SITE.title) => {
                       props: {
                         style: {
                           fontSize: 72,
+                          color: colorTextBase,
                           fontWeight: "bold",
                           maxHeight: "84%",
                           overflow: "hidden"
@@ -101,6 +113,9 @@ const generateOgImage = async (text = SITE.title) => {
                           {
                             type: "span",
                             props: {
+                              style: {
+                                color: colorTextBase
+                              },
                               children: [
                                 "by",
                                 " ",
@@ -117,6 +132,7 @@ const generateOgImage = async (text = SITE.title) => {
                                   type: "span",
                                   props: {
                                     style: {
+                                      color: colorAccent,
                                       overflow: "hidden",
                                       fontWeight: "bold"
                                     },
@@ -130,10 +146,11 @@ const generateOgImage = async (text = SITE.title) => {
                             type: "span",
                             props: {
                               style: {
+                                color: colorAccent,
                                 overflow: "hidden",
                                 fontWeight: "bold"
                               },
-                              children: SITE.title
+                              children: SITE.website.replace("https://", "")
                             }
                           }
                         ]
