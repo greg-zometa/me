@@ -66,7 +66,7 @@ onMount(() => {
     </svg>
   </span>
   <input
-    class="block w-full rounded border border-skin-fill border-opacity-40 bg-skin-fill py-3 pl-10 pr-3 placeholder:italic placeholder:text-opacity-75 focus:border-skin-accent focus:outline-none"
+    class="block w-full rounded border border-fill border-opacity-40 bg-fill py-3 pl-10 pr-3 placeholder:italic placeholder:text-opacity-75 focus:border-accent focus:outline-none"
     placeholder="Search for anything..."
     type="text"
     name="search"
