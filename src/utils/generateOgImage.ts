@@ -20,10 +20,10 @@ const { fontRegular, fontBold } = await fetchFonts();
 const generateOgImage = async (text = SITE.title) => {
   // * Will need to keep an eye on base.css
   // src\styles\base.css
-  const colorFill = "rgb(242, 244, 248)";
-  const colorTextBase = "rgb(76, 86, 106)";
-  const colorAccent = "rgb(94, 129, 172)";
-  const colorBorder = "rgb(170, 184, 206)";
+  const colorFill = "rgb(13, 17, 23)";
+  const colorTextBase = "rgb(255, 255, 255)";
+  const colorAccent = "rgb(255, 255, 255)";
+  const colorBorder = "rgb(230, 237, 243)";
 
   const svg = await satori(
     {

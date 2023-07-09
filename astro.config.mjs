@@ -29,7 +29,7 @@ export default defineConfig({
       ]
     ],
     shikiConfig: {
-      theme: "nord",
+      theme: "github-dark",
       wrap: true
     },
     extendDefaultPlugins: true
