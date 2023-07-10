@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --color-accent: 9, 105, 218;
-    --color-card-muted: 221, 244, 255;
-  }
   :root,
   html[data-theme="light"] {
     --color-fill: 255, 255, 255;
     --color-text-base: 13, 17, 23;
-    --color-card: 234, 238, 242;
+    --color-accent: 139, 92, 246;
+    --color-card: 237, 233, 254;
+    --color-card-muted: 99, 102, 241;
     --color-border: 31, 35, 40;
   }
   html[data-theme="dark"] {
     --color-fill: 13, 17, 23;
     --color-text-base: 255, 255, 255;
-    --color-card: 36, 41, 47;
+    --color-accent: 167, 139, 250;
+    --color-card: 221, 214, 254;
+    --color-card-muted: 129, 140, 248;
     --color-border: 230, 237, 243;
   }
   #sun-svg,
@@ -27,6 +27,10 @@
   #moon-svg,
   html[data-theme="dark"] #sun-svg {
     display: block;
+  }
+  /* * Workaround for custom badge color */
+  html[data-theme="dark"] .prose {
+    @apply prose-code:bg-opacity-10;
   }
   body {
     @apply flex min-h-screen flex-col bg-fill font-mono text-base
@@ -59,7 +63,7 @@
 
 
     prose-code:rounded prose-code:bg-card
-    prose-code:bg-opacity-75 prose-code:p-1 prose-code:!text-base
+    prose-code:bg-opacity-75 prose-code:p-1 prose-code:!text-accent /* * Originally text-base  */
     prose-code:before:!content-[''] prose-code:after:!content-['']
     prose-pre:!text-base prose-ol:!text-base
     prose-ul:overflow-x-clip prose-ul:!text-base prose-li:marker:!text-accent
