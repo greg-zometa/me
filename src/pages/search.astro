@@ -5,7 +5,7 @@ import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-import SvelteSearch from "@components/Search.svelte";
+import Search from "@components/Search";
 
 // Retrieve all articles
 const posts = await getCollection("blog", ({ data }) => !data.draft);
@@ -21,7 +21,7 @@ const searchList = posts.map(({ data }) => ({
 <Layout title={`Search | ${SITE.title}`}>
   <Header activeNav="search" />
   <Main pageTitle="Search" pageDesc="Search any article ...">
-    <SvelteSearch client:only searchList={searchList} />
+    <Search client:load searchList={searchList} />
   </Main>
   <Footer />
 </Layout>

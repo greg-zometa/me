@@ -2,10 +2,6 @@
 dist/
 .output/
 
-# cache
-*.cache
-.eslintcache
-
 # dependencies
 node_modules/
 
