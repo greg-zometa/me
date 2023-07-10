@@ -64,7 +64,7 @@ All blog posts are stored in `src/content/blog` directory.
 - **Fuzzy Search**: [FuseJS](https://fusejs.io/)
 - **Icons**: [Boxicons](https://boxicons.com/) | [Tablers](https://tabler-icons.io/)
 - **Code Formatting**: [Prettier](https://prettier.io/)
-- **Deployment**: [GitHub Pages](https://pages.github.com/)
+- **Deployment**: [Cloudflare Pages](https://pages.cloudflare.com/)
 - **Illustrations**: [Free SVG Illustration](https://freesvgillustration.com/)
 - **Linting**: [ESLint](https://eslint.org)
 
