@@ -10,24 +10,28 @@ tags:
   - forestry-cms
   - astro-paper
 ogImage: https://res.cloudinary.com/noezectz/v1663745737/astro-paper/astropaper-x-forestry-og_kqfwp0.png
-description:
-  Step by step process of connecting Astro-Paper blog theme with Forestry
-  Headless CMS.
+description: Step by step process of connecting Astro-Paper blog theme with Forestry Headless CMS.
 ---
 
-> Important!!! Forestry is going to be discontinued on April 22nd, 2023. You can [read their announcement](https://forestry.io/blog/forestry.io-end-of-life/) for more info.
+> Important!!! Forestry is going to be discontinued on April 22nd, 2023. You can
+> [read their announcement](https://forestry.io/blog/forestry.io-end-of-life/) for more info.
 
-In this article, I will explain step by step process of connecting AstroPaper theme with the Forestry headless CMS. So, let's get started 🎉
+In this article, I will explain step by step process of connecting AstroPaper theme with the Forestry headless CMS. So,
+let's get started 🎉
 
 ## Table of contents
 
 ## What is Forestry?
 
-[Forestry](https://forestry.io/ "Forestry Website") is a git-based headless CMS and we can manage our markdown contents easily by using that. Although it is not an open-sourced CMS, it has a good free plan by which we can import up to 3 sites (3 repositories). In this article, I'll demonstrate how we can use Forestry as git-based CMS of our AstroPaper blog theme.
+[Forestry](https://forestry.io/ "Forestry Website") is a git-based headless CMS and we can manage our markdown contents
+easily by using that. Although it is not an open-sourced CMS, it has a good free plan by which we can import up to 3
+sites (3 repositories). In this article, I'll demonstrate how we can use Forestry as git-based CMS of our AstroPaper
+blog theme.
 
 ## Login / Register an account at Forestry.io
 
-First of all, you have to create an account at [Forestry website](https://app.forestry.io/login "Forestry Login Page"). I usually sign up with my Github account.
+First of all, you have to create an account at [Forestry website](https://app.forestry.io/login "Forestry Login Page").
+I usually sign up with my Github account.
 
 ![Forestry Login page](https://res.cloudinary.com/noezectz/v1663739096/astro-paper/Forestry-io_hk5yzv.png)
 
@@ -57,7 +61,8 @@ After this, the process of importing site (repo) is done.
 
 ## Set up Sidebar
 
-The next phase after importing site is setting up sidebar menu. You can add many sidebar menu as you want. However, I'll only add one sidebar menu in this case.
+The next phase after importing site is setting up sidebar menu. You can add many sidebar menu as you want. However, I'll
+only add one sidebar menu in this case.
 
 Navigate to "Finish setup process" > "Set up sidebar" and click "Configure sitebar"
 
@@ -79,15 +84,19 @@ After this step, you should see a sidebar menu "Blog Posts" and some blog posts.
 
 ## Set up Media Import
 
-In Forestry CMS, you can set up different options for media (aka assets) such as Cloudinary, git commit media etc. I usually store my assets in [Cloudinary](https://cloudinary.com/). To set up media import, go to Settings > Media. Then select your image storage provider. (I chose Cloudinary).
+In Forestry CMS, you can set up different options for media (aka assets) such as Cloudinary, git commit media etc. I
+usually store my assets in [Cloudinary](https://cloudinary.com/). To set up media import, go to Settings > Media. Then
+select your image storage provider. (I chose Cloudinary).
 
 ![Setting up 'Cloudinary' as the media import](https://res.cloudinary.com/noezectz/v1663741636/astro-paper/forestry-io-media-import_1_f8i4lm.png)
 
-You can see details of Forestry Cloudinary setup at [Forestry documentation](https://forestry.io/docs/media/cloudinary/).
+You can see details of Forestry Cloudinary setup at
+[Forestry documentation](https://forestry.io/docs/media/cloudinary/).
 
 ## Set up Front matter template
 
-After setting everything up, you can set up front matter template for your future blog post. To set up front matter template, navigate to "Front matter" menu on the sidebar.
+After setting everything up, you can set up front matter template for your future blog post. To set up front matter
+template, navigate to "Front matter" menu on the sidebar.
 
 Then, click "Add Template" button at the top right corner.
 
