@@ -4,16 +4,13 @@ const withOpacity = (variableName) => ({ opacityValue }) => opacityValue !== und
 module.exports = {
   content: ["./src/**/*.{astro,html,md,mdx,svelte,ts}"],
   theme: {
-    // Remove the following screen breakpoint or add other breakpoints
-    // if one breakpoint is not enough for you
     screens: {
-      sm: "640px",
+      xs: "320px",
+      sm: "576px",
+      md: "768px",
+      lg: "992px",
+      xl: "1024px"
     },
-
-    // Uncomment the following extend
-    // if existing Tailwind color palette will be used
-
-    // extend: {
     textColor: {
       base: withOpacity("--color-text-base"),
       accent: withOpacity("--color-accent"),
@@ -41,8 +38,7 @@ module.exports = {
     },
     fontFamily: {
       mono: ["IBM Plex Mono", "monospace"],
-    },
-    // },
+    }
   },
   plugins: [require("@tailwindcss/typography")],
 };
