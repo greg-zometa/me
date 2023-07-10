@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import serviceWorker from "astrojs-service-worker";
 import tailwind from "@astrojs/tailwind";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
@@ -15,6 +16,7 @@ export default defineConfig({
         applyBaseStyles: false
       }
     }),
+    serviceWorker(),
     sitemap(),
     svelte()
   ],
