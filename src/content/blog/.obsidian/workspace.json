@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "terminal-development.md",
+                "file": "how-to-take-notes-to-learn-effectively.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "terminal-development.md",
+                "file": "how-to-take-notes-to-learn-effectively.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "terminal-development.md",
+                "file": "how-to-take-notes-to-learn-effectively.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "terminal-development.md"
+                "file": "how-to-take-notes-to-learn-effectively.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "e15efd6c5985100a",
   "lastOpenFiles": [
+    "blog-post-template.md",
+    "how-to-take-notes-to-learn-effectively.md",
+    "terminal-development.md",
     "rec-2.md",
     "tailwind-typography.md",
     "predefined-color-schemes.md",
