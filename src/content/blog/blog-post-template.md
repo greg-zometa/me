@@ -1,14 +1,16 @@
 ---
-author: Sat Naing
-pubDatetime: 2022-09-23T15:22:00Z
-title: Adding new posts in AstroPaper theme
-postSlug: adding-new-posts-in-astropaper-theme
-featured: true
-draft: false
+title: Blog post template
+description: This is an unpublished, reusable blog post template.
+pubDatetime: 2023-07-11T03:27:16.458Z
+author: Greg Zometa
+postSlug: unpublished-blog-post-template
+featured: false
+draft: true
 tags:
-  - docs
-ogImage: ""
-description: Some rules & recommendations for creating or adding new posts using AstroPaper theme.
+  - some
+  - example
+  - tags
+ogImage: "/og.jpeg"
 ---
 
 Here are some rules/recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
@@ -36,28 +38,6 @@ Here is the list of frontmatter property for each post.
 | **_ogImage_**     | OG image of the post. Useful for social media sharing and SEO.                  | default = SITE.ogImage or generated SVG image |
 
 Only `title`, `description` and `pubDatetime` fields in frontmatter must be specified.
-
-Title and description (excerpt) are important for search engine optimization (SEO) and thus AstroPaper encourages to
-include these in blog posts.
-
-`slug` is the unique identifier of the url. Thus, `slug` must be unique and different from other posts. The whitespace
-of `slug` needs to be separated with `-` or `_` but `-` is recommended. However, even if you don't write the correct
-slug, AstroPaper will automatically slugify your incorrect slug. If slug is not specified, the slugified title of the
-post will be used as slug.
-
-If you omit `tags` in a blog post (in other words, if no tag is specified), the default tag `others` will be used as a
-tag for that post. You can set the default tag in the `/src/content/_schemas.ts` file.
-
-```ts
-// src/contents/_schemas.ts
-export const blogSchema = z.object({
-  // ---
-  // replace "others" with whatever you want
-  tags: z.array(z.string()).default(["others"]),
-  ogImage: z.string().optional(),
-  description: z.string()
-});
-```
 
 ### Sample Frontmatter
 
@@ -112,6 +92,17 @@ This rule is not mandatory, but highly recommended for visual, accessibility and
 
 ## Bonus
 
+### ISO Format
+
+Open a browser and paste the following to get the
+[ISO Format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString) for the
+`pubDatetime` frontmatter property.
+
+```js
+const date = new Date();
+date.toISOString();
+```
+
 ### Image compression
 
 When you put images in the blog post, it is recommended that the image is compressed. This will affect the overall
@@ -128,4 +119,4 @@ The default OG image will be placed if a post does not specify the OG image. Tho
 the post should be specify in the frontmatter. The recommended size for OG image is **_1200 X 640_** px.
 
 > Since AstroPaper v1.4.0, OG images will be generated automatically if not specified. Check out
-> [the announcement](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper-blog-posts/).
+> [the announcement](https://astro-paper.pages.dev/posts/dynamic-og-image-generation-in-astropaper)
