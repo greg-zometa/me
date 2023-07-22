@@ -15,11 +15,11 @@
     xl:active:before:bottom-0 xl:active:before:h-full
     xl:before:bg-accent xl:before:w-full xl:before:h-1
     xl:before:transition-all xl:before:ease-in-out xl:before:duration-300
-    xl:before:absolute xl:before:left-0 xl:before:bottom-1 xl:before:-z-10
+    xl:before:absolute xl:before:left-0 xl:before:bottom-px xl:before:-z-10
   `;
 </script>
 
-<li class="my-6">
+<li class="mt-4">
   <a {href} class="inline-block focus-visible:no-underline focus-visible:underline-offset-0">
     {#if secHeading}
       <h2 class={headingClass}>
