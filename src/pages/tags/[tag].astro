@@ -30,7 +30,7 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.props;
 
-const posts = await getCollection("blog", ({ data }) => !data.draft);
+const posts = await getCollection("blog", ({ data }) => import.meta.env.MODE === "development" || !data.draft);
 
 const tagPosts = getPostsByTag(posts, tag);
 ---

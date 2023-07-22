@@ -8,7 +8,7 @@ import Footer from "@components/Footer.astro";
 import SvelteSearch from "@components/Search.svelte";
 
 // Retrieve all articles
-const posts = await getCollection("blog", ({ data }) => !data.draft);
+const posts = await getCollection("blog", ({ data }) => import.meta.env.MODE === "development" || !data.draft);
 
 // List of items to search in
 const searchList = posts.map(({ data }) => ({
