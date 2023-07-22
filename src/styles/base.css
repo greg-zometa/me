@@ -8,17 +8,17 @@
     --color-fill: 242, 242, 242; /* White */
     --color-text-base: 13, 13, 13; /* Black */
     --color-accent: 99, 102, 241; /* 500 */
-    --color-card: 224, 231, 255; /* 100 */
-    --color-card-muted: 67, 56, 202; /* 700 */
-    --color-border: 31, 35, 40;
+    --color-card: 199, 210, 254; /* 200 */
+    --color-card-muted: 79, 70, 229; /* 600 */
+    --color-border: 30, 27, 75; /* 950 */
   }
   html[data-theme="dark"] {
     --color-fill: 13, 13, 13; /* Black */
     --color-text-base: 242, 242, 242; /* White */
     --color-accent: 129, 140, 248; /* 400 */
-    --color-card: 199, 210, 254; /* 200 */
+    --color-card: 224, 231, 255; /* 100 */
     --color-card-muted: 165, 180, 252; /* 300 */
-    --color-border: 230, 237, 243;
+    --color-border: 238, 242, 255; /* 50*/
   }
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
@@ -27,14 +27,6 @@
   #moon-svg,
   html[data-theme="dark"] #sun-svg {
     display: block;
-  }
-  /* * Workaround for custom badge color */
-  html[data-theme="dark"] .prose {
-    @apply prose-code:bg-opacity-10;
-  }
-  /* * Workaround for scrollbar track color */
-  html[data-theme="dark"] ::-webkit-scrollbar-track {
-    @apply bg-opacity-10;
   }
   body {
     @apply flex min-h-screen flex-col bg-fill font-mono text-base
@@ -67,7 +59,7 @@
 
 
     prose-code:rounded prose-code:bg-card
-    prose-code:bg-opacity-75 prose-code:p-1 prose-code:!text-accent /* * Originally text-base  */
+    prose-code:bg-opacity-25 prose-code:p-1 prose-code:!text-accent /* * Originally text-base  */
     prose-code:before:!content-[''] prose-code:after:!content-['']
     prose-pre:!text-base prose-ol:!text-base
     prose-ul:overflow-x-clip prose-ul:!text-base prose-li:marker:!text-accent
