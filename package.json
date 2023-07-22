@@ -10,7 +10,7 @@
     "preview": "astro preview",
     "sync": "astro sync",
     "astro": "astro",
-    "format": "prettier --write \"**/*.{html,md,mdx,ts}\" --cache",
+    "format": "prettier --write \"**/*.{astro,html,json,md,mdx,svelte,ts}\" --cache",
     "lint": "eslint \"**/*.ts\" --config .eslintrc --cache",
     "prepare": "husky install"
   },
@@ -41,14 +41,14 @@
     "eslint-plugin-svelte": "2.32.4",
     "husky": "8.0.3",
     "lint-staged": "13.2.3",
-    "prettier": "2.8.8",
-    "prettier-plugin-astro": "0.10.0",
-    "prettier-plugin-svelte": "2.10.1",
-    "prettier-plugin-tailwindcss": "0.3.0",
+    "prettier": "3.0.0",
+    "prettier-plugin-astro": "0.11.0",
+    "prettier-plugin-svelte": "3.0.0",
+    "prettier-plugin-tailwindcss": "0.4.1",
     "svelte-eslint-parser": "0.32.2"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,mdx,json}": [
+    "*.{astro,html,json,md,mdx,svelte,ts}": [
       "prettier --plugin-search-dir=. --write"
     ]
   },
