@@ -6,7 +6,7 @@
   export let href: string | undefined = undefined;
   export let secHeading: boolean | undefined = undefined;
 
-  const { title, pubDatetime, description } = frontmatter;
+  const { title, pubDatetime, description, readingTime } = frontmatter;
   const headingClass = `
     font-medium relative
     text-lg text-accent xl:text-base
@@ -31,6 +31,6 @@
       </h3>
     {/if}
   </a>
-  <Datetime datetime={pubDatetime} />
+  <Datetime datetime={pubDatetime} {readingTime} />
   <p>{description}</p>
 </li>

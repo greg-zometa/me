@@ -1,8 +1,10 @@
 import { defineConfig } from "astro/config";
 import serviceWorker from "astrojs-service-worker";
 import tailwind from "@astrojs/tailwind";
-import remarkToc from "remark-toc";
+import { toString } from "mdast-util-to-string";
+import getReadingTime from "reading-time";
 import remarkCollapse from "remark-collapse";
+import remarkToc from "remark-toc";
 import sitemap from "@astrojs/sitemap";
 import svelte from "@astrojs/svelte";
 import { SITE } from "./src/config";
@@ -22,13 +24,20 @@ export default defineConfig({
   ],
   markdown: {
     remarkPlugins: [
-      remarkToc,
       [
         remarkCollapse,
         {
           test: "Table of contents"
         }
-      ]
+      ],
+      () =>
+        // https://docs.astro.build/en/recipes/reading-time/
+        (tree, { data }) => {
+          const textOnPage = toString(tree);
+          const readingTime = getReadingTime(textOnPage);
+          data.astro.frontmatter.readingTime = readingTime.text;
+        },
+      remarkToc
     ],
     shikiConfig: {
       theme: "github-dark",
