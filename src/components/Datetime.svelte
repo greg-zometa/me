@@ -2,20 +2,16 @@
   import { LOCALE } from "@config";
 
   export let datetime: string | Date;
+  export let readingTime: string | undefined = undefined;
   export let size: "sm" | "lg" | undefined = undefined;
   export let className: string | undefined = undefined;
 
-  const myDatetime = new Date(datetime);
+  const postDatetime = new Date(datetime);
 
-  const date = myDatetime.toLocaleDateString(LOCALE, {
+  const date = postDatetime.toLocaleDateString(LOCALE, {
     year: "numeric",
     month: "long",
     day: "numeric"
-  });
-
-  const time = myDatetime.toLocaleTimeString(LOCALE, {
-    hour: "2-digit",
-    minute: "2-digit"
   });
 </script>
 
@@ -33,8 +29,21 @@
   <span class="sr-only">Posted on:</span>
   <span class={`italic ${size === "sm" ? "text-sm" : "text-base"}`}>
     {date}
-    <span aria-hidden="true"> | </span>
-    <span class="sr-only">&nbsp;at&nbsp;</span>
-    {time}
   </span>
+  {#if readingTime}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class={`${size === "sm" ? "scale-90" : "scale-100"} inline-block h-6 w-6 fill-base`}
+      aria-hidden="true"
+    >
+      <path
+        d="M12 5c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm0 14c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"
+      />
+      <path d="M11 9h2v5h-2zM9 2h6v2H9zm10.293 5.707-2-2 1.414-1.414 2 2z" />
+    </svg>
+    <span class="sr-only">Reading time:</span>
+    <span class={`italic ${size === "sm" ? "text-sm" : "text-base"}`}>
+      {readingTime}
+    </span>
+  {/if}
 </div>
