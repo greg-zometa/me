@@ -11,8 +11,12 @@
             "id": "0110a35c049effe9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "mobile-devices.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "7fc5de755a2ffcc7",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "mobile-devices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "mobile-devices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "mobile-devices.md"
+              }
             }
           }
         ]
@@ -141,8 +150,11 @@
   "active": "0110a35c049effe9",
   "lastOpenFiles": [
     "blog-post-template.md",
-    "customizing-astropaper-theme-color-schemes.md",
     "how-to-take-notes-to-learn-effectively.md",
+    "mobile-devices.md",
+    "customizing-astropaper-theme-color-schemes.md",
+    "2023-07-29.md",
+    "Untitled.canvas",
     "terminal-development.md",
     "rec-2.md",
     "tailwind-typography.md",

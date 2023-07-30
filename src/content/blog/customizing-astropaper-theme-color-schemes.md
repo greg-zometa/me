@@ -109,6 +109,7 @@ specify your light color scheme inside `:root`,`html[data-theme="light"]` and da
 `html[data-theme="dark"]`.
 
 Colors are declared in CSS custom property (CSS Variable) notation. Color property values are written in rgb values.
+
 (Note: instead of `rgb(40, 39, 40)`, only specify `40, 39, 40`)
 
 Here is the detail explanation of color properties.
