@@ -11,8 +11,8 @@ This PR is intended to...
 
 <!-- Please delete options that are not relevant. -->
 
-- [ ] Feature (non-breaking change which adds functionality)
-- [ ] Fix (non-breaking change which fixes an issue)
+- [ ] Feature (adds functionality)
+- [ ] Fix (fixes an issue)
 - [ ] Refactor (optimize or format existing code)
-- [ ] Docs (change that updates documentation)
+- [ ] Docs (change that updates documentation or adds post)
 - [ ] Chore (miscellaneous changes)

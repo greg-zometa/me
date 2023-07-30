@@ -49,13 +49,11 @@
     sm:scale-110;
   }
   .prose {
-    @apply prose-headings:!mb-3 prose-headings:!text-base
-    prose-h3:italic prose-p:!text-base
-    prose-a:!text-base prose-a:!decoration-dashed prose-a:underline-offset-8
-    hover:prose-a:text-accent prose-blockquote:!border-l-accent
-    prose-blockquote:opacity-80 /* ! Removed prose-blockquote:border-opacity-50  */
+    @apply prose-headings:!mb-3 prose-headings:!text-accent /* * Originally prose-headings:!text-base */
+    prose-h3:italic prose-p:!text-base prose-strong:!text-base
+    prose-a:!text-base prose-a:!decoration-dashed prose-a:underline-offset-8 hover:prose-a:text-accent 
+    prose-blockquote:!border-l-accent prose-blockquote:opacity-80 /* ! Removed prose-blockquote:border-opacity-50  */
     prose-figcaption:!text-base prose-figcaption:opacity-70
-    prose-strong:!text-base
 
 
     prose-code:rounded prose-code:bg-card

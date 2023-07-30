@@ -4,6 +4,7 @@ import tailwind from "@astrojs/tailwind";
 import { toString } from "mdast-util-to-string";
 import getReadingTime from "reading-time";
 import remarkCollapse from "remark-collapse";
+import remarkExternalLinks from "remark-external-links";
 import remarkToc from "remark-toc";
 import sitemap from "@astrojs/sitemap";
 import svelte from "@astrojs/svelte";
@@ -30,6 +31,7 @@ export default defineConfig({
           test: "Table of contents"
         }
       ],
+      remarkExternalLinks,
       () =>
         // https://docs.astro.build/en/recipes/reading-time/
         (tree, { data }) => {
