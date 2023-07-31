@@ -20,10 +20,10 @@ const { fontRegular, fontBold } = await fetchFonts();
 const generateOgImage = async (text = SITE.title) => {
   // * Will need to keep an eye on base.css
   // src\styles\base.css
-  const colorFill = "rgb(13, 17, 23)";
-  const colorTextBase = "rgb(255, 255, 255)";
-  const colorAccent = "rgb(255, 255, 255)";
-  const colorBorder = "rgb(230, 237, 243)";
+  const colorFill = "rgb(13, 13, 13)";
+  const colorTextBase = "rgb(242, 242, 242)";
+  const colorAccent = "rgb(129, 140, 248)";
+  const colorBorder = "rgb(238, 242, 255)";
 
   const svg = await satori(
     {
@@ -91,7 +91,7 @@ const generateOgImage = async (text = SITE.title) => {
                       props: {
                         style: {
                           fontSize: 72,
-                          color: colorTextBase,
+                          color: colorAccent,
                           fontWeight: "bold",
                           maxHeight: "84%",
                           overflow: "hidden"
@@ -132,7 +132,7 @@ const generateOgImage = async (text = SITE.title) => {
                                   type: "span",
                                   props: {
                                     style: {
-                                      color: colorAccent,
+                                      color: colorTextBase,
                                       overflow: "hidden",
                                       fontWeight: "bold"
                                     },
@@ -146,7 +146,7 @@ const generateOgImage = async (text = SITE.title) => {
                             type: "span",
                             props: {
                               style: {
-                                color: colorAccent,
+                                color: colorTextBase,
                                 overflow: "hidden",
                                 fontWeight: "bold"
                               },
