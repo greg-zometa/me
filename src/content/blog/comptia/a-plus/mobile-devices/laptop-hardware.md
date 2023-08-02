@@ -1,9 +1,9 @@
 ---
 title: Laptop Hardware
 description:
-  Learn about the various accessories, configurations, hardware, and standards that enable us to connect and use mobile
-  devices.
-pubDatetime: 2023-07-30T07:33:25.533Z
+  Learn about laptop hardware, storage options, and an overview of converting from traditional hard drives to high-speed
+  SSD technology.
+pubDatetime: 2023-08-02T06:36:17.783Z
 postSlug: mobile-devices-laptop-hardware
 tags:
   - comptia

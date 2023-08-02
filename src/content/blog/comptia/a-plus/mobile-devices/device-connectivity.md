@@ -1,9 +1,7 @@
 ---
 title: Device Connectivity
-description:
-  Learn about the various accessories, configurations, hardware, and standards that enable us to connect and use mobile
-  devices.
-pubDatetime: 2023-07-30T07:33:25.533Z
+description: Learn about cellular standards, mobile device connectivity, and mobile device configurations.
+pubDatetime: 2023-08-02T06:36:17.783Z
 postSlug: mobile-devices-device-connectivity
 tags:
   - comptia
