@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mobile-devices.md",
+                "file": "networking.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "7fc5de755a2ffcc7",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mobile-devices.md",
+                "file": "networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mobile-devices.md",
+                "file": "networking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mobile-devices.md"
+                "file": "networking.md"
               }
             }
           }
@@ -149,9 +148,10 @@
   },
   "active": "0110a35c049effe9",
   "lastOpenFiles": [
-    "blog-post-template.md",
     "how-to-take-notes-to-learn-effectively.md",
     "mobile-devices.md",
+    "networking.md",
+    "blog-post-template.md",
     "customizing-astropaper-theme-color-schemes.md",
     "2023-07-29.md",
     "Untitled.canvas",
