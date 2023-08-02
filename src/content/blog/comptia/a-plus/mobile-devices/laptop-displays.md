@@ -13,8 +13,7 @@ tags:
 ---
 
 This post will cover various aspects of the **Mobile Devices** section of the
-[CompTIA A+](https://www.comptia.org/certifications/a) Core 1 certification endeavor. This includes laptop hardware,
-laptop displays, mobile device configuration, and mobile device connectivity.
+[CompTIA A+](https://www.comptia.org/certifications/a) Core 1 certification endeavor.
 
 ## Table of contents
 
