@@ -13,13 +13,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mobile-devices.md",
+                "file": "comptia/a-plus/mobile-devices/device-configuration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "07e85761b3625276",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "comptia/a-plus/mobile-devices/device-configuration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "32047adb93075126",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "comptia/a-plus/mobile-devices/laptop-hardware.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d6c874397e1ba266",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "comptia/a-plus/mobile-devices/laptop-displays.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "77c80c898314880f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "comptia/a-plus/mobile-devices/device-configuration.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -69,8 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 317.5
   },
   "right": {
     "id": "7fc5de755a2ffcc7",
@@ -86,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mobile-devices.md",
+                "file": "comptia/a-plus/mobile-devices/laptop-displays.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mobile-devices.md",
+                "file": "comptia/a-plus/mobile-devices/laptop-displays.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mobile-devices.md"
+                "file": "comptia/a-plus/mobile-devices/laptop-displays.md"
               }
             }
           }
@@ -147,11 +195,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0110a35c049effe9",
+  "active": "d6c874397e1ba266",
   "lastOpenFiles": [
+    "comptia/a-plus/mobile-devices/laptop-hardware.md",
+    "comptia/a-plus/mobile-devices/laptop-displays.md",
+    "comptia/a-plus/mobile-devices/device-connectivity.md",
+    "comptia/a-plus/mobile-devices/device-configuration.md",
+    "mobile-devices.md",
+    "comptia/a-plus/mobile-devices",
+    "comptia/a-plus",
+    "comptia",
     "blog-post-template.md",
     "how-to-take-notes-to-learn-effectively.md",
-    "mobile-devices.md",
     "customizing-astropaper-theme-color-schemes.md",
     "2023-07-29.md",
     "Untitled.canvas",
