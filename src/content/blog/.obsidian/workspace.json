@@ -4,83 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "f31172d13602b187",
+        "id": "321e0f45958c658b",
         "type": "tabs",
         "children": [
           {
-            "id": "0110a35c049effe9",
+            "id": "54edb55c90d125c0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "comptia/a-plus/mobile-devices/device-configuration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "07e85761b3625276",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "comptia/a-plus/mobile-devices/device-configuration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "32047adb93075126",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "comptia/a-plus/mobile-devices/laptop-hardware.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d6c874397e1ba266",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "networking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3bcabddf3c314448",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "networking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "77c80c898314880f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "comptia/a-plus/mobile-devices/device-configuration.md",
+                "file": "comptia/a-plus/networking/wireless-networks.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -146,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "networking.md",
+                "file": "comptia/a-plus/networking/wireless-networks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "networking.md",
+                "file": "comptia/a-plus/networking/wireless-networks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "networking.md"
+                "file": "comptia/a-plus/networking/wireless-networks.md"
               }
             }
           }
@@ -207,19 +146,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3bcabddf3c314448",
+  "active": "54edb55c90d125c0",
   "lastOpenFiles": [
-    "comptia/a-plus/mobile-devices/laptop-hardware.md",
+    "networking.md",
+    "comptia/a-plus/networking/wireless-networks.md",
     "comptia/a-plus/networking/network-devices.md",
+    "comptia/a-plus/mobile-devices/device-configuration.md",
     "comptia/a-plus/networking/ports-and-protocols.md",
+    "comptia/a-plus/mobile-devices/laptop-hardware.md",
+    "customizing-astropaper-theme-color-schemes.md",
+    "blog-post-template.md",
     "comptia/a-plus/mobile-devices/laptop-displays.md",
     "comptia/a-plus/mobile-devices/device-connectivity.md",
-    "networking.md",
-    "blog-post-template.md",
-    "customizing-astropaper-theme-color-schemes.md",
     "how-to-take-notes-to-learn-effectively.md",
     "comptia/a-plus/networking",
-    "comptia/a-plus/mobile-devices/device-configuration.md",
     "mobile-devices.md",
     "comptia/a-plus/mobile-devices",
     "comptia/a-plus",

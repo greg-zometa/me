@@ -1,8 +1,6 @@
 ---
 title: Ports and Protocols
-description:
-  Learn about laptop hardware, storage options, and an overview of converting from traditional hard drives to high-speed
-  SSD technology.
+description: Learn about the Internet Protocol and port numbers that traverse the network.
 pubDatetime: 2023-08-03T04:03:27.106Z
 postSlug: networking-ports-and-protocols
 tags:
@@ -15,8 +13,7 @@ tags:
 ---
 
 This post will cover various aspects of the **Networking** section of the
-[CompTIA A+](https://www.comptia.org/certifications/a) Core 1 certification endeavor. This includes ports, protocols,
-services, standards, tools, and connectivity types all for networking.
+[CompTIA A+](https://www.comptia.org/certifications/a) Core 1 certification endeavor.
 
 ## Table of contents
 

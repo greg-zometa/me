@@ -1,9 +1,9 @@
 ---
-title: CompTIA A+ - Networking
+title: Networking
 description: Learn how computers connect and communicate with each other via networking.
 pubDatetime: 2023-07-30T07:33:25.533Z
 author: Greg Zometa
-postSlug: comptia-a-plus-networking
+postSlug: networking
 featured: true
 draft: true
 tags:
@@ -20,8 +20,6 @@ This post will cover various aspects of the **Networking** section of the
 services, standards, tools, and connectivity types all for networking.
 
 ## Table of contents
-
-## Wireless Networks
 
 ## Network Services
 
