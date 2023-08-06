@@ -257,45 +257,29 @@ by URL and many other security capabilities as well.
 
 ## SCADA
 
-If you work in an industrial environment, then you’re probably already familiar with SCADA or ICS. The stands for the
-Supervisory Control And Data Acquisition system. You might also hear this referred to as an Industrial Control system,
-or ICS. The SCADA systems are responsible for control and management of these industrial machines. So if you are part of
-a power company and you have power generation equipment or you’re a manufacturing company with these large manufacturing
+[SCADA](https://www.techtarget.com/whatis/definition/SCADA-supervisory-control-and-data-acquisition) (supervisory
+control and data acquisition), sometimes referred to as an ICS (industrial control system), is a category of software
+applications for controlling industrial processes, which is the gathering of data in
+[real time](https://www.techtarget.com/whatis/definition/real-time) from remote locations in order to control equipment
+and conditions. SCADA provides organizations with the tools needed to make and deploy data-driven decisions regarding
+their industrial processes.
+
+The SCADA systems are responsible for control and management of these industrial machines. So if you are part of a power
+company and you have power generation equipment or you’re a manufacturing company with these large manufacturing
 equipment, you might use some SCADA to be able to manage those devices. SCADA allows us to see exactly what’s happening
 on these devices and to be able to manage and control these devices across the network.
 
-As you can imagine, these power generation systems and manufacturing equipment can be very expensive systems. And an
-outage of these systems might have a dramatic impact. For those reasons, SCADA systems are usually segmented from the
-rest of the network, and you very often need additional rights, permissions, and connections to even gain access to
-these very important systems.
-
-One common theme with data centers is once a service is installed, it’s very difficult to get that service removed from
-the data center. And often devices and services may sit in the data center for 10 years or even more. We often refer to
-these systems as legacy systems. And although they’re very old, they usually have an extremely important service that’s
-running on them. Very often these legacy systems are running on older software or older hardware, and it might be very
-difficult to resolve a problem with this device just because the software and hardware are not well supported or may be
-difficult to obtain.
-
-Another type of service you might find in your data center is an embedded system. These are systems where you normally
-don’t have access to the operating system or any other aspect inside of the device. Instead it is a purpose built device
-that’s designed for you to only have access to the service or the application that that device provides. This might be
-something like an alarm system or a door security system or perhaps the time card system that you use to keep track of
-when people come to work and when they leave. Those devices commonly don’t have an operating system that we can update
-or even view. Because of that, we rely on the manufacturer of these purpose built systems to be able to provide us with
-support and ongoing maintenance.
-
 ## IOT
 
-And one of the newest category of systems that you now find in the enterprise are Internet of Things devices or IoT.
-We’re starting to find an increasing number of IoT devices not only on our enterprise networks but our home networks. It
-seems that everything we’re connecting to a power plug in our home is also connecting to our network.
+[Internet of things](https://www.techtarget.com/iotagenda/definition/Internet-of-Things-IoT) (IoT) is a variety of
+devices that basically connect to the internet. A lot of times they are very low powered devices that form networks and
+communicate together. IoT helps people live and work smarter. Consumers, for example, can use IoT-embedded devices
+(cars, smartwatches, thermostats, etc.) to improve their lives.
 
-For example, we’re starting to see appliances such as refrigerators and ovens connect to the wireless network. We have
-smart devices like speakers that are responding to our voice commands. Or we might have air control systems that allow
-us to manage the temperature of a room all from a centralized app on our mobile device. These IoT devices may also be
-responsible for access at our facilities, so they might be a smart doorbell or they might be responsible for unlocking a
-door or a garage.
+In addition to offering smart devices to personal lives, IoT is essential to business. It provides organizations with a
+real-time look into how their systems really work, delivering insights into everything from the performance of machines
+to [supply chain](https://www.techtarget.com/whatis/definition/supply-chain) and logistics operations.
 
-This is another case where the security of these devices is relatively important. We wouldn’t want somebody gaining
-access to our systems because they have access to these IoT devices. So commonly we segment IoT devices onto their own
-network where we can have additional security and limit anyone else from accessing those systems.
+IoT enables machines to complete tedious tasks without human intervention. Companies can automate processes, reduce
+labor costs, cut down on waste and improve service delivery. IoT helps make it less expensive to manufacture and deliver
+goods, and offers transparency into customer transactions.
