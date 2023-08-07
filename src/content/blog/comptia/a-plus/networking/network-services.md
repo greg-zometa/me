@@ -176,38 +176,11 @@ They use standard protocols such as HTTP or HTTPS.
 
 ## Internet appliances
 
-In an enterprise, we might often start our day by logging in to our local computer or we may be connecting from a VPN
-and we would use a username and password to provide that authentication. And often the authentication that we would use
-between all of these different services is identical. So how does the enterprise use the same authentication method
-across all of these different servers? In most cases, the organization’s using an authentication server which
-centralizes all of those usernames and passwords to a single service.
-
-This isn’t something we would commonly use on a home network because we don’t have a lot of services that we’re logging
-into on our local network. But on an enterprise network, there are many different services that we would want to access,
-and this centralized authentication server provides us with a way to not only provide access to those services but do it
-in a way that our usernames and passwords are protected. As you can imagine, if the authentication server is not
-available, then no one would be able to log in and use any of the resources on your network. For that reason, this is
-considered to be a very critical resource, and it’s very common for organizations to have multiple authentication
-servers on their network for redundancy.
-
-Your mail client probably has a separate folder already configured inside of it called spam. That spam folder takes any
-messages which may be unsolicited attempts at getting your attention and puts all of those messages into a spam folder
-so that you don’t have to read them. The content of these spam messages can vary widely. These could be commercial
-attempts to get you to buy something. It might be someone trying to get you to click on a link that sends you to a
-malicious website. Or it may be a phishing attempt, which is trying to get you to give away some of your personal
-information.
-
-Managing all of these spam messages can be complex. It’s already difficult to identify the spam message, and then we
-also have to manage what we do with those messages once they’re identified. There are obviously security concerns. We
-have to think about where we’re going to store this information and for how long we’re going to keep these spam messages
-stored in our databases.
-
-Some organizations will have a separate mail gateway in their network. In this example, that mail is being sent and
-received from the internet through a firewall that then sends it to the mail gateway on a screen subnet. These mail
-gateways can also be stored in the cloud and there may be a third party provider that’s being used to provide that
-functionality. Once the mail is scanned, it can then be sent to the internal network and stored on a local internal mail
-server. This gives us the opportunity to categorize mail as spam or to completely reject the mail and prevent its access
-to the internal server.
+Internet appliances, generally in IT, is very expensive security based devices. It is a type of computing appliance that
+aids in the flow of information to other network-connected computing devices. Services that may be provided by a network
+appliance include firewall functions, caching, authentication, network address translation and IP address management. It
+takes multiple security functionalities and integrates it into a single component that you can manage in a centralized
+fashion. Thereby making it a lot easier for us to manage some of our security infrastructure.
 
 Many organizations have begun consolidating many of their security functions on the network to a single device. Often
 this is a next generation firewall, but you may find older systems that do this called a Unified Threat Management
