@@ -1,10 +1,8 @@
 ---
 title: Network Services
 description: Learn about services supporting, DNS, DHCP, printing, email, and more.
-pubDatetime: 2023-07-30T07:33:25.533Z
-author: Greg Zometa
+pubDatetime: 2023-08-07T15:03:38.282Z
 postSlug: networking-services
-draft: true
 tags:
   - comptia
   - a-plus
@@ -15,15 +13,9 @@ tags:
 ---
 
 This post will cover various aspects of the **Networking** section of the
-[CompTIA A+](https://www.comptia.org/certifications/a) Core 1 certification endeavor. This includes ports, protocols,
-services, standards, tools, and connectivity types all for networking.
+[CompTIA A+](https://www.comptia.org/certifications/a) Core 1 certification endeavor.
 
 ## Table of contents
-
-If you've ever worked in a data center or you have an organization that has a data center, then this picture probably
-looks familiar. It’s row after row after row of 19 inch racks. And those racks have inside of them many different types
-of computing systems. In this video, we’ll look at many different kinds of network services and see what types of things
-might be running inside of this company’s data center.
 
 ## DNS
 
@@ -182,51 +174,35 @@ appliance include firewall functions, caching, authentication, network address t
 takes multiple security functionalities and integrates it into a single component that you can manage in a centralized
 fashion. Thereby making it a lot easier for us to manage some of our security infrastructure.
 
-Many organizations have begun consolidating many of their security functions on the network to a single device. Often
-this is a next generation firewall, but you may find older systems that do this called a Unified Threat Management
-device or a UTM. Some people often refer to this as a web security gateway. These devices can perform many different
-security functions. For example, you may have URL filtering or content inspection built into the device. These may be
-able to identify malware or the transfer of files that may contain malware. These could be a spam filter on their own.
+An example is a
+[unified threat management system](https://www.techtarget.com/searchsecurity/definition/unified-threat-management-UTM)
+(UTM) that consolidates many security functions on a network to a single device. Some people often refer to this as a
+web security gateway. These devices provide a single point of protection against threats, including viruses, worms,
+spyware and other malware, and network attacks. It combines security, performance, management and compliance
+capabilities into a single installation, making it easier for administrators to manage networks.
 
-You might also have other networking features such as CSU DSU capabilities which allow you to connect to a wide area
-network. These devices often act as routers and they usually might also have switch interfaces on the back of these
-devices. And of course, they act also as a firewall so you can allow or disallow certain traffic flows through your
-network. These devices can often act as intrusion detection systems or intrusion prevention systems, which can block
-known attacks from traversing the network. These devices can also act as bandwidth shapers or quality of service devices
-so that different applications can be prioritized in real time. And if you need people to connect to the network that
-are outside of your facility, you might want to use an encrypted tunnel through a virtual private network.
+You might also have other networking features such as
+[CSU/DSU](https://www.techtarget.com/searchnetworking/definition/CSU-DSU) (Channel Service Unit/Data Service Unit)
+capabilities which allow you to connect to a wide area network. It converts a digital data frame from local area network
+(LAN) communication technology into a frame appropriate for a wide area network (WAN) and vice versa.
 
-In an enterprise environment, we’re very sensitive to downtime. If a server becomes unavailable, the user may not be
-able to complete certain tasks or they may not be able to buy anything from us because the server is not responding. To
-be able to provide continuous uptime and availability, we need multiple servers. And the way that you would distribute
-the load across those servers is with a load balancer. The load balancer is responsible for checking in with all of the
-servers that are connected to it. And if one particular server becomes unresponsive, it simply removes that server from
-the load and continues operating with the remaining servers.
+Other ones that exist are [load balancers](https://www.techtarget.com/searchnetworking/definition/load-balancing); a way
+to distribute resource requests from some of those servers in our networks. We can take a load balancer and when a
+client request we can spread that workload across multiple servers, and evenly distribute the workload. In addition to
+maximizing network capacity and ensuring high performance, load balancing
+provides [failover](https://www.techtarget.com/searchstorage/definition/failover). If one server fails, a load balancer
+immediately redirects its workloads to a backup server, thus mitigating the effect on end users.
 
-This is usually the primary reason a load balancer is installed is to have multiple servers and be able to distribute
-the load across all of those devices. Since the load balancer is sitting in the middle of these conversations, it can
-also make changes to the way certain protocols might work. For example, it’s common for a load balancer to offload TCP
-so that it has a constant connection between all of the servers connected to it. This load balancer might also be
-providing SSL offloading.
-
-So all of the encryption and decryption from these servers is happening on the load balancer instead of having the
-servers manage that process themselves. These load balancers can commonly cache information so that requests from the
-internet may not have to go down to a server. Instead the load balancer may already have that information in a cache and
-can simply respond back to the internet without involving any of the connected servers.
-
-We can also perform some very advanced configurations of the traffic going through this load balancer. So we might
-configure certain web pages or certain applications to have priority over others. We might also tell the load balancer
-that certain applications should prioritize to certain servers and other applications or web pages can be moved to other
-servers. This content switching capability allows the load balancer to optimize communication with the servers that can
-respond the best.
-
-Some organizations have installed proxy servers to add additional security to their internet communications. As the name
-implies, a proxy sits in the middle of a conversation. Users will make a request to the proxy. The proxy then makes the
-request to the third party service, receives a response from that service, and then examines the response to make sure
-nothing within that response is malicious. Once everything is checked and everything looks OK, that response is then
-sent to the end user. This means that we can put a lot of security controls into the proxy. The proxy can act as access
-control, so it may require a username and password to gain access to the internet. It can perform caching. It can filter
-by URL and many other security capabilities as well.
+Finally a [proxy server](https://www.techtarget.com/whatis/definition/proxy-server) is a dedicated computer or a
+software system running on a computer that acts as an intermediary between an endpoint device, such as a computer, and
+another server from which a user or client is requesting a service. The proxy server may exist in the same machine as a
+firewall server or it may be on a separate server, which forwards requests through the
+[firewall](https://www.techtarget.com/searchsecurity/definition/firewall). Proxy servers are used for both legal and
+illegal purposes. In the enterprise, a proxy server is used to facilitate security, administrative control or
+[caching](https://www.techtarget.com/whatis/definition/server) services, among other purposes. In a personal computing
+context, proxy servers are used to enable user
+[privacy](https://www.techtarget.com/searchdatamanagement/definition/privacy) and anonymous surfing. Proxy servers can
+also be used for the opposite purpose: To monitor traffic and undermine user privacy.
 
 ## SCADA
 
