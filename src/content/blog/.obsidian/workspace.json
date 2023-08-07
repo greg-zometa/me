@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "comptia/a-plus/networking/wireless-networks.md",
+                "file": "comptia/a-plus/networking/network-services.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "comptia/a-plus/networking/wireless-networks.md",
+                "file": "comptia/a-plus/networking/network-services.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "comptia/a-plus/networking/wireless-networks.md",
+                "file": "comptia/a-plus/networking/network-services.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "comptia/a-plus/networking/wireless-networks.md"
+                "file": "comptia/a-plus/networking/network-services.md"
               }
             }
           }
@@ -148,16 +148,17 @@
   },
   "active": "54edb55c90d125c0",
   "lastOpenFiles": [
-    "comptia/a-plus/mobile-devices/laptop-hardware.md",
-    "comptia/a-plus/networking/wireless-networks.md",
-    "comptia/a-plus/networking/ports-and-protocols.md",
-    "networking.md",
     "comptia/a-plus/networking/network-devices.md",
+    "comptia/a-plus/networking/network-services.md",
+    "comptia/a-plus/networking/ports-and-protocols.md",
+    "comptia/a-plus/networking/wireless-networks.md",
     "comptia/a-plus/mobile-devices/device-configuration.md",
+    "comptia/a-plus/mobile-devices/device-connectivity.md",
+    "comptia/a-plus/mobile-devices/laptop-hardware.md",
+    "comptia/a-plus/mobile-devices/laptop-displays.md",
+    "networking.md",
     "customizing-astropaper-theme-color-schemes.md",
     "blog-post-template.md",
-    "comptia/a-plus/mobile-devices/laptop-displays.md",
-    "comptia/a-plus/mobile-devices/device-connectivity.md",
     "how-to-take-notes-to-learn-effectively.md",
     "comptia/a-plus/networking",
     "mobile-devices.md",
