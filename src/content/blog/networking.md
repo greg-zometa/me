@@ -21,8 +21,6 @@ services, standards, tools, and connectivity types all for networking.
 
 ## Table of contents
 
-## Network Services
-
 ## Network Configurations
 
 ## Network Connections
