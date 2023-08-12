@@ -16,10 +16,10 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@astrojs/rss": "2.4.3",
+    "@astrojs/rss": "2.4.4",
     "@astrojs/svelte": "3.1.0",
     "@resvg/resvg-js": "2.4.1",
-    "astro": "2.9.7",
+    "astro": "2.10.7",
     "fuse.js": "6.6.2",
     "github-slugger": "2.0.0",
     "mdast-util-to-string": "4.0.0",
@@ -27,8 +27,8 @@
     "remark-collapse": "0.1.2",
     "remark-external-links": "9.0.1",
     "remark-toc": "8.0.1",
-    "satori": "0.10.2",
-    "svelte": "4.1.2",
+    "satori": "0.10.3",
+    "svelte": "4.2.0",
     "tailwindcss": "3.3.3"
   },
   "devDependencies": {
@@ -36,19 +36,19 @@
     "@astrojs/tailwind": "4.0.0",
     "@divriots/jampack": "0.13.0",
     "@tailwindcss/typography": "0.5.9",
-    "@typescript-eslint/parser": "6.2.1",
+    "@typescript-eslint/parser": "6.3.0",
     "astro-eslint-parser": "0.14.0",
     "astrojs-service-worker": "1.0.0",
     "concurrently": "8.2.0",
-    "eslint": "8.46.0",
+    "eslint": "8.47.0",
     "eslint-plugin-astro": "0.28.0",
     "eslint-plugin-svelte": "2.32.4",
     "husky": "8.0.3",
     "lint-staged": "13.2.3",
-    "prettier": "3.0.0",
+    "prettier": "3.0.1",
     "prettier-plugin-astro": "0.11.0",
     "prettier-plugin-svelte": "3.0.3",
-    "prettier-plugin-tailwindcss": "0.4.1",
+    "prettier-plugin-tailwindcss": "0.5.2",
     "svelte-eslint-parser": "0.32.2"
   },
   "lint-staged": {
