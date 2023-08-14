@@ -3,7 +3,6 @@ title: Network Configurations
 description: Learn about IP address assignments and settings configuration.
 pubDatetime: 2023-08-14T21:39:32.804Z
 postSlug: networking-configurations
-draft: true
 tags:
   - comptia
   - a-plus
