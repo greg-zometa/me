@@ -1,7 +1,7 @@
 ---
 title: Network Configurations
 description: Learn about IP address assignments and settings configuration.
-pubDatetime: 2023-08-04T05:56:27.316Z
+pubDatetime: 2023-08-14T21:39:32.804Z
 postSlug: networking-configurations
 draft: true
 tags:
@@ -32,11 +32,16 @@ Without that address, the pizza delivery person will have no idea which house to
 
 ### IPv4
 
-IPv4 stands for Internet Protocol version 4. It is the underlying technology that makes it possible for us to connect
-our devices to the web. Whenever a device accesses the Internet, it is assigned a unique, numerical IP address such as
-99.48.227.227.
+Internet Protocol Version 4 (IPv4) addresses are 32-bit integers that can be expressed in hexadecimal notation. The more
+common format is `x . x . x . x`, where each x, called an _octet_, can be any value between 0 and 255. For example,
+`192.0. 2.146` is a valid IPv4 address. IPv4 still routes most of today's internet traffic.
 
-#### IPv4 address classes
+A 32-bit address space limits the number of unique hosts to 232, which is nearly 4.3 billion IPv4 addresses for the
+world to use (4,294,967,296, to be exact). In 2011, the Internet Assigned Numbers Authority (IANA), the global
+coordinator of IP addressing, [ran out of free IPv4 address space](https://www.nro.net/ipv4-free-pool-depleted) to
+allocate to regional registries. IANA then recovered additional unused IPv4 address blocks from the regional registries
+and created a recovered address pool. In 2014, IANA announced that it was redistributing the
+[last addresses in the recovered address pool](https://www.icann.org/en/announcements/details/remaining-ipv4-addresses-to-be-redistributed-to-regional-internet-registries--address-redistribution-signals-that-ipv4-is-nearing-total-exhaustion-20-5-2014-en).
 
 With an IPv4 IP address,
 [there are five classes of available IP ranges](https://www.computerhope.com/jargon/i/ip.htm#classes): Class A, Class B,
@@ -46,13 +51,13 @@ addresses, shown in the following table (does not include
 
 **This table illustrates the five classes of an IPv4 range**:
 
-| Class   | Address range                | Supports                                                       |
-| ------- | ---------------------------- | -------------------------------------------------------------- |
-| Class A | 1.0.0.1 to 126.255.255.254   | Supports 16 million hosts on each of 127 networks.             |
-| Class B | 128.1.0.1 to 191.255.255.254 | Supports 65,000 hosts on each of 16,000 networks.              |
-| Class C | 192.0.1.1 to 223.255.254.254 | Supports 254 hosts on each of 2 million networks.              |
-| Class D | 224.0.0.0 to 239.255.255.255 | Reserved for multicast groups.                                 |
-| Class E | 240.0.0.0 to 254.255.255.254 | Reserved for future use, or research and development purposes. |
+| Class   | Address range                | Supports                                                       | Network Id (underlined)    |
+| ------- | ---------------------------- | -------------------------------------------------------------- | -------------------------- |
+| Class A | 1.0.0.1 to 126.255.255.254   | Supports 16 million hosts on each of 127 networks.             | <u>xxxx</u>.xxxx.xxxx.xxxx |
+| Class B | 128.1.0.1 to 191.255.255.254 | Supports 65,000 hosts on each of 16,000 networks.              | <u>xxxx.xxxx</u>.xxxx.xxxx |
+| Class C | 192.0.1.1 to 223.255.254.254 | Supports 254 hosts on each of 2 million networks.              | <u>xxxx.xxxx.xxxx</u>.xxxx |
+| Class D | 224.0.0.0 to 239.255.255.255 | Reserved for multicast groups.                                 | <u>xxxx.xxxx.xxxx.xxxx</u> |
+| Class E | 240.0.0.0 to 254.255.255.254 | Reserved for future use, or research and development purposes. | <u>xxxx.xxxx.xxxx.xxxx</u> |
 
 #### Binary decimal conversion
 
@@ -74,176 +79,145 @@ To convert decimal into binary:
 
 **This table illustrates the a table to use for binary decimal conversion**:
 
-<table style="width: 100%;"> 
-  <tbody> 
-   <tr> 
-    <td width="97"> <p>Power of two</p> </td> 
-    <td width="34"> <p>2<sup>7</sup></p> </td> 
-    <td width="27"> <p>2<sup>6</sup></p> </td> 
-    <td width="27"> <p>2<sup>5</sup></p> </td> 
-    <td width="27"> <p>2<sup>4</sup></p> </td> 
-    <td width="24"> <p>2<sup>3</sup></p> </td> 
-    <td width="24"> <p>2<sup>2</sup></p> </td> 
-    <td width="24"> <p>2<sup>1</sup></p> </td> 
-    <td width="24"> <p>2<sup>0</sup></p> </td> 
-   </tr> 
-   <tr> 
-    <td width="97"> <p>Decimal space</p> </td> 
-    <td width="34"> <p>128</p> </td> 
-    <td width="27"> <p>64</p> </td> 
-    <td width="27"> <p>32</p> </td> 
-    <td width="27"> <p>16</p> </td> 
-    <td width="24"> <p>8</p> </td> 
-    <td width="24"> <p>4</p> </td> 
-    <td width="24"> <p>2</p> </td> 
-    <td width="24"> <p>1</p> </td> 
-   </tr> 
-   <tr> 
-    <td width="97"> <p>Binary bits</p> </td> 
-    <td width="34"></td> 
-    <td width="27"></td> 
-    <td width="27"></td> 
-    <td width="27"></td> 
-    <td width="24"></td> 
-    <td width="24"></td> 
-    <td width="24"></td> 
-    <td width="24"></td> 
-   </tr> 
-  </tbody> 
- </table>
+| <!-- -->      | <!-- -->      | <!-- -->      | <!-- -->      | <!-- -->      | <!-- -->      | <!-- -->      | <!-- -->      | <!-- -->      |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Power of two  | 2<sup>7</sup> | 2<sup>6</sup> | 2<sup>5</sup> | 2<sup>4</sup> | 2<sup>3</sup> | 2<sup>2</sup> | 2<sup>1</sup> | 2<sup>0</sup> |
+| Decimal space | 128           | 64            | 32            | 16            | 8             | 4             | 2             | 1             |
+| Binary bits   | -             | -             | -             | -             | -             | -             | -             | -             |
+
+#### Subnet mask
+
+A [subnet](https://www.techtarget.com/searchnetworking/definition/subnet), or subnetwork, is a segmented piece of a
+larger network. More specifically, subnets are a logical partition of an IP network into multiple, smaller network
+segments. The Internet Protocol (IP) is the method for sending data from one computer to another over the internet. Each
+computer, or host, on the internet has at least one IP address as a unique identifier.
+
+Each subnet allows its connected devices to communicate with each other, while routers are used to communicate between
+subnets. The size of a subnet depends on the connectivity requirements and the network technology employed. A
+point-to-point subnet allows two devices to connect, while a data center subnet might be designed to connect many more
+devices.
 
 ### IPv6
 
-We quickly realized with the popularity of the internet that we were going to exceed the capacity of what IPv4 addresses
-could provide. So we created IPv6 which was a new form of IP that had a much larger address. You can see that an IPv6
-address is 128 bits in length. This means that you can have a very large number of total addresses, which ultimately
-means that the $6.8 billion people on Earth could have a very large number of addresses for each individual person. This
-gives us enough addresses to assign an IPv6 address to almost anything that we might use.
+[Internet Protocol Version 6 ](https://www.techtarget.com/iotagenda/definition/IPv6-address)(IPv6) addresses are a
+128-bit alphanumeric value that is arranged in eight groups, each of which is 16 bits. The more common format is
+`y : y : y : y : y : y : y : y`, where _y_ is called a _segment_ and can be any hexadecimal value between 0 and FFFF.
+`FE80:CD00:0000:0CDE:1257:0000:211E:729C` is an example of a full IPv6 address. IPv6 is the successor to IPv4, and is
+intended to increase address space compared to IPv4.
 
-You can see that IPv6 addresses are separated into eight different groups. And each one of those groups consists of 16
-bits. This is also two bytes or two octets. Instead of displaying these addresses as binary or decimal, you can see that
-in IPv6, we choose to address these in hexadecimal format. So a common IPv6 address might be FE80 colon colon 5D18 colon
-652 colon CFFD colon 8F52. As you can tell, it’s a much larger address. And in some ways, it’s a much more difficult
-address to try to memorize. For that reason, your DNS is going to be a very important tool to use on your network,
-because you’ll very often be referring to these servers by their name instead of their very long and relatively
-complicated IPv6 address.
+An IPv6 address is eight groupings of numbers:
 
-We also tend to see IPv6 addresses assigned with a 64-bit subnet mask. That means that the first 64 bits are the network
-address, and the last 64 bits are the host address. If you’re assigning an IP address to a device, there are a number of
-important configuration parameters you need to add. The first would obviously be the IP address itself. So for IPv4, you
-might assign it an IP address of 192.168.1.165. Every device on your network needs a unique IP address. So you have to
-make sure there are no duplicates when you start assigning these IP addresses to devices.
+- **Network address** -- the first three groupings of numbers (first 48 bits) in the subnet mask
+- **Subnet address** -- the fourth grouping of numbers (the 49th through 64th bits) in the subnet mask
+- **Device address** -- the last four groupings of numbers (the last 64 bits) in the subnet mask
 
-## Subnet mask
+The IPv6 format was created to enable the trillions of new IP addresses to connect an ever-greater number of computing
+devices and the rapidly expanding numbers of items with embedded connectivity, thanks to the internet of things. The
+number of potential IPv6 addresses has been calculated to be
+[over 340 undecillion](https://www.techtarget.com/whatis/feature/IPv6-addresses-how-many-is-that-in-numbers) (or 340
+trillion trillion trillion). However, one drawback to using an IPv6 address is that IPv4 is still widely used.
+Communication between IPv4 and IPv6 machines is not directly possible, meaning IPv4 addresses won't be able to see an
+IPv6 page, and vice versa. [Gateway](https://internetofthingsagenda.techtarget.com/definition/gateway) equipment is
+required to get around this. Dual-stack IP implementation is one such method. In this process, a domain name system
+(DNS) can return an IPv4 or IPv6 IP address.
 
-Along with the IP address, we also need to assign a subnet mask. This will normally be assigned by the network
-administrator. And it’s usually a format like this one, such as, 255.255.255.0. Subnet masks are used by the local
-device to determine what subnet it happens to be a part of. So it uses this to mask out the IP address, leaving only the
-host address at the end. You’ll often be provided both of these values at the same time. So if you’re assigning an IP to
-a device, someone may tell you to assign 192.168.1.165 with a subnet mask of 255.255.255.0. If you only have one of
-these parameters, you won’t be able to complete the IP address assignment. Both of these parameters are used in
-conjunction with each other. And you have to have both of them to assign an IP.
-
-If the device also needs to communicate outside of your local subnet, and most devices do, you’ll need to also assign a
-default gateway. This is the IP address of a router that allows you to communicate outside of your local subnet. So the
-default gateway in this particular example is 192.168.1.1. In most cases, this is the bare minimum of configurations you
-would need to assign to a local device. So you would need an IP address, a subnet mask, and a default gateway.
+Switching from IPv4 to IPv6 also requires a lot of technical expertise, effort and time
 
 ## BOOTP
 
-BOOTP was a good start, but it didn’t assign all of the different configuration settings that we needed. There were
-still some manual configurations that you had to do yourself. And BOOTP had no idea when a device would leave the
-network, so that it could use that IP address for another device later on. To correct some of these shortcomings, we
-created a new version of BOOTP. And we gave it a new name, the Dynamic Host Configuration Protocol or DHCP.
+[BOOTP](https://www.techtarget.com/searchnetworking/definition/BOOTP) (Bootstrap Protocol) is an internet protocol that
+lets a network user automatically be configured to receive an IP address and have an operating system booted without
+user involvement.
+
+The BOOTP server, managed by a network administrator, automatically assigns the IP address from a pool of addresses for
+a certain duration of time.
+
+BOOTP was originally defined in 1985 for Request for Comments 951 to replace Reverse Address Resolution Protocol, which
+required servers to be present on each server IP address. With BOOTP, a central BOOTP server could exist for numerous
+subnets.
+
+Today, BOOTP is executed using User Datagram Protocol
+([UDP](https://www.techtarget.com/searchnetworking/definition/UDP-User-Datagram-Protocol)) and is the basis for Dynamic
+Host Configuration Protocol ([DHCP](https://www.techtarget.com/searchnetworking/definition/DHCP)). DHCP servers are used
+to receive client requests.
 
 ## DHCP
 
-DHCP has been around for quite some time since 1997. And it provides an automatic configuration of IP addresses, subnet
-masks, default gateways, and many more settings as well. We often don’t even think about the process that DHCP goes
-through to assign these values to your computer. We simply turn on our system, and it magically has an IP address once
-it boots up. But behind the scenes there are a series of steps that take place to provide that IP configuration to your
-device.
+[DHCP (Dynamic Host Configuration Protocol)](https://www.techtarget.com/searchnetworking/definition/DHCP) is a network
+management protocol used to dynamically assign an IP address to any device,
+or [node](https://www.techtarget.com/searchnetworking/definition/node), on a network so it can communicate using IP.
+DHCP automates and centrally manages these configurations rather than requiring network administrators to manually
+assign IP addresses to all network devices.
+
+### Static vs. dynamic DHCP leases
+
+With dynamic DHCP, a client does not own the IP address assigned to it, but instead *leases* it for a period of time.
+Each time a device with a dynamic IP address is powered up, it must communicate with the DHCP server to lease another IP
+address.
+
+Static DHCP assignment means the DHCP server assigns the same IP to the defined MAC address every time the device is
+connected to the network. The DHCP server serves the reserved IP address when the device using the corresponding MAC
+address requests an IP address.
+
+### DHCP lease process
+
+Under a dynamic DHCP setup, a client might also have to perform certain activities that lead to terminating its IP
+address and then reconnecting to the network using a different IP address. DHCP lease times can vary depending on how
+long a user is likely to need an internet connection at a particular location. Devices release their IP addresses when
+their DHCP leases expire and then request a renewal from the DHCP server if they are staying online. The DHCP server may
+assign a new address rather than renewing an old one.
+
+The typical dynamic DHCP lease cycle is as follows:
+
+1. A client acquires an IP address lease through the allocation process of requesting one from the DHCP server.
+2. If a client already has an IP address from an existing lease, it needs to refresh its IP address when it reboots
+   after being shut down and contact the DHCP server to have an IP address reallocated.
+3. Once a lease is active, the client is bound to the lease and to the address.
+4. Once the lease has expired, a client contacts the server that initially granted the lease to renew it so it can keep
+   using its IP address.
+5. If a client is moving to a different network, its dynamic IP address is terminated, and it requests a new IP address
+   from the DHCP server of the new network.
+
+### DHCP Scope
+
+A DHCP scope is a valid range of IP addresses that are available for assignment or lease to client computers on a
+particular subnet. In a DHCP server, a scope is configured to determine the address pool of IPs that the server can
+provide to DHCP clients.
+
+Scopes determine which IP addresses are provided to the clients. They should be defined and activated before DHCP
+clients use the DHCP server for its dynamic IP configuration. Users can configure as many scopes on a DHCP server as
+required in the network environment.
 
 ### DORA
 
-We refer to these four steps as D-O-R-A or Dora. The first of these is the D step or discover, where our devices will
-try to locate a DHCP server that’s on our local network. The next step of O is to offer where a DHCP server will offer
-an IP address to our device. Our device will then look at the one or many offers that we receive, pick one of those
-offers, and then request that IP address from the offering DHCP server. And finally, the DHCP server will acknowledge
-that offer and provide your system with all of the IP configuration settings that it needs.
+DORA helps in providing an IP address to hosts or client
+machines.[ DORA is the process that follows some steps](https://www.geeksforgeeks.org/how-dora-works/) between the
+server and client. It gets the IP address from the centralized server. It consists of four-stage:
 
-Let’s look at each of these steps to see exactly how this process occurs on our network. Here’s a simple network diagram
-that includes my client workstation, which is connected to a switch. And that switch I also have connected a local DHCP
-server on my local subnet. And I have a router that’s on my network as well. On the other side of that router, on a
-separate IP subnet, is another DHCP server so that we can have some type of redundancy if either one of those was to
-fail.
-
-The step one of the DHCP process or the discover part of the process has my client workstation sending a broadcast out
-to the network to UDP port 67. This broadcast will be sent to all devices on my local network. And that broadcast is
-going to be sent both to the router that’s on my network and the DHCP server that’s on my network. One of the things
-that you probably remember from looking at broadcast multicast and unicast is that routers will not allow broadcast to
-pass.
-
-But you’ll notice in our example, the broadcast did pass through this router and was directed to a DHCP server. That’s
-because we’ve effectively configured this router as a DHCP proxy. You’ll sometimes see this referenced as a DHCP relay,
-and some manufacturers call it an IP helper. This obviously requires that you pre-configure this router so that any
-broadcasts associated with DHCP are automatically forwarded to a DHCP server elsewhere on the network.
-
-Now that these two DHCP servers have received our request, we can move to step two or the offer phase. These two devices
-will send their offers back to the original client workstation. This is often sent to a broadcast address over UDP 68.
-The reason we’re using so many broadcasts is because, remember, our client workstation does not yet have an IP address.
-Now that this message is sent to the client workstation, it can examine both of those offers and make a decision on
-which offer it should take for the IP address assignment.
-
-The client workstation will send another broadcast over UDP port 67 on step three or the request phase. This broadcast
-contains a formal request to take the offer that was originally sent. And in this particular example, I’m only showing
-the communication that’s occurring between the client workstation and the DHCP server that made the original offer. But
-of course, since this is a broadcast, it would be sent to all other devices on this local subnet. And now that the DHCP
-server has received this formal request, it can begin step four or the acknowledgment phase where it sends a message
-back to the client workstation by default over UDP port 68 confirming that the request from the previous phase has been
-acknowledged, and this device can assign itself with the configuration settings included in the offer.
-
-This four step DORA process happens every time a device connects to the network and needs to obtain an IP address from a
-DHCP server. When these DHCP servers were first configured, a range of IP addresses was configured inside of that server
-to hand out to the different clients. We refer to this as a pool of IP addresses. And the IP address that you may pull
-one day from this pool may be different than when you might use on a different day. But there might be some devices on
-your network that you would prefer always receive exactly the same IP address every single time it starts up.
-
-There might be a printer, a server, or some type of infrastructure device that you would prefer to always have the same
-IP. One of the ways you could do this is to simply disable DHCP on all of these devices and manually configure the IP
-addresses yourself. This obviously requires that you administratively make this change. And if you make any changes to
-the IP address settings on your network, then you’ll manually need to revisit these devices to change all of your
-previous configurations. In a very large environment this may not be very practical. And it certainly requires
-additional administration.
-
-So instead of manually setting an IP address, we can configure a reservation on the DHCP server. This means we’ll
-configure a specific MAC address of a printer, a server, or another device on the network, and tell our DHCP server
-every time you see this MAC address, always provide it with this reserved IP address. This way every time we start up
-the printer or the server, it will always have exactly the same IP address. This is the best practice for IP address
-configurations because we know it’s so easy to set a manual address. The problem is that when there are changes to the
-network, you’ll have to go back to every single one of those devices. So having a reservation already in the DHCP server
-can make this process so much easier than revisiting all of these different devices on your network.
+- **Discover**: client sends a discover message to server
+- **Offer**: server responds with an available IP address and options
+- **Request**: client requests the IP address from server
+- **Acknowledge**: server acknowledges client request and completes
 
 ## APIPA
 
-There may be times when your device is configured to obtain a DHCP address, but on your local network there’s no longer
-a DHCP server. In those situations your device will be assigned an APIPA address. That stands for an Automatic Private
-IP Addressing Address. This is sometimes referred to as a link-local address, because any device that’s configured with
-an APIPA address range can only communicate to other devices on the local network. If your device is assigned an APIPA
-address, it can’t communicate outside of your local network.
+[Automatic Private IP Addressing](https://www.techtarget.com/whatis/definition/Automatic-Private-IP-Addressing-APIPA)
+(APIPA) is a feature of [Windows](https://www.techtarget.com/searchwindowsserver/definition/Windows)-based
+[OSes](https://www.techtarget.com/whatis/definition/operating-system-OS) -- included since Windows 98 and Windows ME --
+that enables a [Dynamic Host Configuration Protocol](https://www.techtarget.com/searchnetworking/definition/DHCP) client
+to automatically assign an
+[IP address](https://www.techtarget.com/whatis/definition/IP-address-Internet-Protocol-Address) to itself when there's
+no DHCP server available to perform that function. APIPA serves as a DHCP server failover mechanism and makes it easier
+to configure and support small [LANs](https://www.techtarget.com/searchnetworking/definition/local-area-network-LAN).
 
-Like most things, there is a standard for the automatic private IP addressing. The entire range is 169.254.0.0 through
-169.254.255.255. This particular standard reserves the first and last 256 addresses. So if you are assigned an APIPA
-address, it will be a random assignment between 169.254.1. 0 through 169.254.254.255. If you see any of those IP
-addresses on a system, then you can automatically assume that a DHCP server was not available when the system started
-up. And you will only be able to communicate with other devices on your local network.
+As part of the APIPA assignment process, the DHCP client uses the Address Resolution Protocol
+([ARP](https://www.techtarget.com/searchnetworking/definition/Address-Resolution-Protocol-ARP)) to ensure the chosen
+address isn't being used by another network computer. Once the client has assigned itself an IP address, it can
+communicate over [TCP/IP](https://www.techtarget.com/searchnetworking/definition/TCP-IP) with other computers on the LAN
+that are either configured for APIPA or manually set to the correct address range and using a subnet mask of
+255.255.0.0.
 
-Like DHCP, APIPA addresses are also assigned to automatically. But the only device determining what IP address you
-receive is your local device itself. Your local device will pick a random IP address that’s in this APIPA address range.
-It will perform an address resolution protocol or ARP request to see if anybody else on the local network is currently
-using that IP address. And if it doesn’t receive a response, it assigns signs that APIPA address to your local device.
-
-Here’s what you would see if you ran an ipconfig/all on a Windows device that has an APIPA address assigned. You can see
-that the IPv4 address configuration even states that it is an autoconfiguration address. And it is assigned
-169.254.228.109 with the default subnet mask for APIPA of 255.255.0.0. And because you can’t communicate outside of this
-local network, you can see that the default gateway option has been left blank.
+The APIPA service can be beneficial even if the DCHP client has received a previous IP address from the DHCP server.
+This is true even if the lease for that address has expired. The user is typically notified when a DHCP client switches
+between DHCP and APIPA addressing. APIPA is enabled by default, but it can be disabled in some cases, depending on the
+OS and how the DHCP client is configured.
