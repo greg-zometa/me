@@ -1,6 +1,6 @@
 ---
 title: Network Configurations
-description: Learn about IP address assignments and settings configuration.
+description: Learn about IP address assignments and network configurations.
 pubDatetime: 2023-08-14T21:39:32.804Z
 postSlug: networking-configurations
 tags:
@@ -140,15 +140,12 @@ Today, BOOTP is executed using User Datagram Protocol
 Host Configuration Protocol ([DHCP](https://www.techtarget.com/searchnetworking/definition/DHCP)). DHCP servers are used
 to receive client requests.
 
-## DHCP
+## DHCP Leases
 
-[DHCP (Dynamic Host Configuration Protocol)](https://www.techtarget.com/searchnetworking/definition/DHCP) is a network
-management protocol used to dynamically assign an IP address to any device,
-or [node](https://www.techtarget.com/searchnetworking/definition/node), on a network so it can communicate using IP.
-DHCP automates and centrally manages these configurations rather than requiring network administrators to manually
-assign IP addresses to all network devices.
+[DHCP (Dynamic Host Configuration Protocol)](/posts/networking-services/#dhcp) is a network management protocol used to
+dynamically assign an IP address to any device.
 
-### Static vs. dynamic DHCP leases
+### Static vs. dynamic leases
 
 With dynamic DHCP, a client does not own the IP address assigned to it, but instead *leases* it for a period of time.
 Each time a device with a dynamic IP address is powered up, it must communicate with the DHCP server to lease another IP
@@ -158,7 +155,7 @@ Static DHCP assignment means the DHCP server assigns the same IP to the defined 
 connected to the network. The DHCP server serves the reserved IP address when the device using the corresponding MAC
 address requests an IP address.
 
-### DHCP lease process
+### Lease process
 
 Under a dynamic DHCP setup, a client might also have to perform certain activities that lead to terminating its IP
 address and then reconnecting to the network using a different IP address. DHCP lease times can vary depending on how

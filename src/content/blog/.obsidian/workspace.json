@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "comptia/a-plus/networking/network-configurations.md",
+                "file": "comptia/a-plus/networking/network-services.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "314b2c5c2536a05e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "comptia/a-plus/networking/network-connections.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 368.5
   },
   "right": {
     "id": "7fc5de755a2ffcc7",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "comptia/a-plus/networking/network-configurations.md",
+                "file": "comptia/a-plus/networking/network-connections.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "comptia/a-plus/networking/network-configurations.md",
+                "file": "comptia/a-plus/networking/network-connections.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "comptia/a-plus/networking/network-configurations.md"
+                "file": "comptia/a-plus/networking/network-connections.md"
               }
             }
           }
@@ -147,13 +159,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "54edb55c90d125c0",
+  "active": "314b2c5c2536a05e",
   "lastOpenFiles": [
-    "comptia/a-plus/networking/ports-and-protocols.md",
-    "comptia/a-plus/networking/network-devices.md",
     "comptia/a-plus/networking/network-configurations.md",
-    "comptia/a-plus/networking/network-services.md",
     "comptia/a-plus/networking/wireless-networks.md",
+    "comptia/a-plus/networking/ports-and-protocols.md",
+    "comptia/a-plus/networking/network-services.md",
+    "comptia/a-plus/networking/network-devices.md",
+    "comptia/a-plus/networking/network-connections.md",
     "networking.md",
     "comptia/a-plus/mobile-devices/device-configuration.md",
     "comptia/a-plus/mobile-devices/device-connectivity.md",
