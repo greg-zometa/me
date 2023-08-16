@@ -30,32 +30,6 @@ In a typical DNS query without any [caching](https://www.cloudflare.com/learning
 servers that work together to deliver an IP address to the client: recursive resolvers, root nameservers, TLD
 nameservers, and authoritative nameservers.
 
-### Recursive resolver
-
-The DNS recursor (also referred to as the DNS resolver) is a server that receives the query from the DNS client, and
-then interacts with other DNS servers to hunt down the correct IP. Once the resolver receives the request from the
-client, the resolver then actually behaves as a client itself, querying the other three types of DNS servers in search
-of the right IP.
-
-### Root nameservers
-
-First the resolver queries the root nameserver. The root server is the first step in translating (resolving)
-human-readable domain names into IP addresses. The root server then responds to the resolver with the address of a
-[top-level domain (TLD)](https://www.cloudflare.com/learning/dns/top-level-domain/) DNS server (such as .com or .net)
-that stores the information for its domains.
-
-### TLD nameservers
-
-Next the resolver queries the TLD server. The TLD server responds with the IP address of the domain’s authoritative
-nameserver. The recursor then queries the authoritative nameserver, which will respond with the IP address of the origin
-server.
-
-### Authoritative nameservers
-
-The resolver will finally pass the origin server IP address back to the client. Using this IP address, the client can
-then initiate a query directly to the origin server, and the origin server will respond by sending website data that can
-be interpreted and displayed by the web browser.
-
 ## DHCP
 
 [Dynamic Host Configuration Protocol](https://www.techtarget.com/searchnetworking/definition/DHCP) (DHCP) is a network
