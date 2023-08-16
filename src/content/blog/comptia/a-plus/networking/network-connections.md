@@ -1,10 +1,8 @@
 ---
 title: Network Connections
 description: Learn about DNS server configuration and virtual connections VLANs andVPNs.
-pubDatetime: 2023-07-30T07:33:25.533Z
+pubDatetime: 2023-08-16T15:35:39.260Z
 postSlug: networking-connections
-featured: true
-draft: true
 tags:
   - comptia
   - a-plus
@@ -99,17 +97,16 @@ example.com
 Once the 8 steps of the DNS lookup have returned the IP address for example.com, the browser is able to make the request
 for the web page:
 
-10. The browser makes a [HTTP](https://www.cloudflare.com/learning/ddos/glossary/hypertext-transfer-protocol-http/)
-    request to the IP address.
+10. The browser makes a [HTTP](/posts/networking-ports-and-protocols#web-protocols) request to the IP address.
 11. The server at that IP returns the webpage to be rendered in the browser.
 
 ### DNS records
 
 [DNS records](https://www.cloudflare.com/learning/dns/dns-records/) (aka zone files) are instructions that live in
 authoritative [DNS servers](#dns-servers) and provide information about a domain including what
-[IP address](https://www.cloudflare.com/learning/dns/glossary/what-is-my-ip-address/) is associated with that domain and
-how to handle requests for that domain. These records consist of a series of text files written in what is known as DNS
-syntax. DNS syntax is just a string of characters used as commands that tell the DNS server what to do.
+[IP address](/posts/networking-configurations#ip-address-format) is associated with that domain and how to handle
+requests for that domain. These records consist of a series of text files written in what is known as DNS syntax. DNS
+syntax is just a string of characters used as commands that tell the DNS server what to do.
 
 The most common records are:
 
@@ -140,62 +137,76 @@ The most common records are:
 
 ## VLAN
 
-A LAN is a Local Area Network. We commonly define this as a group of devices that are in the same broadcast domain. In
-this example, we have two different switches. One is the red switch and one is the blue switch. On the red network, we
-have two devices that are in one broadcast domain. And on the blue switch, we have devices that are on a completely
-different broadcast domain. We might want this separation for security reasons.
+A [virtual LAN](https://www.techtarget.com/searchnetworking/definition/virtual-LAN) (VLAN) is a logical overlay network
+that groups together a subset of devices that share a physical LAN, isolating the traffic for each group. A LAN is a
+group of computers or other devices in the same place (i.e. building/campus), usually associated with an Ethernet
+([Layer 2](https://www.techtarget.com/searchnetworking/definition/Data-Link-layer)) broadcast domain, which is the set
+of network devices an [Ethernet](https://www.techtarget.com/searchnetworking/definition/Ethernet) broadcast packet can
+reach. Computers on the LAN connect to the same [network switch](/posts/networking-devices#switches), either directly or
+through wireless access points (APs) connected to the same switch. Computers can also connect to one of a set of
+interconnected switches, such as a set of access switches that all connect up to a backbone switch.
 
-Certainly this would have a separation between these devices and these. We might want to limit the number of broadcasts
-that might be on a network. So we might segment the network into smaller pieces. And in many ways, this is a very
-straightforward way to manage the network. Because if somebody needs to be on the red network, we connect them to the
-red switch. And if someone needs to be on the blue network, we connect them to the blue switch.
+A VLAN, like the LAN it sits atop, operates at Layer 2 of the network, the Ethernet level. VLANs partition a single
+switched network into a set of overlaid
+[virtual networks](https://www.techtarget.com/searchnetworking/definition/virtual-networking) that can meet different
+functional and security requirements. This partitioning avoids the need to have multiple, distinct physical networks for
+different use cases.
 
-It would be much more efficient and cost effective if we could buy a single switch, maintain a single power source for
-that switch and a single configuration, and simply logically associate certain interfaces on that switch to the red
-network and logically associate other interfaces on that switch to the blue network. The switch itself would provide the
-separation between the red network and the blue network, and these devices still would not be able to communicate
-directly to each other.
+VLANs can improve performance for devices on them by reducing the amount of traffic a given endpoint sees and processes.
+VLANs break up broadcast domains, reducing the number of other hosts from which any given device sees broadcasts. For
+example, if all desktop voice over IP phones are on one VLAN and all workstations are on another, phones won't see any
+workstation-generated broadcast traffic and vice versa. Each can devote its network resources to relevant traffic only.
 
-We refer to this virtualization of the local area network as a VLAN. This is grouping the devices still in their same
-broadcast domain, but we’re doing this across the same physical device. This means that we won’t need separate switches.
-We can instead have exactly the same functionality on a single switch by implementing and configuring VLANs for each of
-these individual interfaces.
+VLAN partitioning can also improve security by enabling a higher degree of control over which devices have access to
+each other. For example, network teams may restrict management access to network gear or IoT devices to specific VLANs.
 
-Let’s add even a third network. So on this switch, we’ve configured a red network, a blue network, and a green network.
-And you can see that we’ve connected different devices to these interfaces. As the network administrator, we’ve
-specifically configured the interfaces on the switch to match a certain network. So in this case, if you’re connected to
-port one, you’re on the red network. If you’re connected to port nine, you’re on the blue network. And if you’re
-connected to port 17, you’re on the green network.
-
-Of course, instead of using colors we associate a VLAN with a number. So the red network may be VLAN 1, the blue network
-might be VLAN 2, and the green network might be VLAN 3. You can see that not only does this make it easier to manage the
-network, but now we can keep costs lower by having a single switch instead of purchasing three separate switches for
-these three VLANs.
+Using VLANs to group endpoints also enables administrators to group devices for purely administrative, nontechnical
+purposes. For example, they may put all accounting computers on one VLAN, all human resources computers on another and
+so on.
 
 ## VPN
 
-A technology that has become rather commonplace on our networks today is a VPN or a Virtual Private Network. This is
-usually a combination of software and hardware that allows us to securely send information across a public network such
-as the internet. Everything sent over that VPN connection is automatically encrypted, which means if anyone in the
-middle happens to capture this information, they wouldn’t be able to see or understand anything in the conversation. If
-you’ve used a VPN, then you certainly are familiar with how that looks from the desktop of your operating system.
+A [VPN](https://nordvpn.com/what-is-a-vpn/) reroutes your traffic through a remote server, encrypting it in the process.
+Typically, when you try to access a website, your
+[ISP](https://www.techtarget.com/whatis/definition/ISP-Internet-service-provider) (Internet Service Provider) receives
+the request and redirects you to your destination. But when you connect to a VPN, it redirects your internet traffic
+through a remote server before sending it over to your destination.
 
-But somewhere it’s connecting to a separate device and the device we’re connecting to is a concentrator. This can be a
-standalone device or it may be integrated into a firewall or some other multi-use device. There are many different ways
-to deploy VPNs. The example we have here is a hardware device that may have specialized VPN or encryption hardware
-inside of it. But you can also configure VPN software that might be running on a server. Many VPN implementations have
-their own application that can be installed in an operating system, and you’ll find that these days most modern
-operating systems come included with some type of VPN client.
+Your [IP](/posts/networking-configurations#ip-address-format) (and, therefore, your virtual location) is also hidden and
+you get a new one that belongs to the VPN server you’re connected to. This ensures extra security and significantly
+increases your privacy online; no one knows what city or country you’re browsing from.
 
-This means that you can still be secure when using your laptop in a coffee shop even if the wireless network in that
-coffee shop is one that is open and not encrypted. You would either use VPN software that’s always on and always
-connected or you would have the option on your laptop to enable or turn on the VPN capability. When you do that, it
-creates an encrypted tunnel back to the VPN concentrator, and now everything sent from your laptop will be encrypted
-across the wireless network of the coffee shop, the internet, and any other links until it reaches that VPN
-concentrator.
+[VPN works](https://www.cloudflare.com/learning/access-management/what-is-a-vpn/) by creating a secure encrypted
+connection between your device and the remote server so that your data can travel in secrecy:
 
-At this point, the VPN concentrator will receive that encrypted information. It will decrypt the data and send that
-information into the corporate network. Any device that needs to send information back to the laptop will send that
-information to the VPN concentrator. The concentrator will encrypt that data, send it over the encrypted tunnel, and
-when it reaches your laptop, the laptop will then decrypt that data so that it can be used locally. This entire process
-happens behind the scenes and is automatic when you enable your VPN software.
+1. When you connect to a virtual private network service, it authenticates your client with a VPN server.
+2. The server then applies an encryption protocol to all the data you send and receive.
+3. The VPN service creates an encrypted “tunnel” over the internet. This secures the data traveling between you and your
+   destination.
+4. To ensure each data packet stays secure, a VPN wraps it in an outer packet, which is then encrypted through
+   encapsulation. This is the core element of the VPN tunnel, keeping the data safe during transfer.
+5. When the data arrives at the server, the outer packet is removed through a decryption process.
+
+### VPN servers
+
+After the VPN tunnel is established, your device sends out encrypted information (like the website you want to visit) to
+the [VPN server](https://nordvpn.com/servers/). It decrypts it and forwards the information to the designated web
+server. It also hides your real IP address before sending the data out. Instead, you will appear to have the IP address
+of the VPN server you’re connected to.
+
+When the web server responds, the VPN server encrypts the data and sends it to you through your ISP. Your VPN client
+will decrypt the data once it reaches your device.
+
+### VPN tunneling
+
+The [VPN tunnel](https://nordvpn.com/blog/vpn-tunnel/) is created by first authenticating your client (computer,
+smartphone, or tablet) with a VPN server. The server then uses one of several encryption protocols to make sure that no
+one can monitor the information traveling between you and your online destination.
+
+Here you should remember that before being sent and received over the internet, any data needs to first be split into
+packets. To ensure each data packet stays secure, a VPN service wraps it in an outer packet, which is then encrypted
+through a process called encapsulation.
+
+This exterior packet keeps the data secure during the transfer, and it is the core element of the VPN tunnel. When the
+data arrives at the VPN server, the outer packet is removed to access the data within, which requires a decryption
+process.
