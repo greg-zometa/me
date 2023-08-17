@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "comptia/a-plus/networking/network-connections.md",
+                "file": "comptia/a-plus/networking/internet-connections.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 357.5
   },
   "right": {
     "id": "7fc5de755a2ffcc7",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "comptia/a-plus/networking/network-connections.md",
+                "file": "comptia/a-plus/networking/internet-connections.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "comptia/a-plus/networking/network-connections.md",
+                "file": "comptia/a-plus/networking/internet-connections.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "comptia/a-plus/networking/network-connections.md"
+                "file": "comptia/a-plus/networking/internet-connections.md"
               }
             }
           }
@@ -161,13 +161,18 @@
   },
   "active": "e37cda2e8cd93b2b",
   "lastOpenFiles": [
+    "comptia/a-plus/networking/network-tools.md",
+    "comptia/a-plus/networking/internet-connections.md",
+    "comptia/a-plus/troubleshooting-hardware-and-networking",
+    "comptia/a-plus/virtualization-and-cloud-computing",
+    "comptia/a-plus/hardware",
+    "networking.md",
     "comptia/a-plus/networking/network-configurations.md",
     "comptia/a-plus/networking/network-connections.md",
     "comptia/a-plus/networking/network-devices.md",
-    "comptia/a-plus/networking/wireless-networks.md",
-    "comptia/a-plus/networking/ports-and-protocols.md",
     "comptia/a-plus/networking/network-services.md",
-    "networking.md",
+    "comptia/a-plus/networking/ports-and-protocols.md",
+    "comptia/a-plus/networking/wireless-networks.md",
     "comptia/a-plus/mobile-devices/device-configuration.md",
     "comptia/a-plus/mobile-devices/device-connectivity.md",
     "comptia/a-plus/mobile-devices/laptop-hardware.md",
@@ -188,9 +193,6 @@
     "predefined-color-schemes.md",
     "portfolio-website-development.md",
     "how-to-connect-astro-paper-blog-with-forestry-cms.md",
-    "how-to-configure-astropaper-theme.md",
-    "dynamic-og-images.md",
-    "astro-paper-2.md",
-    "adding-new-post.md"
+    "how-to-configure-astropaper-theme.md"
   ]
 }
