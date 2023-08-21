@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "comptia/a-plus/networking/network-configurations.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e37cda2e8cd93b2b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "comptia/a-plus/networking/internet-connections.md",
+                "file": "comptia/a-plus/networking/network-tools.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "comptia/a-plus/networking/internet-connections.md",
+                "file": "comptia/a-plus/networking/network-tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "comptia/a-plus/networking/internet-connections.md",
+                "file": "comptia/a-plus/networking/network-tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "comptia/a-plus/networking/internet-connections.md"
+                "file": "comptia/a-plus/networking/network-tools.md"
               }
             }
           }
@@ -159,20 +146,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e37cda2e8cd93b2b",
+  "active": "6459743f493adabe",
   "lastOpenFiles": [
-    "comptia/a-plus/networking/network-tools.md",
     "comptia/a-plus/networking/internet-connections.md",
+    "comptia/a-plus/networking/network-tools.md",
+    "comptia/a-plus/networking/wireless-networks.md",
+    "comptia/a-plus/networking/ports-and-protocols.md",
+    "comptia/a-plus/networking/network-services.md",
+    "comptia/a-plus/networking/network-devices.md",
+    "comptia/a-plus/networking/network-connections.md",
+    "comptia/a-plus/networking/network-configurations.md",
+    "comptia/security",
+    "comptia/pentest",
+    "comptia/network",
+    "comptia/linux",
+    "comptia/a-plus/security",
+    "comptia/a-plus/pentest",
+    "comptia/a-plus/network",
+    "comptia/a-plus/linux",
     "comptia/a-plus/troubleshooting-hardware-and-networking",
     "comptia/a-plus/virtualization-and-cloud-computing",
-    "comptia/a-plus/hardware",
     "networking.md",
-    "comptia/a-plus/networking/network-configurations.md",
-    "comptia/a-plus/networking/network-connections.md",
-    "comptia/a-plus/networking/network-devices.md",
-    "comptia/a-plus/networking/network-services.md",
-    "comptia/a-plus/networking/ports-and-protocols.md",
-    "comptia/a-plus/networking/wireless-networks.md",
     "comptia/a-plus/mobile-devices/device-configuration.md",
     "comptia/a-plus/mobile-devices/device-connectivity.md",
     "comptia/a-plus/mobile-devices/laptop-hardware.md",
@@ -180,11 +174,7 @@
     "customizing-astropaper-theme-color-schemes.md",
     "blog-post-template.md",
     "how-to-take-notes-to-learn-effectively.md",
-    "comptia/a-plus/networking",
     "mobile-devices.md",
-    "comptia/a-plus/mobile-devices",
-    "comptia/a-plus",
-    "comptia",
     "2023-07-29.md",
     "Untitled.canvas",
     "terminal-development.md",
