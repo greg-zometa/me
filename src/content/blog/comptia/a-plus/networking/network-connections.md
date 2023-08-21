@@ -1,6 +1,6 @@
 ---
 title: Network Connections
-description: Learn about DNS server configuration and virtual connections VLANs andVPNs.
+description: Learn about DNS server configuration and virtual connections VLANs and VPNs.
 pubDatetime: 2023-08-16T15:35:39.260Z
 postSlug: networking-connections
 tags:
@@ -110,29 +110,28 @@ syntax is just a string of characters used as commands that tell the DNS server 
 
 The most common records are:
 
-- **[A record](https://www.cloudflare.com/learning/dns/dns-records/dns-a-record/)** -- The record that holds the IP
+- **[A record](https://www.cloudflare.com/learning/dns/dns-records/dns-a-record/)** —The record that holds the IP
   address of a domain.
-- **[AAAA record](https://www.cloudflare.com/learning/dns/dns-records/dns-aaaa-record/)** -- The record that contains
-  the IPv6 address for a domain (as opposed to A records, which list the IPv4 address).
-- **[CNAME record](https://www.cloudflare.com/learning/dns/dns-records/dns-cname-record/)** -- Forwards one domain or
+- **[AAAA record](https://www.cloudflare.com/learning/dns/dns-records/dns-aaaa-record/)** —The record that contains the
+  IPv6 address for a domain (as opposed to A records, which list the IPv4 address).
+- **[CNAME record](https://www.cloudflare.com/learning/dns/dns-records/dns-cname-record/)** —Forwards one domain or
   subdomain to another domain, does NOT provide an IP address.
-- **[MX record](https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/)** -- Directs mail to an email
-  server.
-- **[TXT record](https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/)** -- Lets an admin store text
-  notes in the record. These records are often used for email security.
-- **[NS record](https://www.cloudflare.com/learning/dns/dns-records/dns-ns-record/)** -- Stores the name server for a
-  DNS entry.
-- **[SOA record](https://www.cloudflare.com/learning/dns/dns-records/dns-soa-record/)** -- Stores admin information
-  about a domain.
-- **[SRV record](https://www.cloudflare.com/learning/dns/dns-records/dns-srv-record/)** -- Specifies a port for specific
+- **[MX record](https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/)** —Directs mail to an email server.
+- **[TXT record](https://www.cloudflare.com/learning/dns/dns-records/dns-txt-record/)** —Lets an admin store text notes
+  in the record. These records are often used for email security.
+- **[NS record](https://www.cloudflare.com/learning/dns/dns-records/dns-ns-record/)** —Stores the name server for a DNS
+  entry.
+- **[SOA record](https://www.cloudflare.com/learning/dns/dns-records/dns-soa-record/)** —Stores admin information about
+  a domain.
+- **[SRV record](https://www.cloudflare.com/learning/dns/dns-records/dns-srv-record/)** —Specifies a port for specific
   services.
-- **[PTR record](https://www.cloudflare.com/learning/dns/dns-records/dns-ptr-record/)** -- Provides a domain name in
+- **[PTR record](https://www.cloudflare.com/learning/dns/dns-records/dns-ptr-record/)** —Provides a domain name in
   reverse-lookups.
-- **[SPF record](https://www.cloudflare.com/learning/dns/dns-records/dns-spf-record/)** -- Lists all the servers
+- **[SPF record](https://www.cloudflare.com/learning/dns/dns-records/dns-spf-record/)** —Lists all the servers
   authorized to send emails from a particular domain.
-- **[DKIM record](https://www.cloudflare.com/learning/dns/dns-records/dns-dkim-record/)** -- Stores the public key used
-  to verify an email's authenticity.
-- **[DMARC record](https://www.cloudflare.com/learning/dns/dns-records/dns-dmarc-record/)** -- Authenticates email
+- **[DKIM record](https://www.cloudflare.com/learning/dns/dns-records/dns-dkim-record/)** —Stores the public key used to
+  verify an email's authenticity.
+- **[DMARC record](https://www.cloudflare.com/learning/dns/dns-records/dns-dmarc-record/)** —Authenticates email
   messages.
 
 ## VLAN

@@ -38,37 +38,37 @@ transport, while the upper layers in the OSI model deal with software and applic
 To understand how network protocols function, it's crucial to understand the workings of the seven layers of the OSI
 model:
 
-1. **Physical layer**: The [physical layer](https://www.techtarget.com/searchnetworking/definition/physical-layer) is
+1. **Physical layer** — The [physical layer](https://www.techtarget.com/searchnetworking/definition/physical-layer) is
    the initial layer that physically connects two interoperable systems. It controls simplex or
    [duplex](https://www.techtarget.com/searchnetworking/definition/full-duplex) modem transmissions and transfers data
    in bits. Additionally, it oversees the hardware that connects the network interface card
    ([NIC](https://www.techtarget.com/searchnetworking/definition/network-interface-card)) to the network, including the
    wiring, cable terminators, topography and voltage levels.
-2. **Data-link layer**: The [data-link layer](https://www.techtarget.com/searchnetworking/definition/Data-Link-layer) is
-   responsible for the error-free delivery of data from one node to another over the physical layer. It's also the
+2. **Data-link layer** — The [data-link layer](https://www.techtarget.com/searchnetworking/definition/Data-Link-layer)
+   is responsible for the error-free delivery of data from one node to another over the physical layer. It's also the
    [firmware](https://www.techtarget.com/whatis/definition/firmware) layer of the NIC. It puts datagrams together into
    frames and gives each frame the start and stop flags. Additionally, it fixes issues brought on by broken, misplaced
    or duplicate frames.
-3. **Network layer**: The [network layer](https://www.techtarget.com/searchnetworking/definition/Network-layer) is
+3. **Network layer** — The [network layer](https://www.techtarget.com/searchnetworking/definition/Network-layer) is
    concerned with information flow regulation, switching and routing between workstations. Additionally, it divides up
    datagrams from the transport layer into error-free and smaller datagrams.
-4. **Transport layer**: The [transport layer](https://www.techtarget.com/searchnetworking/definition/Transport-layer)
+4. **Transport layer** — The [transport layer](https://www.techtarget.com/searchnetworking/definition/Transport-layer)
    transfers services from the network layer to the application layer and breaks down data into data frames for error
    checking at the network segment level. This also ensures that a fast host on a network doesn't overtake a slower one.
    Essentially, the transport layer ensures that the entire message is delivered from beginning to end. It also confirms
    a successful data transmission and retransmitting of the data if an error is discovered.
-5. **Session layer**: The [session layer](https://www.techtarget.com/searchnetworking/definition/Session-layer)
+5. **Session layer** — The [session layer](https://www.techtarget.com/searchnetworking/definition/Session-layer)
    establishes a connection between two workstations that need to communicate. In addition to ensuring security, this
    layer oversees connection establishment, session maintenance and
    [authentication](https://www.techtarget.com/searchsecurity/definition/authentication).
-6. **Presentation layer**: The
+6. **Presentation layer** — The
    [presentation layer](https://www.techtarget.com/searchnetworking/definition/presentation-layer) is also known as the
    _translation layer_ because it retrieves the data from the application layer and formats it for transmission over the
    network. It addresses the proper representation of data, including the syntax and semantics of information. The
    presentation layer is also in charge of managing
    [file-level security](https://www.techtarget.com/searchcontentmanagement/tip/7-common-file-sharing-security-risks)
    and transforming data to network standards.
-7. **Application layer**: The
+7. **Application layer** — The
    [application layer](https://www.techtarget.com/searchnetworking/definition/Application-layer), which is the top layer
    of the network, oversees relaying user application requests to lower levels. File transfer, email, remote login, data
    entry and other common applications take place at this layer.
@@ -101,13 +101,13 @@ communications indicate the order in which data packets should be received and c
 In a TCP communication, the two computers begin by establishing a connection via an automated process called a three-way
 "[handshake](https://www.geeksforgeeks.org/tcp-3-way-handshake-process/)":
 
-- **(SYN)**: The client wants to establish a connection with a server, so it sends a segment with SYN(Synchronize
+- **(SYN)** — The client wants to establish a connection with a server, so it sends a segment with SYN(Synchronize
   Sequence Number) which informs the server that the client is likely to start communication and with what sequence
   number it starts segments with.
-- **(SYN + ACK)**: Server responds to the client request with SYN-ACK signal bits set. Acknowledgement(ACK) signifies
+- **(SYN + ACK)** — Server responds to the client request with SYN-ACK signal bits set. Acknowledgement(ACK) signifies
   the response of the segment it received and SYN signifies with what sequence number it is likely to start the segments
   with.
-- **(ACK)**: Client acknowledges the response of the server and they both establish a reliable connection with which
+- **(ACK)** — Client acknowledges the response of the server and they both establish a reliable connection with which
   they will start the actual data transfer.
 
 Only once this handshake has been completed will one computer actually transfer data packets to the other **If a packet
@@ -129,11 +129,11 @@ TCP**.
 [Email protocols](https://www.geeksforgeeks.org/email-protocols/) are a collection of protocols provide the ability for
 the client to transmit emails to or from the intended email server. There are three basic types of email protocols:
 
-- **Simple Mail Transfer Protocol ([SMTP](https://www.cloudflare.com/learning/email-security/what-is-smtp/))** -- An
+- **Simple Mail Transfer Protocol ([SMTP](https://www.cloudflare.com/learning/email-security/what-is-smtp/))** —An
   efficient and reliable protocol for sending emails. SMTP handles the sending and receiving of messages between email
   servers over a TCP/IP network. SMTP commands are used to identify the sender and receiver email addresses along with
   the message to be sent.
-- **Post Office Protocol (POP)** -- Used to retrieve email for a single client. It is an application layer protocol and
+- **Post Office Protocol (POP)** —Used to retrieve email for a single client. It is an application layer protocol and
   allows access to email offline via messages downloaded. POP3 version is the current version of POP used.
 - **Internet Message Access Protocol ([IMAP](<(https://www.cloudflare.com/learning/email-security/what-is-imap/)>)** --
   Used to retrieve mails for multiple clients. IMAP is an application layer protocol and allows access to email without

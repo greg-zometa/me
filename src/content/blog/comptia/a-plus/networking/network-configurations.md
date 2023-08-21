@@ -106,9 +106,9 @@ intended to increase address space compared to IPv4.
 
 An IPv6 address is eight groupings of numbers:
 
-- **Network address** -- the first three groupings of numbers (first 48 bits) in the subnet mask
-- **Subnet address** -- the fourth grouping of numbers (the 49th through 64th bits) in the subnet mask
-- **Device address** -- the last four groupings of numbers (the last 64 bits) in the subnet mask
+- **Network address** —the first three groupings of numbers (first 48 bits) in the subnet mask
+- **Subnet address** —the fourth grouping of numbers (the 49th through 64th bits) in the subnet mask
+- **Device address** —the last four groupings of numbers (the last 64 bits) in the subnet mask
 
 The IPv6 format was created to enable the trillions of new IP addresses to connect an ever-greater number of computing
 devices and the rapidly expanding numbers of items with embedded connectivity, thanks to the internet of things. The
@@ -186,14 +186,14 @@ required in the network environment.
 
 ### DORA
 
-DORA helps in providing an IP address to hosts or client
-machines.[ DORA is the process that follows some steps](https://www.geeksforgeeks.org/how-dora-works/) between the
-server and client. It gets the IP address from the centralized server. It consists of four-stage:
+DORA helps in providing an IP address to hosts or client machines.
+[DORA is the process that follows some steps](https://www.geeksforgeeks.org/how-dora-works/) between the server and
+client. It gets the IP address from the centralized server. It consists of four-stage:
 
-- **Discover**: client sends a discover message to server
-- **Offer**: server responds with an available IP address and options
-- **Request**: client requests the IP address from server
-- **Acknowledge**: server acknowledges client request and completes
+- **Discover** — client sends a discover message to server
+- **Offer** — server responds with an available IP address and options
+- **Request** — client requests the IP address from server
+- **Acknowledge** — server acknowledges client request and completes
 
 ## APIPA
 
