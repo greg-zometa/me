@@ -40,7 +40,7 @@ company or the organization that has basically leased the portion of that name s
 known as the host and the host is typically owned and controlled by the company whose portion of that DNS name space we
 see here.
 
-```text
+```
 # example
 https://www.example.com
 

@@ -17,9 +17,9 @@
   },
   "dependencies": {
     "@astrojs/rss": "2.4.4",
-    "@astrojs/svelte": "3.1.0",
+    "@astrojs/svelte": "3.1.1",
     "@resvg/resvg-js": "2.4.1",
-    "astro": "2.10.7",
+    "astro": "2.10.12",
     "fuse.js": "6.6.2",
     "github-slugger": "2.0.0",
     "mdast-util-to-string": "4.0.0",
@@ -32,11 +32,11 @@
     "tailwindcss": "3.3.3"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "2.0.1",
+    "@astrojs/sitemap": "2.0.2",
     "@astrojs/tailwind": "4.0.0",
     "@divriots/jampack": "0.13.0",
     "@tailwindcss/typography": "0.5.9",
-    "@typescript-eslint/parser": "6.3.0",
+    "@typescript-eslint/parser": "6.4.0",
     "astro-eslint-parser": "0.14.0",
     "astrojs-service-worker": "1.0.0",
     "concurrently": "8.2.0",
@@ -44,12 +44,12 @@
     "eslint-plugin-astro": "0.28.0",
     "eslint-plugin-svelte": "2.32.4",
     "husky": "8.0.3",
-    "lint-staged": "13.2.3",
-    "prettier": "3.0.1",
-    "prettier-plugin-astro": "0.11.0",
+    "lint-staged": "14.0.1",
+    "prettier": "3.0.2",
+    "prettier-plugin-astro": "0.11.1",
     "prettier-plugin-svelte": "3.0.3",
-    "prettier-plugin-tailwindcss": "0.5.2",
-    "svelte-eslint-parser": "0.32.2"
+    "prettier-plugin-tailwindcss": "0.5.3",
+    "svelte-eslint-parser": "0.33.0"
   },
   "lint-staged": {
     "*.{astro,html,json,md,mdx,svelte,ts}": [
