@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "comptia/a-plus/networking/network-tools.md",
+                "file": "comptia/a-plus/core-1/hardware/cables-and-adapters.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "54600675ba44afdd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f64ca463ae892a38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -69,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 357.5
+    "width": 210.5
   },
   "right": {
     "id": "7fc5de755a2ffcc7",
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "comptia/a-plus/networking/network-tools.md",
+                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "comptia/a-plus/networking/network-tools.md",
+                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "comptia/a-plus/networking/network-tools.md"
+                "file": "comptia/a-plus/core-1/hardware/storage-devices.md"
               }
             }
           }
@@ -146,31 +171,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6459743f493adabe",
+  "active": "b35f97c5b833ee8f",
   "lastOpenFiles": [
-    "comptia/a-plus/networking/internet-connections.md",
-    "comptia/a-plus/networking/network-tools.md",
-    "comptia/a-plus/networking/wireless-networks.md",
-    "comptia/a-plus/networking/ports-and-protocols.md",
-    "comptia/a-plus/networking/network-services.md",
-    "comptia/a-plus/networking/network-devices.md",
-    "comptia/a-plus/networking/network-connections.md",
-    "comptia/a-plus/networking/network-configurations.md",
+    "comptia/pentest",
+    "comptia/linux",
+    "comptia/network",
+    "comptia/security",
+    "comptia/a-plus/core-2",
+    "comptia/a-plus/core-1",
+    "comptia/a-plus/core-1/hardware/power.md",
+    "comptia/a-plus/core-1/hardware/motherboards.md",
+    "comptia/a-plus/core-1/hardware/memory.md",
+    "comptia/a-plus/core-1/hardware/cables-and-adapters.md",
+    "comptia/a-plus/core-1/hardware/storage-devices.md",
+    "comptia/a-plus/core-1/networking/network-devices.md",
+    "comptia/a-plus/core-1/networking/network-connections.md",
+    "comptia/a-plus/core-1/networking/network-configurations.md",
+    "comptia/a-plus/core-1/networking/internet-connections.md",
+    "comptia/a-plus/core-1/networking/network-tools.md",
+    "comptia/a-plus/core-1/networking/wireless-networks.md",
+    "comptia/a-plus/core-1/networking/ports-and-protocols.md",
+    "comptia/a-plus/core-1/networking/network-services.md",
     "comptia/security",
     "comptia/pentest",
     "comptia/network",
     "comptia/linux",
     "comptia/a-plus/security",
-    "comptia/a-plus/pentest",
-    "comptia/a-plus/network",
-    "comptia/a-plus/linux",
-    "comptia/a-plus/troubleshooting-hardware-and-networking",
-    "comptia/a-plus/virtualization-and-cloud-computing",
     "networking.md",
-    "comptia/a-plus/mobile-devices/device-configuration.md",
-    "comptia/a-plus/mobile-devices/device-connectivity.md",
-    "comptia/a-plus/mobile-devices/laptop-hardware.md",
-    "comptia/a-plus/mobile-devices/laptop-displays.md",
+    "comptia/a-plus/core-1/mobile-devices/device-configuration.md",
+    "comptia/a-plus/core-1/mobile-devices/device-connectivity.md",
+    "comptia/a-plus/core-1/mobile-devices/laptop-hardware.md",
+    "comptia/a-plus/core-1/mobile-devices/laptop-displays.md",
     "customizing-astropaper-theme-color-schemes.md",
     "blog-post-template.md",
     "how-to-take-notes-to-learn-effectively.md",
@@ -178,11 +209,6 @@
     "2023-07-29.md",
     "Untitled.canvas",
     "terminal-development.md",
-    "rec-2.md",
-    "tailwind-typography.md",
-    "predefined-color-schemes.md",
-    "portfolio-website-development.md",
-    "how-to-connect-astro-paper-blog-with-forestry-cms.md",
-    "how-to-configure-astropaper-theme.md"
+    "rec-2.md"
   ]
 }
