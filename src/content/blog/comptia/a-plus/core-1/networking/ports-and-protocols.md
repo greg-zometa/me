@@ -129,11 +129,11 @@ TCP**.
 [Email protocols](https://www.geeksforgeeks.org/email-protocols/) are a collection of protocols provide the ability for
 the client to transmit emails to or from the intended email server. There are three basic types of email protocols:
 
-- **Simple Mail Transfer Protocol ([SMTP](https://www.cloudflare.com/learning/email-security/what-is-smtp/))** —An
+- **Simple Mail Transfer Protocol ([SMTP](https://www.cloudflare.com/learning/email-security/what-is-smtp/))** — An
   efficient and reliable protocol for sending emails. SMTP handles the sending and receiving of messages between email
   servers over a TCP/IP network. SMTP commands are used to identify the sender and receiver email addresses along with
   the message to be sent.
-- **Post Office Protocol (POP)** —Used to retrieve email for a single client. It is an application layer protocol and
+- **Post Office Protocol (POP)** — Used to retrieve email for a single client. It is an application layer protocol and
   allows access to email offline via messages downloaded. POP3 version is the current version of POP used.
 - **Internet Message Access Protocol ([IMAP](<(https://www.cloudflare.com/learning/email-security/what-is-imap/)>)** --
   Used to retrieve mails for multiple clients. IMAP is an application layer protocol and allows access to email without
