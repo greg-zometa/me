@@ -1,10 +1,8 @@
 ---
 import { LOGO_IMAGE, SITE } from "@config";
+import { Image } from "astro:assets";
 import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
-
-// import logoPNG from "/logo.png";
-import logoSVG from "/favicon.svg";
 
 export interface Props {
   activeNav?: "posts" | "tags" | "about" | "search";
@@ -20,7 +18,7 @@ const { activeNav } = Astro.props;
       <a href="/" class="logo">
         {
           LOGO_IMAGE.enable ? (
-            <img src={logoSVG} alt={SITE.title} width={LOGO_IMAGE.width} height={LOGO_IMAGE.height} />
+            <Image src="/favicon.svg" alt={SITE.title} width={LOGO_IMAGE.width} height={LOGO_IMAGE.height} />
           ) : (
             SITE.title
           )

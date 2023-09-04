@@ -19,7 +19,7 @@
   `;
 </script>
 
-<li class="mt-4">
+<li class="mt-4 space-y-1">
   <a {href} class="inline-block focus-visible:no-underline focus-visible:underline-offset-0">
     {#if secHeading}
       <h2 class={headingClass}>

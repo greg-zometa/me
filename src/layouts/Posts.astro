@@ -17,8 +17,9 @@ export interface Props {
 
 const { pageNum, totalPages, posts } = Astro.props;
 
-const prev = pageNum > 1 ? "" : "disabled";
-const next = pageNum < totalPages ? "" : "disabled";
+const moreThanOnePage = totalPages > 1;
+const prev = pageNum === 1 ? "disabled" : "";
+const next = pageNum === totalPages ? "disabled" : "";
 ---
 
 <Layout title={`Posts | ${SITE.title}`}>
@@ -30,11 +31,11 @@ const next = pageNum < totalPages ? "" : "disabled";
   </Main>
 
   {
-    totalPages > 1 && (
+    moreThanOnePage && (
       <nav class="pagination-wrapper" aria-label="Pagination">
         <LinkButton
           disabled={prev === "disabled"}
-          href={`/posts${pageNum - 1 !== 1 ? "/" + (pageNum - 1) : ""}`}
+          href={`/posts/${pageNum - 1 === 1 ? "" : pageNum - 1}`}
           className={`mr-4 select-none ${prev}`}
           ariaLabel="Previous"
         >
@@ -57,7 +58,7 @@ const next = pageNum < totalPages ? "" : "disabled";
       </nav>
     )
   }
-  <Footer noMarginTop={totalPages > 1} />
+  <Footer noMarginTop={moreThanOnePage} />
 </Layout>
 
 <style>
