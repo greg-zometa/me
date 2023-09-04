@@ -50,7 +50,7 @@ const { activeNav } = Astro.props;
             <line x1="6" y1="6" x2="18" y2="18" class="close"></line>
           </svg>
         </button>
-        <ul id="menu-items" class="hidden grid sm:flex">
+        <ul id="menu-items" class="display-none sm:flex">
           <li>
             <a href="/posts" class={activeNav === "posts" ? "active" : ""}> Posts</a>
           </li>
@@ -125,7 +125,7 @@ const { activeNav } = Astro.props;
     @apply flex w-full flex-col items-center bg-fill sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4;
   }
   nav ul {
-    @apply mt-4 w-44 grid-cols-2 grid-rows-4 gap-x-2 gap-y-2 sm:ml-0 sm:mt-0 sm:w-auto sm:gap-x-5 sm:gap-y-0;
+    @apply mt-4 grid w-44 grid-cols-2 grid-rows-4 gap-x-2 gap-y-2 sm:ml-0 sm:mt-0 sm:w-auto sm:gap-x-5 sm:gap-y-0;
   }
   nav ul li {
     @apply col-span-2 flex items-center justify-center;
@@ -185,6 +185,6 @@ const { activeNav } = Astro.props;
     menuIcon?.classList.toggle("is-active");
     menuBtn.setAttribute("aria-expanded", menuExpanded ? "false" : "true");
     menuBtn.setAttribute("aria-label", menuExpanded ? "Open Menu" : "Close Menu");
-    menuItems?.classList.toggle("hidden");
+    menuItems?.classList.toggle("display-none");
   });
 </script>
