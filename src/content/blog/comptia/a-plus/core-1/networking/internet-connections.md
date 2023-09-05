@@ -49,10 +49,9 @@ certain areas.
 
 ### Cable
 
-When we talk about cable, we're talking about the
-[coaxial cable](https://www.techtarget.com/searchnetworking/definition/coaxial-cable-illustrated) type implementations,
-when it comes to network communications. Coaxial cables are probably one of the oldest network technologies, we have in
-the industry today.
+When we talk about cable, we're talking about the [coaxial cable](/posts/hardware-cables-and-adapters#coaxial-cable)
+type implementations, when it comes to network communications. Coaxial cables are probably one of the oldest network
+technologies, we have in the industry today.
 
 A coaxial -- or coax -- cable is primarily used by cable TV companies to connect their satellite antenna facilities to
 customer homes and businesses. Telephone companies also sometimes use coax cable to connect central offices to telephone
@@ -129,12 +128,12 @@ Although most PANs are wireless, wired PAN options exist, including USB.
 
 Some benefits of PANs include:
 
-- **Portability** —Most devices that connect in a PAN are small and can be easily transported.
-- **Affordability** —The ability to form a connection between two devices in a PAN without additional wiring is
+- **Portability** — Most devices that connect in a PAN are small and can be easily transported.
+- **Affordability** — The ability to form a connection between two devices in a PAN without additional wiring is
   generally less expensive compared to a wired network.
-- **Reliability** —PANs guarantee stable connectivity between devices, provided that the devices remain within the 10 m
+- **Reliability** — PANs guarantee stable connectivity between devices, provided that the devices remain within the 10 m
   range.
-- **Security** —PANs don't directly connect to larger networks, but rather to other devices connected to larger
+- **Security** — PANs don't directly connect to larger networks, but rather to other devices connected to larger
   networks. The security of a device in a PAN is contingent upon how secure the intermediary device is within the larger
   overall network.
 
@@ -167,14 +166,14 @@ susceptible to compromise.
 
 Some benefits of LANs include:
 
-- **Resource sharing** —Resource sharing is one of the most important reasons for setting up any network. As more
+- **Resource sharing** — Resource sharing is one of the most important reasons for setting up any network. As more
   devices connect to each other, they can share more files, data and software among each other.
-- **Secure data storage** —Network data is stored in a centralized location that all connected devices can access.
+- **Secure data storage** — Network data is stored in a centralized location that all connected devices can access.
   Devices must receive permission to access the network, preventing unauthorized users from retrieving sensitive
   information.
-- **Fast communication** —Ethernet cables provide fast, reliable data transmission speeds, which increase the rate of
+- **Fast communication** — Ethernet cables provide fast, reliable data transmission speeds, which increase the rate of
   communication between devices.
-- **Seamless communication** —Any authorized user can communicate with another on the same network.
+- **Seamless communication** — Any authorized user can communicate with another on the same network.
 
 LANs support home offices and corporate network environments, among others. Users in personal home offices can connect
 their devices and transfer data between each device with little error. Employees in company offices can quickly
@@ -195,11 +194,11 @@ including fiber optics, Ethernet cables, Wi-Fi or cellular.
 
 Some benefits of MANs include:
 
-- **Municipal coverage** —A MAN can span an entire city or town, stretching network connectivity by dozens of miles.
-- **Efficient networking standards** —MAN configurations typically use
+- **Municipal coverage** — A MAN can span an entire city or town, stretching network connectivity by dozens of miles.
+- **Efficient networking standards** — MAN configurations typically use
   [IEEE 802.11](https://www.techtarget.com/searchnetworking/reference/IEEE-802-Wireless-Standards-Fast-Reference)
   networking standards to increase bandwidth capacity and frequency levels, which boost network performance.
-- **High-speed connectivity** —Fiber optic cables are the most popular form of MAN connectivity because they provide
+- **High-speed connectivity** — Fiber optic cables are the most popular form of MAN connectivity because they provide
   safe and fast connection data rates.
 
 The main purpose of a MAN is to have the same network available in several locations. In a LAN, the network is
@@ -219,11 +218,11 @@ campus network varies from 1 kilometer to 5 km, while MANs can extend to 50 km.
 
 Some benefits of campus networks include:
 
-- **Affordability** —Campus networks cover a smaller geographical area than MANs, so infrastructure costs less to
+- **Affordability** — Campus networks cover a smaller geographical area than MANs, so infrastructure costs less to
   maintain.
-- **Easy configuration** —Compared to MANs, campus networks are easier to set up and manage because there is less ground
-  to cover and fewer devices to support.
-- **Wi-Fi hotspot creation** —Universities and other organizations with campus networks may set up free Wi-Fi hotspots
+- **Easy configuration** — Compared to MANs, campus networks are easier to set up and manage because there is less
+  ground to cover and fewer devices to support.
+- **Wi-Fi hotspot creation** — Universities and other organizations with campus networks may set up free Wi-Fi hotspots
   in areas with high volume to enable easy network access.
 
 Network administrators commonly set up campus networks to create networks large enough to cover a school or university.
@@ -241,11 +240,11 @@ with each other.
 
 Some benefits of WANs include:
 
-- **Large area coverage** —WANs provide more expansive connectivity because networks can connect from anywhere in the
+- **Large area coverage** — WANs provide more expansive connectivity because networks can connect from anywhere in the
   world.
-- **Improved performance** —WANs use links with dedicated bandwidth to connect LANs together. These links enhance
+- **Improved performance** — WANs use links with dedicated bandwidth to connect LANs together. These links enhance
   network speeds and provide faster data transfer rates than LANs.
-- **Increased security** —Dedicated links also increase safety across the network because the network only connects to
+- **Increased security** — Dedicated links also increase safety across the network because the network only connects to
   itself, lowering the chances for hackers to hijack a system.
 
 The main draw of a WAN is its facilitation of long-distance network connectivity. Organizations use WANs to connect
@@ -270,11 +269,11 @@ from which to purchase services.
 
 Some benefits of CDNs include:
 
-- **Fast content delivery** —The main goal of a CDN is to load rich media content on websites quickly and reduce latency
-  between requests.
-- **Increased security** —When traffic travels through a CDN server, potential viruses attached to data reroute to the
+- **Fast content delivery** — The main goal of a CDN is to load rich media content on websites quickly and reduce
+  latency between requests.
+- **Increased security** — When traffic travels through a CDN server, potential viruses attached to data reroute to the
   server, too. A CDN service mitigates these threats so it can send uncompromised data through the network.
-- **Improved site performance** —Websites managed by CDNs experience less latency and bandwidth limitation issues.
+- **Improved site performance** — Websites managed by CDNs experience less latency and bandwidth limitation issues.
   Network downtime caused by traffic spikes is also a rare occurrence in websites with CDNs.
 
 CDNs enable the delivery of rich -- i.e., dynamic -- media. Most websites and applications incorporate some form of
@@ -291,10 +290,10 @@ hackers. The user's location appears to be wherever the VPN server exists.
 
 Some benefits of VPNs include:
 
-- **Privacy and anonymity** —Users can browse a network without having their activity monitored by an ISP.
-- **Increased security** —Users must receive authentication before gaining access to a VPN. Organizations can secure
+- **Privacy and anonymity** — Users can browse a network without having their activity monitored by an ISP.
+- **Increased security** — Users must receive authentication before gaining access to a VPN. Organizations can secure
   company data this way by preventing unauthenticated users from accessing sensitive information.
-- **Geo-spoofing** —Users connected to VPNs appear to be in the same location as the server, whether in an office
+- **Geo-spoofing** — Users connected to VPNs appear to be in the same location as the server, whether in an office
   building or another country entirely. Users can retrieve company data or gain access to geo-blocked content outside of
   their country's borders.
 

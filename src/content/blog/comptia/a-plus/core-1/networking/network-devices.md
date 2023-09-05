@@ -118,15 +118,15 @@ connection of a LAN to a WAN and operate at the border of your network.
 Routers usually communicate routing and other information using one of three standard protocols:
 
 - **Open Shortest Path First
-  ([OSPF](https://www.techtarget.com/searchnetworking/definition/OSPF-Open-Shortest-Path-First))** —used to find the
+  ([OSPF](https://www.techtarget.com/searchnetworking/definition/OSPF-Open-Shortest-Path-First))** — used to find the
   best path for packets as they pass through a set of connected networks. OSPF is designated by the Internet Engineering
   Task Force (IETF) as one of several Interior Gateway Protocols (IGPs).
 - **Border Gateway Protocol
-  ([BGP](https://www.techtarget.com/searchnetworking/definition/BGP-Border-Gateway-Protocol))** —manages how packets are
-  routed across the internet through the exchange of information between edge routers. BGP offers network stability that
-  guarantees routers can quickly adapt to send packets through another reconnection if one internet path goes down.
+  ([BGP](https://www.techtarget.com/searchnetworking/definition/BGP-Border-Gateway-Protocol))** — manages how packets
+  are routed across the internet through the exchange of information between edge routers. BGP offers network stability
+  that guarantees routers can quickly adapt to send packets through another reconnection if one internet path goes down.
 - **Routing Information Protocol
-  ([RIP](https://www.techtarget.com/searchnetworking/definition/Routing-Information-Protocol))** —the original protocol
+  ([RIP](https://www.techtarget.com/searchnetworking/definition/Routing-Information-Protocol))** — the original protocol
   for defining how routers should share information when moving traffic among an interconnected group of local area
   networks. The largest number of hops allowed for RIP is 15, which limits the size of networks that RIP can support.
 

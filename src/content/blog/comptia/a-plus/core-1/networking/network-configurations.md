@@ -106,9 +106,9 @@ intended to increase address space compared to IPv4.
 
 An IPv6 address is eight groupings of numbers:
 
-- **Network address** —the first three groupings of numbers (first 48 bits) in the subnet mask
-- **Subnet address** —the fourth grouping of numbers (the 49th through 64th bits) in the subnet mask
-- **Device address** —the last four groupings of numbers (the last 64 bits) in the subnet mask
+- **Network address** — the first three groupings of numbers (first 48 bits) in the subnet mask
+- **Subnet address** — the fourth grouping of numbers (the 49th through 64th bits) in the subnet mask
+- **Device address** — the last four groupings of numbers (the last 64 bits) in the subnet mask
 
 The IPv6 format was created to enable the trillions of new IP addresses to connect an ever-greater number of computing
 devices and the rapidly expanding numbers of items with embedded connectivity, thanks to the internet of things. The
