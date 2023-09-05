@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f36f15c96a1cab00",
+        "id": "001a322d60decf00",
         "type": "tabs",
         "children": [
           {
-            "id": "f64ca463ae892a38",
+            "id": "ad46d90ce63349af",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/cables-and-adapters.md",
+                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 327.5
   },
   "right": {
     "id": "7fc5de755a2ffcc7",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/cables-and-adapters.md",
+                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/cables-and-adapters.md",
+                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/cables-and-adapters.md"
+                "file": "comptia/a-plus/core-1/hardware/storage-devices.md"
               }
             }
           }
@@ -147,27 +146,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f64ca463ae892a38",
+  "active": "ad46d90ce63349af",
   "lastOpenFiles": [
-    "comptia/a-plus/core-1/networking/network-connections.md",
-    "comptia/a-plus/core-1/networking/network-services.md",
-    "comptia/a-plus/core-1/networking/network-configurations.md",
-    "comptia/a-plus/core-1/networking/internet-connections.md",
+    "comptia/a-plus/core-1/hardware/power.md",
+    "comptia/a-plus/core-1/hardware/motherboards.md",
+    "comptia/a-plus/core-1/hardware/memory.md",
     "comptia/a-plus/core-1/hardware/cables-and-adapters.md",
+    "comptia/a-plus/core-1/hardware/storage-devices.md",
     "comptia/pentest",
     "comptia/linux",
     "comptia/network",
     "comptia/security",
     "comptia/a-plus/core-2",
     "comptia/a-plus/core-1",
-    "comptia/a-plus/core-1/hardware/power.md",
-    "comptia/a-plus/core-1/hardware/motherboards.md",
-    "comptia/a-plus/core-1/hardware/memory.md",
-    "comptia/a-plus/core-1/hardware/storage-devices.md",
     "comptia/a-plus/core-1/networking/network-devices.md",
+    "comptia/a-plus/core-1/networking/network-connections.md",
+    "comptia/a-plus/core-1/networking/network-configurations.md",
+    "comptia/a-plus/core-1/networking/internet-connections.md",
     "comptia/a-plus/core-1/networking/network-tools.md",
     "comptia/a-plus/core-1/networking/wireless-networks.md",
     "comptia/a-plus/core-1/networking/ports-and-protocols.md",
+    "comptia/a-plus/core-1/networking/network-services.md",
     "comptia/security",
     "comptia/pentest",
     "comptia/network",
