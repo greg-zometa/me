@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "001a322d60decf00",
+        "id": "71df9bbc791028c7",
         "type": "tabs",
         "children": [
           {
-            "id": "ad46d90ce63349af",
+            "id": "34ea8e1afe7c29d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
+                "file": "comptia/a-plus/core-1/hardware/memory.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 327.5
+    "width": 327.5,
+    "collapsed": true
   },
   "right": {
     "id": "7fc5de755a2ffcc7",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
+                "file": "comptia/a-plus/core-1/hardware/memory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
+                "file": "comptia/a-plus/core-1/hardware/memory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/storage-devices.md"
+                "file": "comptia/a-plus/core-1/hardware/memory.md"
               }
             }
           }
@@ -146,13 +147,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ad46d90ce63349af",
+  "active": "34ea8e1afe7c29d7",
   "lastOpenFiles": [
+    "comptia/a-plus/core-1/hardware/cables-and-adapters.md",
+    "comptia/a-plus/core-1/hardware/memory.md",
+    "comptia/a-plus/core-1/hardware/storage-devices.md",
+    "comptia/a-plus/core-1/mobile-devices/device-connectivity.md",
+    "comptia/a-plus/core-1/mobile-devices/device-configuration.md",
     "comptia/a-plus/core-1/hardware/power.md",
     "comptia/a-plus/core-1/hardware/motherboards.md",
-    "comptia/a-plus/core-1/hardware/memory.md",
-    "comptia/a-plus/core-1/hardware/cables-and-adapters.md",
-    "comptia/a-plus/core-1/hardware/storage-devices.md",
     "comptia/pentest",
     "comptia/linux",
     "comptia/network",
@@ -172,8 +175,6 @@
     "comptia/network",
     "comptia/linux",
     "networking.md",
-    "comptia/a-plus/core-1/mobile-devices/device-configuration.md",
-    "comptia/a-plus/core-1/mobile-devices/device-connectivity.md",
     "comptia/a-plus/core-1/mobile-devices/laptop-hardware.md",
     "comptia/a-plus/core-1/mobile-devices/laptop-displays.md",
     "customizing-astropaper-theme-color-schemes.md",
