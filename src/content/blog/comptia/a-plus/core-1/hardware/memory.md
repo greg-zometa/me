@@ -1,8 +1,6 @@
 ---
 title: Hardware Memory
-description:
-  Memory is a critical resource for our computing devices. Learn about the various hardware and software capabilities of
-  memory management.
+description: Memory is a critical resource for our computing devices. Learn about the various hardware and software capabilities of memory management.
 pubDatetime: 2023-09-06T13:11:44.077Z
 postSlug: hardware-memory
 featured: true
@@ -16,74 +14,39 @@ tags:
   - studying
 ---
 
-This post will cover various aspects of the **Hardware** section of the
-[CompTIA A+](https://www.comptia.org/certifications/a) Core 1 certification endeavor.
+This post will cover various aspects of the **Hardware** section of the [CompTIA A+](https://www.comptia.org/certifications/a) Core 1 certification endeavor.
 
 ## Table of contents
 
 ## Overview
 
-If you’ve ever installed an application or an operating system, you’ll notice there’s a specification that requires you
-have a certain amount of memory inside of your system. This memory is referring to **random access memory** or
-**[RAM](/posts/mobile-devices-laptop-hardware/#ram)**. It’s the type of memory we commonly use inside of our personal
-computers.
+If you’ve ever installed an application or an operating system, you’ll notice there’s a specification that requires you have a certain amount of memory inside of your system. This memory is referring to **random access memory** or **[RAM](/posts/mobile-devices-laptop-hardware/#ram)**. It’s the type of memory we commonly use inside of our personal computers.
 
-RAM is the main memory in a computer where the operating system
-([OS](https://www.techtarget.com/whatis/definition/operating-system-OS)), application programs and data in current use
-are kept so they can be quickly reached by the
-device's [processor](https://www.techtarget.com/whatis/definition/processor). It is much faster to read from and write
-to than [other kinds of storage](/posts/mobile-devices-laptop-hardware/#disk-drives), such as a hard disk drive (HDD),
-solid-state drive (SSD) or optical drive.
+RAM is the main memory in a computer where the operating system ([OS](https://www.techtarget.com/whatis/definition/operating-system-OS)), application programs and data in current use are kept so they can be quickly reached by the device's [processor](https://www.techtarget.com/whatis/definition/processor). It is much faster to read from and write to than [other kinds of storage](/posts/mobile-devices-laptop-hardware/#disk-drives), such as a hard disk drive (HDD), solid-state drive (SSD) or optical drive.
 
-RAM is volatile which means data is retained so long as the computer is on, but it is lost when the computer is turned
-off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.
+RAM is volatile which means data is retained so long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.
 
-RAM can be compared to a person's short-term memory, and a hard disk drive to a person's long-term memory. Short-term
-memory is focused on immediate work, but it can only keep a limited number of facts in view at any one time. When a
-person's short-term memory fills up, it can be refreshed with facts stored in the brain's long-term memory.
+RAM can be compared to a person's short-term memory, and a hard disk drive to a person's long-term memory. Short-term memory is focused on immediate work, but it can only keep a limited number of facts in view at any one time. When a person's short-term memory fills up, it can be refreshed with facts stored in the brain's long-term memory.
 
 ### RAM Form factors
 
-The **dual in-line memory module** or **[DIMM](https://www.techtarget.com/searchstorage/definition/DIMM)** is a type of
-computer memory that is natively 64 bits, enabling fast data transfer. DIMM is a module that contains one or several RAM
-chips on a small circuit board with pins that connect it to the computer motherboard. The DIMM stores each data bit in a
-separate memory cell. DIMMs use a 64-bit data path, since processors used in personal computers have a 64-bit data
-width. DIMMs are typically used in desktop PCs, laptops, printers and other devices.
+The **dual in-line memory module** or **[DIMM](https://www.techtarget.com/searchstorage/definition/DIMM)** is a type of computer memory that is natively 64 bits, enabling fast data transfer. DIMM is a module that contains one or several RAM chips on a small circuit board with pins that connect it to the computer motherboard. The DIMM stores each data bit in a separate memory cell. DIMMs use a 64-bit data path, since processors used in personal computers have a 64-bit data width. DIMMs are typically used in desktop PCs, laptops, printers and other devices.
 
-A **single in-line memory module** or
-**[SIMM](https://www.techtarget.com/whatis/definition/SIMM-single-in-line-memory-module)** typically has a 32 data bit
-(36 bits counting [parity](https://www.techtarget.com/searchstorage/definition/parity) bits) path to the computer that
-requires a 72-pin connector. For synchronous dynamic RAM
-([SDRAM](https://www.techtarget.com/whatis/definition/SDRAM-synchronous-DRAM)) chips, which have a 64 data bit
-connection to the computer, SIMMs must be installed in in-line pairs, since each one supports a 32-bit path. A single
-DIMM can be used instead. Originally, a DIMM had a 168-pin connector to support 64-bit data transfer.
+A **single in-line memory module** or **[SIMM](https://www.techtarget.com/whatis/definition/SIMM-single-in-line-memory-module)** typically has a 32 data bit (36 bits counting [parity](https://www.techtarget.com/searchstorage/definition/parity) bits) path to the computer that requires a 72-pin connector. For synchronous dynamic RAM ([SDRAM](https://www.techtarget.com/whatis/definition/SDRAM-synchronous-DRAM)) chips, which have a 64 data bit connection to the computer, SIMMs must be installed in in-line pairs, since each one supports a 32-bit path. A single DIMM can be used instead. Originally, a DIMM had a 168-pin connector to support 64-bit data transfer.
 
 RAM comes in two primary forms:
 
-- **Dynamic Random Access Memory (**[**DRAM**](https://www.techtarget.com/searchstorage/definition/DRAM)**)** makes up
-  the typical computing device's RAM, and as was previously noted, it needs that power to be on to retain stored data.
+- **Dynamic Random Access Memory (**[**DRAM**](https://www.techtarget.com/searchstorage/definition/DRAM)**)** makes up the typical computing device's RAM, and as was previously noted, it needs that power to be on to retain stored data.
 
-Each DRAM cell has a charge or lack of charge held in an electrical capacitor. This data must be constantly refreshed
-with an electronic charge every few milliseconds to compensate for leaks from the capacitator. A transistor serves as a
-gate, determining whether a capacitor's value can be read or written.
+Each DRAM cell has a charge or lack of charge held in an electrical capacitor. This data must be constantly refreshed with an electronic charge every few milliseconds to compensate for leaks from the capacitator. A transistor serves as a gate, determining whether a capacitor's value can be read or written.
 
-As faster DRAM was developed, DIMM circuit boards evolved. Modern DIMMs based on double data rate fourth generation
-(DDR4) SDRAM chips use 288-pin connectors to attach to the computer motherboard to enable the increase in data
-throughput. As [clock speeds](https://www.techtarget.com/whatis/definition/clock-speed) of the RAM chips increased, the
-64-bit path handled increasing amounts of data.
+As faster DRAM was developed, DIMM circuit boards evolved. Modern DIMMs based on double data rate fourth generation (DDR4) SDRAM chips use 288-pin connectors to attach to the computer motherboard to enable the increase in data throughput. As [clock speeds](https://www.techtarget.com/whatis/definition/clock-speed) of the RAM chips increased, the 64-bit path handled increasing amounts of data.
 
-- **Static Random Access Memory
-  (**[**SRAM**](https://www.techtarget.com/whatis/definition/SRAM-static-random-access-memory)**)** also needs constant
-  power to hold on to data, but it doesn't need to be continually refreshed the way DRAM does.
+- **Static Random Access Memory (**[**SRAM**](https://www.techtarget.com/whatis/definition/SRAM-static-random-access-memory)**)** also needs constant power to hold on to data, but it doesn't need to be continually refreshed the way DRAM does.
 
-In SRAM, instead of a capacitor holding the charge, the transistor acts as a switch, with one position serving as 1 and
-the other position as 0. Static RAM requires several transistors to retain one bit of data compared to dynamic RAM which
-needs only one transistor per bit. As a result, SRAM chips are much larger and more expensive than an equivalent amount
-of DRAM.
+In SRAM, instead of a capacitor holding the charge, the transistor acts as a switch, with one position serving as 1 and the other position as 0. Static RAM requires several transistors to retain one bit of data compared to dynamic RAM which needs only one transistor per bit. As a result, SRAM chips are much larger and more expensive than an equivalent amount of DRAM.
 
-However, SRAM is significantly faster and uses less power than DRAM. The price and speed differences mean static RAM is
-mainly used in small amounts as [cache memory](https://www.techtarget.com/searchstorage/definition/cache-memory) inside
-a computer's processor.
+However, SRAM is significantly faster and uses less power than DRAM. The price and speed differences mean static RAM is mainly used in small amounts as [cache memory](https://www.techtarget.com/searchstorage/definition/cache-memory) inside a computer's processor.
 
 **This table compares DDR SDRAM generations**:
 
@@ -1029,63 +992,38 @@ a computer's processor.
    <tfoot></tfoot>
 </table>
 
-## Memory Technologies
+## Memory technologies
 
-Let’s start our conversation about memory technologies with what we do when we run out of memory. There are ways to help
-when you run low on random access memory. And one of the things you can do is take information you’re not currently
-using in RAM and swap it out to a hard drive or SSD.
+**There are ways to help when you run low on RAM**. When your computer doesn’t have enough memory for all of the actions it’s trying to perform, your programs can stop working. To help prevent information loss, save your files, close all open programs, and restart your programs to free enough memory for programs to work correctly.
 
-We sometimes refer to this as virtual memory, although we can also refer to it as virtual RAM or a swap file. In Windows
-in the Performance Options, there’s an Advanced tab that allows you to configure a virtual memory section. This is an
-area of your hard drive or SSD that Windows can use as if it was actual memory. Obviously, a hard drive or SSD is slower
-than actual random access memory so this is really an area where we’re temporarily storing things until we find more
-room within our normal random access memory.
+Computers have two types of memory, RAM and virtual memory. All programs use RAM, but when there isn’t enough RAM for the program, your computer temporarily moves information that would normally be stored in RAM to a file on the disk storage called a paging file. The amount of information temporarily stored in a paging file is also referred to as virtual memory. Using virtual memory or moving information to and from the paging file frees up enough RAM for programs to run correctly.
 
-Many operating systems will manage this process automatically. In Windows, there’s a checkbox that says “Automatically
-manage paging file size for all drives.” But you can manage this yourself. If you uncheck that option, you can specify
-exactly how much virtual memory you’d like to allocate on your storage drive.
+### Virtual memory
 
-Another memory technology that can greatly increase the throughput in your system is multichannel memory. Sometimes
-you’ll see this as dual channel, triple channel, or quad channel memory. This takes the throughput that normally would
-be sent to one single memory module and spreads that load across multiple memory modules. Ideally, you would have
-exactly the same memory module types in each of these multichannel slots. If your motherboard supports multichannel
-memory, then you might want to look at the memory modules and see if they have different colors. This is often done so
-that you know exactly which slots to use for the multichannel memory.
+[Virtual memory](https://www.techtarget.com/searchstorage/definition/virtual-memory) uses both hardware and software to enable a computer to compensate for physical memory shortages, temporarily transferring data from RAM to disk storage. Mapping chunks of memory to disk files enables a computer to treat secondary memory as though it were main memory.
 
-One thing you might have to consider is what might happen to your system if there happens to be an error with the memory
-that you’re using. In some environments, you’re able to have memory check itself. And if a memory does occur, then we
-can choose to perform some other functions. This is the type of memory that you might have in a system that’s running
-virtual machines. It may be very large database servers or anything where you want to maintain the uptime and
-availability of those services.
+Virtual memory uses both hardware and software to operate. When an application is in use, data from that program is stored in a physical address using RAM. A memory management unit ([MMU](https://www.techtarget.com/whatis/definition/memory-management-unit-MMU)) maps the address to RAM and automatically translates addresses. The MMU can, for example, map a logical address space to a corresponding physical address.
 
-One type of memory you might use is parity memory. This adds an additional parity bit to the information that you’re
-storing in RAM. This isn’t a perfect way to identify problems because parity memory can’t always identify when an error
-has occurred. And parity memory has no method to be able to correct any problems that it happens to find.
+While copying virtual memory into physical memory, the OS divides memory with a fixed number of addresses into either pagefiles or [swap files](https://www.techtarget.com/searchwindowsserver/definition/swap-file-swap-space-or-pagefile). Each page is stored on a disk, and when the page is needed, the OS copies it from the disk to main memory and translates the virtual addresses into real addresses.
 
-If you would like to use memory that can make corrections to any problems, then you want to use a motherboard that can
-support error correcting code memory or ECC memory. This will not only identify when an error has occurred but it will
-make a change to the memory to correct any of those problems. It’s this parity bit that allows us to identify when an
-error may have occurred with the data. Many memory modules use even parity, which means adding the parity bit means that
-there will be an even number of ones in that data.
+Virtual memory is important for improving system performance, multitasking and using large programs. However, users should not overly rely on virtual memory, or swapping virtual memory to physical, since it is considerably slower than RAM. If the OS has to swap data between virtual memory and RAM too often, the computer will begin to slow down, this is called [thrashing](https://www.techtarget.com/whatis/definition/thrashing).
 
-Let’s see how this parity bit is calculated and added to the existing data. Let’s look at this first line of data. And
-we want to count the number of ones. So in this particular data that’s 1, 1, 1, 0, 0, 1, 1, 1, we have one, two, three,
-four, five, six ones within that data. That six is already an even number so we don’t need any additional ones to make
-this even. Therefore, the parity bit will be zero.
+### Multichannel memory
 
-Let’s take the next bit of data. This data is 0, 0, 0, 0, 0, 0, 1, 0. If we count the number of ones, there is a single
-one which means there are an odd number of ones. To be able to make this even parity, we need to add one more one into
-this mix so that we have an even number of ones in this data.
+The RAM on the memory module communicates with the rest of the computer through the memory controller on the CPU using a bus.  Some memory controllers have multiple channels for communication with the memory module. This allows faster data exchange, as the data can be sent on more than one channel. There are memory controllers built with one channel, two channels (dual channel), four channels (quad channel), six channels, and eight channels. Six-channel and eight-channel architecture is usually designed for servers.
 
-And lastly, we have 1, 0, 0, 1, 1, 0, 0, 0.. We count the number of ones. There are one, two, three, ones. That’s an odd
-number. So to get even parity, we’re going to add a one. And now we have an even number of ones in that data.
+There are also a few motherboards that run triple-channel architecture. Triple-channel architecture also uses interleaving, which is a method of assigning memory addresses to the memory in a set order.
 
-So with the existing parity bit, we can run some tests of some data that may already be existing to see if the data
-appears to be correct. So let’s evaluate the parity bit, assuming that we’re using even parity. We’ll take this first
-bit of data and count the number of ones. We have 0, 0, 0, 0, 0, 1, 1, 1, 1 with a one as the parity bit. And if we
-count the number of ones, we have four ones. That is an even number. Therefore that data has been validated.
+For dual-channel architecture, the original design combined two 64-bit buses into a single 128-bit bus, which was later called the ganged model. The performance increases were not enough, however. Manufacturers found that two independent buses increased performance more, so the un-ganged model is usually set by default on most modern processors.
 
-Let’s do the next bit of data, which is 0, 0,0 0, 0, 0, 0, 1, 0, with a 0 on the end. We count the number of ones. That
-one is an odd number, which means something has gone wrong with that data and it does not validate. And then lastly, we
-have 0, 1, 1, 0, 0, 1, 0, 0 with a one parity bit. If we count the number of ones, there’s one, two, three, four ones,
-which means it is even parity. That validates and that data appears to be correct.
+### Parity memory
+
+Some RAM chips have built-in error-checking functions that use a process called **[parity](https://www.techtarget.com/searchstorage/definition/parity)**. Chips that use parity have an extra bit for every eight bits of data. In the **parity process**, as the eight bits receive binary data (data represented by 1s and 0s), the chip adds all the 1s, and if that total is odd, the extra bit is set to 1.The most common data error-checking and validation technique is the Vertical Redundancy Check (VRC) often called a parity check.
+
+If the total is even, the extra bit is set to 0. When the computer tries to read each byte of data back from the RAM, it calculates the total number of 1s again and compares its findings to the parity bit. If the findings match up, the data is ruled error-free and can be sent to the CPU.
+
+If the findings don’t match up, the chip assumes the data is erroneous and dumps it. This is called even parity. Odd parity is the same process, except that the extra bit setting is 1 when the sum of all the 1s in the byte is even.
+
+The computer checks a bit for parity each time a byte is transferred or transmitted. The process of parity uses simple arithmetic to determine whether stored data values are the same when they are read as they were when they were written. This is fine for detecting errors, but it doesn’t do anything to correct them. If parity proves data to be faulty, the memory system simply rejects the data and starts over.
+
+High-end computer servers need a more effective form of error-checking, such as error-correcting code (ECC). ECC uses more memory than parity, but with its special algorithm, it can actually fix most errors it finds. Amazingly, many computers operate with non party memory and manage to continue working despite lacking this check. The good news is that memory components used in PCs today have improved and checking the integrity of memory and data is less necessary than it once was for the average home computer.

@@ -8,8 +8,7 @@
 
 Personal blog to share thoughts, notes, and shitsplain every now and then.
 
-This project was created from the [AstroPaper](https://github.com/satnaing/astro-paper) template by
-[Sat Naing](https://github.com/satnaing).
+This project was created from the [AstroPaper](https://github.com/satnaing/astro-paper) template by [Sat Naing](https://github.com/satnaing).
 
 ## 🚀 Project Structure
 
@@ -41,8 +40,7 @@ This project was created from the [AstroPaper](https://github.com/satnaing/astro
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file
-name.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
 Any static assets, like images, can be placed in the `public/` directory.
 
