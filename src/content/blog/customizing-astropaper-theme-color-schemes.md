@@ -11,16 +11,13 @@ tags:
 ogImage: "/og.jpeg"
 ---
 
-This post will explain how you can enable/disable light & dark mode for the website. Moreover, you'll learn how you can
-customize color schemes of the entire website.
+This post will explain how you can enable/disable light & dark mode for the website. Moreover, you'll learn how you can customize color schemes of the entire website.
 
 ## Table of contents
 
 ## Enable/disable light & dark mode
 
-AstroPaper theme will include light and dark mode by default. In other words, there will be two color schemes\_ one for
-light mode and another for dark mode. This default behavior can be disabled in SITE configuration object of the
-`src/config.ts` file.
+AstroPaper theme will include light and dark mode by default. In other words, there will be two color schemes\_ one for light mode and another for dark mode. This default behavior can be disabled in SITE configuration object of the `src/config.ts` file.
 
 ```js
 // file: src/config.ts
@@ -41,8 +38,7 @@ To disable `light & dark mode` set `SITE.lightAndDarkMode` to `false`.
 
 By default, if we disable `SITE.lightAndDarkMode`, we will only get system's prefers-color-scheme.
 
-Thus, to choose primary color scheme instead of prefers-color-scheme, we have to set color scheme in the
-primaryColorScheme variable inside `public/toggle-theme.js`.
+Thus, to choose primary color scheme instead of prefers-color-scheme, we have to set color scheme in the primaryColorScheme variable inside `public/toggle-theme.js`.
 
 ```js
 /* file: public/toggle-theme.js */
@@ -54,8 +50,7 @@ const currentTheme = localStorage.getItem("theme");
 // other codes etc...
 ```
 
-The **primaryColorScheme** variable can hold two values\_ `"light"`, `"dark"`. You can leave the empty string (default)
-if you don't want to specify the primary color scheme.
+The **primaryColorScheme** variable can hold two values\_ `"light"`, `"dark"`. You can leave the empty string (default) if you don't want to specify the primary color scheme.
 
 - `""` - system's prefers-color-scheme. (default)
 - `"light"` - use light mode as primary color scheme.
@@ -63,11 +58,9 @@ if you don't want to specify the primary color scheme.
 
 <details><summary>Why 'primaryColorScheme' is not inside config.ts?</summary>
 
-> To avoid color flickering on page reload, we have to place the toggle-switch JavaScript codes as early as possible
-> when the page loads. It solves the problem of flickering, but as a trade-off, we cannot use ESM imports anymore.
+> To avoid color flickering on page reload, we have to place the toggle-switch JavaScript codes as early as possible when the page loads. It solves the problem of flickering, but as a trade-off, we cannot use ESM imports anymore.
 
-[Click here](https://docs.astro.build/en/reference/directives-reference/#isinline) to know more about Astro's
-`is:inline` script.
+[Click here](https://docs.astro.build/en/reference/directives-reference/#isinline) to know more about Astro's `is:inline` script.
 
 </details>
 
@@ -103,10 +96,7 @@ Both light & dark color schemes of AstroPaper theme can be customized. You can d
 }
 ```
 
-In AstroPaper theme, `:root` and `html[data-theme="light"]` selectors are used as the light color scheme and
-`html[data-theme="dark"]` is used the dark color scheme. If you want to customize your custom color scheme, you have to
-specify your light color scheme inside `:root`,`html[data-theme="light"]` and dark color scheme inside
-`html[data-theme="dark"]`.
+In AstroPaper theme, `:root` and `html[data-theme="light"]` selectors are used as the light color scheme and `html[data-theme="dark"]` is used the dark color scheme. If you want to customize your custom color scheme, you have to specify your light color scheme inside `:root`,`html[data-theme="light"]` and dark color scheme inside `html[data-theme="dark"]`.
 
 Colors are declared in CSS custom property (CSS Variable) notation. Color property values are written in rgb values.
 
@@ -140,5 +130,4 @@ Here is an example of changing the light color scheme.
 }
 ```
 
-> Check out some [predefined color schemes](https://astro-paper.pages.dev/posts/predefined-color-schemes/) AstroPaper
-> has already crafted for you.
+> Check out some [predefined color schemes](https://astro-paper.pages.dev/posts/predefined-color-schemes/) AstroPaper has already crafted for you.

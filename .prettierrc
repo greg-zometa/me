@@ -8,6 +8,14 @@
   "tabWidth": 2,
   "trailingComma": "none",
   "useTabs": false,
+  "overrides": [
+    {
+      "files": "**/*.md",
+      "options": {
+        "printWidth": 1080
+      }
+    }
+  ],
   "plugins": [
     "prettier-plugin-astro",
     "prettier-plugin-svelte"

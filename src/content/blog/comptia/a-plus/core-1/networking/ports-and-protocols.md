@@ -12,132 +12,57 @@ tags:
   - studying
 ---
 
-This post will cover various aspects of the **Networking** section of the
-[CompTIA A+](https://www.comptia.org/certifications/a) Core 1 certification endeavor.
+This post will cover various aspects of the **Networking** section of the [CompTIA A+](https://www.comptia.org/certifications/a) Core 1 certification endeavor.
 
 ## Table of contents
 
 ## Overview
 
-One of the many fundamental things to know as a network engineer is the function and port number used by a number of
-common services as well as many that are typically implemented during the course of a network engineer’s career. While
-there are a large number of ports and protocols we'll just cover the most commonly seen and used.
+One of the many fundamental things to know as a network engineer is the function and port number used by a number of common services as well as many that are typically implemented during the course of a network engineer’s career. While there are a large number of ports and protocols we'll just cover the most commonly seen and used.
 
 ## Protocols
 
-A [network protocol](https://www.techtarget.com/searchnetworking/definition/protocol) is a set of established rules that
-specify how to format, send and receive data so that computer network endpoints, including computers, servers, routers
-and virtual machines, can communicate despite differences in their underlying infrastructures, designs or standards.
+A [network protocol](https://www.techtarget.com/searchnetworking/definition/protocol) is a set of established rules that specify how to format, send and receive data so that computer network endpoints, including computers, servers, routers and virtual machines, can communicate despite differences in their underlying infrastructures, designs or standards.
 
-Network protocols break larger processes into discrete, narrowly defined functions and tasks across every level of the
-network. In the standard model, known as the
-[Open Systems Interconnection (OSI)](https://www.techtarget.com/searchnetworking/definition/OS) model, one or more
-network protocols govern activities at each layer in the telecommunication exchange. Lower layers deal with data
-transport, while the upper layers in the OSI model deal with software and applications.
+Network protocols break larger processes into discrete, narrowly defined functions and tasks across every level of the network. In the standard model, known as the [Open Systems Interconnection (OSI)](https://www.techtarget.com/searchnetworking/definition/OS) model, one or more network protocols govern activities at each layer in the telecommunication exchange. Lower layers deal with data transport, while the upper layers in the OSI model deal with software and applications.
 
-To understand how network protocols function, it's crucial to understand the workings of the seven layers of the OSI
-model:
+To understand how network protocols function, it's crucial to understand the workings of the seven layers of the OSI model:
 
-1. **Physical layer** — The [physical layer](https://www.techtarget.com/searchnetworking/definition/physical-layer) is
-   the initial layer that physically connects two interoperable systems. It controls simplex or
-   [duplex](https://www.techtarget.com/searchnetworking/definition/full-duplex) modem transmissions and transfers data
-   in bits. Additionally, it oversees the hardware that connects the network interface card
-   ([NIC](https://www.techtarget.com/searchnetworking/definition/network-interface-card)) to the network, including the
-   wiring, cable terminators, topography and voltage levels.
-2. **Data-link layer** — The [data-link layer](https://www.techtarget.com/searchnetworking/definition/Data-Link-layer)
-   is responsible for the error-free delivery of data from one node to another over the physical layer. It's also the
-   [firmware](https://www.techtarget.com/whatis/definition/firmware) layer of the NIC. It puts datagrams together into
-   frames and gives each frame the start and stop flags. Additionally, it fixes issues brought on by broken, misplaced
-   or duplicate frames.
-3. **Network layer** — The [network layer](https://www.techtarget.com/searchnetworking/definition/Network-layer) is
-   concerned with information flow regulation, switching and routing between workstations. Additionally, it divides up
-   datagrams from the transport layer into error-free and smaller datagrams.
-4. **Transport layer** — The [transport layer](https://www.techtarget.com/searchnetworking/definition/Transport-layer)
-   transfers services from the network layer to the application layer and breaks down data into data frames for error
-   checking at the network segment level. This also ensures that a fast host on a network doesn't overtake a slower one.
-   Essentially, the transport layer ensures that the entire message is delivered from beginning to end. It also confirms
-   a successful data transmission and retransmitting of the data if an error is discovered.
-5. **Session layer** — The [session layer](https://www.techtarget.com/searchnetworking/definition/Session-layer)
-   establishes a connection between two workstations that need to communicate. In addition to ensuring security, this
-   layer oversees connection establishment, session maintenance and
-   [authentication](https://www.techtarget.com/searchsecurity/definition/authentication).
-6. **Presentation layer** — The
-   [presentation layer](https://www.techtarget.com/searchnetworking/definition/presentation-layer) is also known as the
-   _translation layer_ because it retrieves the data from the application layer and formats it for transmission over the
-   network. It addresses the proper representation of data, including the syntax and semantics of information. The
-   presentation layer is also in charge of managing
-   [file-level security](https://www.techtarget.com/searchcontentmanagement/tip/7-common-file-sharing-security-risks)
-   and transforming data to network standards.
-7. **Application layer** — The
-   [application layer](https://www.techtarget.com/searchnetworking/definition/Application-layer), which is the top layer
-   of the network, oversees relaying user application requests to lower levels. File transfer, email, remote login, data
-   entry and other common applications take place at this layer.
+1. **Physical layer** — The [physical layer](https://www.techtarget.com/searchnetworking/definition/physical-layer) is the initial layer that physically connects two interoperable systems. It controls simplex or [duplex](https://www.techtarget.com/searchnetworking/definition/full-duplex) modem transmissions and transfers data in bits. Additionally, it oversees the hardware that connects the network interface card ([NIC](https://www.techtarget.com/searchnetworking/definition/network-interface-card)) to the network, including the wiring, cable terminators, topography and voltage levels.
+2. **Data-link layer** — The [data-link layer](https://www.techtarget.com/searchnetworking/definition/Data-Link-layer) is responsible for the error-free delivery of data from one node to another over the physical layer. It's also the [firmware](https://www.techtarget.com/whatis/definition/firmware) layer of the NIC. It puts datagrams together into frames and gives each frame the start and stop flags. Additionally, it fixes issues brought on by broken, misplaced or duplicate frames.
+3. **Network layer** — The [network layer](https://www.techtarget.com/searchnetworking/definition/Network-layer) is concerned with information flow regulation, switching and routing between workstations. Additionally, it divides up datagrams from the transport layer into error-free and smaller datagrams.
+4. **Transport layer** — The [transport layer](https://www.techtarget.com/searchnetworking/definition/Transport-layer) transfers services from the network layer to the application layer and breaks down data into data frames for error checking at the network segment level. This also ensures that a fast host on a network doesn't overtake a slower one. Essentially, the transport layer ensures that the entire message is delivered from beginning to end. It also confirms a successful data transmission and retransmitting of the data if an error is discovered.
+5. **Session layer** — The [session layer](https://www.techtarget.com/searchnetworking/definition/Session-layer) establishes a connection between two workstations that need to communicate. In addition to ensuring security, this layer oversees connection establishment, session maintenance and [authentication](https://www.techtarget.com/searchsecurity/definition/authentication).
+6. **Presentation layer** — The [presentation layer](https://www.techtarget.com/searchnetworking/definition/presentation-layer) is also known as the _translation layer_ because it retrieves the data from the application layer and formats it for transmission over the network. It addresses the proper representation of data, including the syntax and semantics of information. The presentation layer is also in charge of managing [file-level security](https://www.techtarget.com/searchcontentmanagement/tip/7-common-file-sharing-security-risks) and transforming data to network standards.
+7. **Application layer** — The [application layer](https://www.techtarget.com/searchnetworking/definition/Application-layer), which is the top layer of the network, oversees relaying user application requests to lower levels. File transfer, email, remote login, data entry and other common applications take place at this layer.
 
 ### Internet protocols
 
-The [Internet Protocol (IP)](https://www.cloudflare.com/learning/network-layer/internet-protocol/) set rules to make it
-possible for devices to communicate over the
-[Internet](https://www.cloudflare.com/learning/network-layer/how-does-the-internet-work/). With billions of people
-accessing the Internet every day, unique identifiers are necessary to keep track of who is doing what. The Internet
-Protocol solves this by assigning IP numbers to every device accessing the Internet.
+The [Internet Protocol (IP)](https://www.cloudflare.com/learning/network-layer/internet-protocol/) set rules to make it possible for devices to communicate over the [Internet](https://www.cloudflare.com/learning/network-layer/how-does-the-internet-work/). With billions of people accessing the Internet every day, unique identifiers are necessary to keep track of who is doing what. The Internet Protocol solves this by assigning IP numbers to every device accessing the Internet.
 
-A computer’s [IP address](https://www.cloudflare.com/learning/dns/glossary/what-is-my-ip-address/) is like the physical
-address of a house. If someone calls a pizzeria to order a delivery, they need to provide their physical address.
-Without that address, the pizza delivery person will have no idea which house to deliver the pizza to.
+A computer’s [IP address](https://www.cloudflare.com/learning/dns/glossary/what-is-my-ip-address/) is like the physical address of a house. If someone calls a pizzeria to order a delivery, they need to provide their physical address. Without that address, the pizza delivery person will have no idea which house to deliver the pizza to.
 
-This is the way that our networks operate. On one side may be your device a workstation, a client, a laptop computer,
-and on the other side is a server. This could be a web server or a mail server or any other type of server that you’d be
-connecting to. This client is going to send information to this server via
-[packets](https://www.cloudflare.com/learning/network-layer/what-is-a-packet/).
+This is the way that our networks operate. On one side may be your device a workstation, a client, a laptop computer, and on the other side is a server. This could be a web server or a mail server or any other type of server that you’d be connecting to. This client is going to send information to this server via [packets](https://www.cloudflare.com/learning/network-layer/what-is-a-packet/).
 
-Packets consist of two portions: the header and the payload. The header contains information about the packet, such as
-its origin and destination [IP addresses](https://www.cloudflare.com/learning/dns/glossary/what-is-my-ip-address/) (an
-IP address is like a computer's mailing address). The payload is the actual data. This could be TCP data with a TCP
-header and a TCP payload or UDP data with a UDP header and a UDP payload.
+Packets consist of two portions: the header and the payload. The header contains information about the packet, such as its origin and destination [IP addresses](https://www.cloudflare.com/learning/dns/glossary/what-is-my-ip-address/) (an IP address is like a computer's mailing address). The payload is the actual data. This could be TCP data with a TCP header and a TCP payload or UDP data with a UDP header and a UDP payload.
 
-[Transmission Control Protocol (TCP)](https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/) is used in conjunction
-with IP in order to maintain a connection between the sender and the target, and to ensure packet order. TCP
-communications indicate the order in which data packets should be received and confirm that packets arrive as intended.
-In a TCP communication, the two computers begin by establishing a connection via an automated process called a three-way
-"[handshake](https://www.geeksforgeeks.org/tcp-3-way-handshake-process/)":
+[Transmission Control Protocol (TCP)](https://www.cloudflare.com/learning/ddos/glossary/tcp-ip/) is used in conjunction with IP in order to maintain a connection between the sender and the target, and to ensure packet order. TCP communications indicate the order in which data packets should be received and confirm that packets arrive as intended. In a TCP communication, the two computers begin by establishing a connection via an automated process called a three-way "[handshake](https://www.geeksforgeeks.org/tcp-3-way-handshake-process/)":
 
-- **(SYN)** — The client wants to establish a connection with a server, so it sends a segment with SYN(Synchronize
-  Sequence Number) which informs the server that the client is likely to start communication and with what sequence
-  number it starts segments with.
-- **(SYN + ACK)** — Server responds to the client request with SYN-ACK signal bits set. Acknowledgement(ACK) signifies
-  the response of the segment it received and SYN signifies with what sequence number it is likely to start the segments
-  with.
-- **(ACK)** — Client acknowledges the response of the server and they both establish a reliable connection with which
-  they will start the actual data transfer.
+- **(SYN)** — The client wants to establish a connection with a server, so it sends a segment with SYN(Synchronize Sequence Number) which informs the server that the client is likely to start communication and with what sequence number it starts segments with.
+- **(SYN + ACK)** — Server responds to the client request with SYN-ACK signal bits set. Acknowledgement(ACK) signifies the response of the segment it received and SYN signifies with what sequence number it is likely to start the segments with.
+- **(ACK)** — Client acknowledges the response of the server and they both establish a reliable connection with which they will start the actual data transfer.
 
-Only once this handshake has been completed will one computer actually transfer data packets to the other **If a packet
-does not arrive TCP requires that it be re-sent**.
+Only once this handshake has been completed will one computer actually transfer data packets to the other **If a packet does not arrive TCP requires that it be re-sent**.
 
-The [User Datagram Protocol (UDP)](https://www.cloudflare.com/learning/ddos/glossary/user-datagram-protocol-udp/), is a
-communication protocol used across the Internet for especially time-sensitive transmissions such as
-[video playback](https://www.cloudflare.com/learning/video/what-is-streaming/) or
-[DNS](https://www.cloudflare.com/learning/dns/what-is-dns/) lookups. It speeds up communications by not formally
-establishing a connection before data is transferred and comes with no error checking. Considered "**best effort
-delivery**", this allows data to be transferred very quickly, but it can also cause
-[packets](https://www.cloudflare.com/learning/network-layer/what-is-a-packet/) to become lost in transit, and create
-opportunities for exploitation in the form of
-[DDoS attacks](https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/). **UDP is faster but less reliable than
-TCP**.
+The [User Datagram Protocol (UDP)](https://www.cloudflare.com/learning/ddos/glossary/user-datagram-protocol-udp/), is a communication protocol used across the Internet for especially time-sensitive transmissions such as [video playback](https://www.cloudflare.com/learning/video/what-is-streaming/) or [DNS](https://www.cloudflare.com/learning/dns/what-is-dns/) lookups. It speeds up communications by not formally establishing a connection before data is transferred and comes with no error checking. Considered "**best effort delivery**", this allows data to be transferred very quickly, but it can also cause [packets](https://www.cloudflare.com/learning/network-layer/what-is-a-packet/) to become lost in transit, and create opportunities for exploitation in the form of [DDoS attacks](https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/). **UDP is faster but less reliable than TCP**.
 
 ### Email protocols
 
-[Email protocols](https://www.geeksforgeeks.org/email-protocols/) are a collection of protocols provide the ability for
-the client to transmit emails to or from the intended email server. There are three basic types of email protocols:
+[Email protocols](https://www.geeksforgeeks.org/email-protocols/) are a collection of protocols provide the ability for the client to transmit emails to or from the intended email server. There are three basic types of email protocols:
 
-- **Simple Mail Transfer Protocol ([SMTP](https://www.cloudflare.com/learning/email-security/what-is-smtp/))** — An
-  efficient and reliable protocol for sending emails. SMTP handles the sending and receiving of messages between email
-  servers over a TCP/IP network. SMTP commands are used to identify the sender and receiver email addresses along with
-  the message to be sent.
-- **Post Office Protocol (POP)** — Used to retrieve email for a single client. It is an application layer protocol and
-  allows access to email offline via messages downloaded. POP3 version is the current version of POP used.
-- **Internet Message Access Protocol ([IMAP](<(https://www.cloudflare.com/learning/email-security/what-is-imap/)>)** --
-  Used to retrieve mails for multiple clients. IMAP is an application layer protocol and allows access to email without
-  downloading them and also supports email download. There are several IMAP versions: IMAP, IMAP2, IMAP3, IMAP4, etc.
+- **Simple Mail Transfer Protocol ([SMTP](https://www.cloudflare.com/learning/email-security/what-is-smtp/))** — An efficient and reliable protocol for sending emails. SMTP handles the sending and receiving of messages between email servers over a TCP/IP network. SMTP commands are used to identify the sender and receiver email addresses along with the message to be sent.
+- **Post Office Protocol (POP)** — Used to retrieve email for a single client. It is an application layer protocol and allows access to email offline via messages downloaded. POP3 version is the current version of POP used.
+- **Internet Message Access Protocol ([IMAP](<(https://www.cloudflare.com/learning/email-security/what-is-imap/)>)** -- Used to retrieve mails for multiple clients. IMAP is an application layer protocol and allows access to email without downloading them and also supports email download. There are several IMAP versions: IMAP, IMAP2, IMAP3, IMAP4, etc.
 
 While IMAP and POP are very similar, they do have key differences between the services.
 
@@ -153,66 +78,32 @@ While IMAP and POP are very similar, they do have key differences between the se
 
 ### File protocols
 
-[File transfer protocol (FTP)](https://www.techtarget.com/searchnetworking/definition/File-Transfer-Protocol-FTP) is a
-network protocol for transmitting files between computers over TCP/IP connections, and is considered an application
-layer protocol. Although many file transfers can be conducted using Hypertext Transfer Protocol (HTTP), FTP is still
-commonly used to transfer files behind the scenes for other applications, such as banking services. It is also sometimes
-used to download new applications via web browsers.
+[File transfer protocol (FTP)](https://www.techtarget.com/searchnetworking/definition/File-Transfer-Protocol-FTP) is a network protocol for transmitting files between computers over TCP/IP connections, and is considered an application layer protocol. Although many file transfers can be conducted using Hypertext Transfer Protocol (HTTP), FTP is still commonly used to transfer files behind the scenes for other applications, such as banking services. It is also sometimes used to download new applications via web browsers.
 
-[Trivial File Transfer Protocol (TFTP)](https://www.lifewire.com/definition-of-tftp-817576) is a simple protocol that
-provides basic file transfer function with no user authentication. TFTP is intended for applications that do not need
-the sophisticated interactions that FTP provides. TFTP is implemented using UDP and generally works only on
-[local area networks](https://www.lifewire.com/what-is-lan-4684071).
+[Trivial File Transfer Protocol (TFTP)](https://www.lifewire.com/definition-of-tftp-817576) is a simple protocol that provides basic file transfer function with no user authentication. TFTP is intended for applications that do not need the sophisticated interactions that FTP provides. TFTP is implemented using UDP and generally works only on [local area networks](https://www.lifewire.com/what-is-lan-4684071).
 
-**FTP and TFTP are inherently insecure protocols**. They do not use encryption and allow both authentication and file
-data to traverse the network in the clear.
+**FTP and TFTP are inherently insecure protocols**. They do not use encryption and allow both authentication and file data to traverse the network in the clear.
 
 ### Remote access protocols
 
-[Remote access protocols](https://www.techtarget.com/searchsecurity/definition/remote-access) enables remote users to
-access files and other system resources
-[on any devices or servers](https://www.techtarget.com/searchitoperations/tip/Is-Anywhere-Operations-the-right-path-for-your-organization)
-that are connected to the network at any time. This increases employee productivity and enables employees to better
-collaborate with colleagues around the world.
+[Remote access protocols](https://www.techtarget.com/searchsecurity/definition/remote-access) enables remote users to access files and other system resources [on any devices or servers](https://www.techtarget.com/searchitoperations/tip/Is-Anywhere-Operations-the-right-path-for-your-organization) that are connected to the network at any time. This increases employee productivity and enables employees to better collaborate with colleagues around the world.
 
-[SSH, also known as Secure Shell or Secure Socket Shell](https://www.techtarget.com/searchsecurity/definition/Secure-Shell),
-is a network protocol that gives users, particularly system administrators, a secure way to access a computer over an
-unsecured network. SSH also refers to the suite of utilities that implement the SSH protocol. Secure Shell provides
-strong password [authentication](https://www.techtarget.com/searchsecurity/definition/authentication) and
-[public key](https://www.techtarget.com/searchsecurity/definition/public-key) authentication, as well as
-[encrypted](https://www.techtarget.com/searchsecurity/definition/encryption) data communications between two computers
-connecting over an open network, such as the internet.
+[SSH, also known as Secure Shell or Secure Socket Shell](https://www.techtarget.com/searchsecurity/definition/Secure-Shell), is a network protocol that gives users, particularly system administrators, a secure way to access a computer over an unsecured network. SSH also refers to the suite of utilities that implement the SSH protocol. Secure Shell provides strong password [authentication](https://www.techtarget.com/searchsecurity/definition/authentication) and [public key](https://www.techtarget.com/searchsecurity/definition/public-key) authentication, as well as [encrypted](https://www.techtarget.com/searchsecurity/definition/encryption) data communications between two computers connecting over an open network, such as the internet.
 
 ### Web protocols
 
-[HTTP stands for Hypertext Transfer Protocol](https://www.cloudflare.com/learning/ddos/glossary/hypertext-transfer-protocol-http/)
-and it is a protocol used for transferring data over a network. Most information that is sent over the Internet,
-including website content and API calls, uses the HTTP protocol. There are two main kinds of HTTP messages: requests and
-responses.
+[HTTP stands for Hypertext Transfer Protocol](https://www.cloudflare.com/learning/ddos/glossary/hypertext-transfer-protocol-http/) and it is a protocol used for transferring data over a network. Most information that is sent over the Internet, including website content and API calls, uses the HTTP protocol. There are two main kinds of HTTP messages: requests and responses.
 
-[HTTPS](https://www.cloudflare.com/learning/ssl/what-is-https/) is HTTP with
-[encryption](https://www.cloudflare.com/learning/ssl/what-is-encryption/) and verification. The only difference between
-the two protocols is that HTTPS uses [TLS](https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/)
-([SSL](https://www.cloudflare.com/learning/ssl/what-is-ssl/)) to encrypt normal HTTP requests and responses, and to
-digitally sign those requests and responses. As a result, HTTPS is far more secure than HTTP.
+[HTTPS](https://www.cloudflare.com/learning/ssl/what-is-https/) is HTTP with [encryption](https://www.cloudflare.com/learning/ssl/what-is-encryption/) and verification. The only difference between the two protocols is that HTTPS uses [TLS](https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/) ([SSL](https://www.cloudflare.com/learning/ssl/what-is-ssl/)) to encrypt normal HTTP requests and responses, and to digitally sign those requests and responses. As a result, HTTPS is far more secure than HTTP.
 
 ## Ports
 
-A [port](https://www.cloudflare.com/learning/network-layer/what-is-a-computer-port/) is a virtual point where network
-connections start and end. Ports are software-based and managed by a computer's operating system. Each port is
-associated with a specific process or service. Ports allow computers to easily differentiate between different kinds of
-traffic: emails go to a different port than webpages, for instance, even though both reach a computer over the same
-Internet connection.
+A [port](https://www.cloudflare.com/learning/network-layer/what-is-a-computer-port/) is a virtual point where network connections start and end. Ports are software-based and managed by a computer's operating system. Each port is associated with a specific process or service. Ports allow computers to easily differentiate between different kinds of traffic: emails go to a different port than webpages, for instance, even though both reach a computer over the same Internet connection.
 
-Ports are standardized across all network-connected devices, with each port assigned a number. Most ports are reserved
-for certain protocols and allow targeting of specific services or applications within those devices. Common services and
-protocols that most computing systems recognize are in a range from 0-1023. The number of protocols available are 65,535
-(including 0):
+Ports are standardized across all network-connected devices, with each port assigned a number. Most ports are reserved for certain protocols and allow targeting of specific services or applications within those devices. Common services and protocols that most computing systems recognize are in a range from 0-1023. The number of protocols available are 65,535 (including 0):
 
-- Registered port ranges -- Organizations set aside and register a port range intended for a specific piece of software.
-  These port ranges start at 1024 and go all the way up to 49,151.
-- Dynamic ports -- A computer requests a service with a dynamic, temporary port that are between 49,152 and 65,535. Once
-  a communication is established on request, the response will generate another dynamic port.
+- Registered port ranges -- Organizations set aside and register a port range intended for a specific piece of software. These port ranges start at 1024 and go all the way up to 49,151.
+- Dynamic ports -- A computer requests a service with a dynamic, temporary port that are between 49,152 and 65,535. Once a communication is established on request, the response will generate another dynamic port.
 
 **This table illustrates the most common protocols and port numbers that they are commonly associated with**:
 
