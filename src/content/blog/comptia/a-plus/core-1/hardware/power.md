@@ -1,7 +1,7 @@
 ---
 title: Hardware Power
 description: Learn about power.
-pubDatetime: 2023-08-21T14:36:24.679Z
+pubDatetime: 2023-09-07T14:44:58.205Z
 postSlug: hardware-power
 featured: true
 draft: true
