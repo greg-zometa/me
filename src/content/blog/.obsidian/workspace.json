@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/memory.md",
+                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/memory.md",
+                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/memory.md",
+                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/memory.md"
+                "file": "comptia/a-plus/core-1/hardware/storage-devices.md"
               }
             }
           }
@@ -147,10 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "34ea8e1afe7c29d7",
+  "active": "b35f97c5b833ee8f",
   "lastOpenFiles": [
-    "comptia/a-plus/core-1/hardware/cables-and-adapters.md",
     "comptia/a-plus/core-1/hardware/memory.md",
+    "comptia/a-plus/core-1/hardware/cables-and-adapters.md",
     "comptia/a-plus/core-1/hardware/storage-devices.md",
     "comptia/a-plus/core-1/mobile-devices/device-connectivity.md",
     "comptia/a-plus/core-1/mobile-devices/device-configuration.md",
