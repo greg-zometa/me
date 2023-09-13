@@ -18,9 +18,9 @@
   "dependencies": {
     "@astrojs/check": "0.2.0",
     "@astrojs/rss": "3.0.0",
-    "@astrojs/svelte": "4.0.0",
+    "@astrojs/svelte": "4.0.2",
     "@resvg/resvg-js": "2.4.1",
-    "astro": "3.0.8",
+    "astro": "3.0.13",
     "fuse.js": "6.6.2",
     "github-slugger": "2.0.0",
     "mdast-util-to-string": "4.0.0",
@@ -37,14 +37,14 @@
     "@astrojs/sitemap": "3.0.0",
     "@astrojs/tailwind": "5.0.0",
     "@divriots/jampack": "0.15.0",
-    "@tailwindcss/typography": "0.5.9",
-    "@typescript-eslint/parser": "6.5.0",
+    "@tailwindcss/typography": "0.5.10",
+    "@typescript-eslint/parser": "6.7.0",
     "astro-eslint-parser": "0.15.0",
     "astrojs-service-worker": "1.1.0",
     "concurrently": "8.2.1",
-    "eslint": "8.48.0",
+    "eslint": "8.49.0",
     "eslint-plugin-astro": "0.29.0",
-    "eslint-plugin-svelte": "2.33.0",
+    "eslint-plugin-svelte": "2.33.1",
     "husky": "8.0.3",
     "lint-staged": "14.0.1",
     "prettier": "3.0.3",
@@ -61,5 +61,5 @@
   "engines": {
     "node": ">=20.0.0"
   },
-  "packageManager": "pnpm@8.6.5"
+  "packageManager": "pnpm@8.7.5"
 }
