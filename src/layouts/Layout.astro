@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from "astro:transitions";
 import { SITE } from "@config";
 import "@styles/base.css";
 
@@ -69,6 +70,8 @@ const socialImageURL = new URL(ogImage ? ogImage : SITE.ogImage, Astro.url.origi
       // Learn more: https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag
       googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />
     }
+
+    <ViewTransitions />
 
     <script is:inline src="/toggle-theme.js"></script>
   </head>

@@ -50,7 +50,7 @@ const { activeNav } = Astro.props;
             <line x1="6" y1="6" x2="18" y2="18" class="close"></line>
           </svg>
         </button>
-        <ul id="menu-items" class="hidden grid sm:flex">
+        <ul id="menu-items" class="grid hidden sm:flex">
           <li>
             <a href="/posts" class={activeNav === "posts" ? "active" : ""}> Posts</a>
           </li>
@@ -109,7 +109,7 @@ const { activeNav } = Astro.props;
     @apply mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row;
   }
   .top-nav-wrap {
-    @apply relative flex w-full items-start justify-between p-4 min-h-[83px] sm:items-center;
+    @apply relative flex min-h-[83px] w-full items-start justify-between p-4 sm:items-center;
   }
   .logo {
     @apply absolute text-xl font-semibold sm:static sm:text-2xl;
@@ -131,7 +131,7 @@ const { activeNav } = Astro.props;
     @apply col-span-2 flex items-center justify-center;
   }
   nav ul li a {
-    @apply w-full px-4 py-3 text-center font-medium hover:text-accent sm:my-0 sm:px-2 py-0;
+    @apply w-full px-4 py-0 py-3 text-center font-medium hover:text-accent sm:my-0 sm:px-2;
   }
   nav ul li:nth-child(4) a {
     @apply w-auto;
@@ -157,7 +157,7 @@ const { activeNav } = Astro.props;
     @apply p-3 sm:p-1;
   }
   #theme-btn svg {
-    @apply scale-125 hover:rotate-12 sm:scale-100;
+    @apply scale-125 sm:scale-100;
   }
 
   .menu-icon line {
@@ -175,16 +175,23 @@ const { activeNav } = Astro.props;
 </style>
 
 <script>
-  // Toggle menu
-  const menuBtn = document.querySelector(".hamburger-menu");
-  const menuIcon = document.querySelector(".menu-icon");
-  const menuItems = document.querySelector("#menu-items");
+  function toggleNav() {
+    // Toggle menu
+    const $menuBtn = document.querySelector(".hamburger-menu");
+    const $menuIcon = document.querySelector(".menu-icon");
+    const $menuItems = document.querySelector("#menu-items");
 
-  menuBtn?.addEventListener("click", () => {
-    const menuExpanded = menuBtn.getAttribute("aria-expanded") === "true";
-    menuIcon?.classList.toggle("is-active");
-    menuBtn.setAttribute("aria-expanded", menuExpanded ? "false" : "true");
-    menuBtn.setAttribute("aria-label", menuExpanded ? "Open Menu" : "Close Menu");
-    menuItems?.classList.toggle("hidden");
-  });
+    $menuBtn?.addEventListener("click", () => {
+      const menuExpanded = $menuBtn.getAttribute("aria-expanded") === "true";
+      $menuIcon?.classList.toggle("is-active");
+      $menuBtn.setAttribute("aria-expanded", menuExpanded ? "false" : "true");
+      $menuBtn.setAttribute("aria-label", menuExpanded ? "Open Menu" : "Close Menu");
+      $menuItems?.classList.toggle("hidden");
+    });
+  }
+
+  toggleNav();
+
+  // Runs on view transitions navigation
+  document.addEventListener("astro:after-swap", toggleNav);
 </script>

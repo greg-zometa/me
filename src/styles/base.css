@@ -49,15 +49,15 @@
     sm:scale-110;
   }
   .prose {
-    @apply prose-headings:!mb-3 prose-headings:!text-accent /* * Originally prose-headings:!text-base */
-    prose-h3:italic prose-p:!text-base prose-strong:!text-base
-    prose-a:!text-base prose-a:!decoration-dashed prose-a:underline-offset-8 hover:prose-a:text-accent
-    prose-blockquote:!border-l-accent prose-blockquote:opacity-80 /* ! Removed prose-blockquote:border-opacity-50 */
-    prose-figcaption:!text-base prose-figcaption:opacity-70
+    @apply /* * Originally */ /* ! Removed
+    */ /* *
+    Originally */ prose-headings:!mb-3 prose-headings:!text-base
+    prose-headings:!text-accent prose-h3:italic prose-p:!text-base prose-a:!text-base prose-a:!decoration-dashed prose-a:underline-offset-8 hover:prose-a:text-accent
+    prose-blockquote:!border-l-accent prose-blockquote:border-opacity-50
 
 
-    prose-code:rounded prose-code:bg-card
-    prose-code:bg-opacity-25 prose-code:p-1 prose-code:!text-accent /* * Originally prose-code:!text-base  */
+    prose-blockquote:opacity-80 prose-figcaption:!text-base
+    prose-figcaption:opacity-70 prose-strong:!text-base prose-code:rounded prose-code:bg-card prose-code:bg-opacity-25 prose-code:p-1 prose-code:!text-base  prose-code:!text-accent
     prose-code:before:!content-[''] prose-code:after:!content-['']
     prose-pre:!text-base prose-ol:!text-base
     prose-ul:overflow-x-clip prose-ul:!text-base prose-li:marker:!text-accent
@@ -122,5 +122,24 @@
 @layer components {
   .focus-outline {
     @apply outline-2 outline-offset-1 outline-fill focus-visible:no-underline focus-visible:outline-dashed;
+  }
+
+  /* Card */
+  .list-card {
+    @apply mt-4 space-y-1;
+  }
+  .list-card > a {
+    @apply inline-block focus-visible:no-underline focus-visible:underline-offset-0;
+  }
+  .list-card h2,
+  .list-card h3 {
+    @apply relative text-lg
+    font-medium text-accent decoration-dashed
+    active:underline xl:text-base xl:no-underline xl:before:absolute
+    xl:before:bottom-px xl:before:left-0
+    xl:before:-z-10 xl:before:h-1
+    xl:before:w-full xl:before:bg-accent xl:before:transition-all
+    xl:before:duration-300 xl:before:ease-in-out xl:hover:before:bottom-0
+    xl:hover:before:h-full xl:active:no-underline xl:active:before:bottom-0 xl:active:before:h-full;
   }
 }

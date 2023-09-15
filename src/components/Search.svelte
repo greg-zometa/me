@@ -1,9 +1,9 @@
 <script lang="ts">
+  import type { BlogFrontmatter } from "@content/_schemas";
   import Fuse from "fuse.js";
   import { onMount } from "svelte";
-  import Card from "@components/Card.svelte";
+  import { LOCALE } from "@config";
   import slugify from "@utils/slugify";
-  import type { BlogFrontmatter } from "@content/_schemas";
 
   export let searchList: {
     title: string;
@@ -33,7 +33,7 @@
       relativePathQuery += `?${searchParams.toString()}`;
     }
 
-    history.replaceState(null, "", relativePathQuery);
+    history.replaceState(history.state, "", relativePathQuery);
   }
 
   onMount(() => {
@@ -87,8 +87,45 @@
 
 {#if searchResults}
   <ul>
-    {#each searchResults as { item, refIndex } (refIndex)}
-      <Card href={`/posts/${slugify(item.data)}`} frontmatter={item.data} />
+    {#each searchResults as { item: { data }, refIndex } (refIndex)}
+      <li class="list-card">
+        <a href={`/posts/${slugify(data)}`}>
+          <h2>
+            {data.title}
+          </h2>
+        </a>
+        <div class="flex items-center space-x-4 opacity-80">
+          <div class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 scale-100 fill-base" aria-hidden="true">
+              <path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z" />
+              <path
+                d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"
+              />
+            </svg>
+            <span class="sr-only">Posted on:</span>
+            <span class="text-base italic">
+              {new Date(data.pubDatetime).toLocaleDateString(LOCALE, {
+                year: "numeric",
+                month: "long",
+                day: "numeric"
+              })}
+            </span>
+          </div>
+          <div class={`flex items-center ${data.readingTime ? "space-x-2" : "space-x-1"}`}>
+            <svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6 scale-100 fill-base" aria-hidden="true">
+              <path
+                d="M12 5c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm0 14c-3.309 0-6-2.691-6-6s2.691-6 6-6 6 2.691 6 6-2.691 6-6 6z"
+              />
+              <path d="M11 9h2v5h-2zM9 2h6v2H9zm10.293 5.707-2-2 1.414-1.414 2 2z" />
+            </svg>
+            <span class="sr-only">Reading time:</span>
+            <span class="text-base italic">
+              {data.readingTime ?? "< 1 min read"}
+            </span>
+          </div>
+        </div>
+        <p>{data.description}</p>
+      </li>
     {/each}
   </ul>
 {/if}

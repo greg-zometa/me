@@ -1,0 +1,19 @@
+---
+import type { BlogFrontmatter } from "@content/_schemas";
+import Datetime from "./Datetime.astro";
+export interface Props {
+  href?: string;
+  frontmatter: BlogFrontmatter;
+  secHeading?: boolean;
+}
+const { href, frontmatter, secHeading = true } = Astro.props;
+const { title, pubDatetime, description, readingTime } = frontmatter;
+---
+
+<li class="list-card">
+  <a href={href} transition:name={title}>
+    {secHeading ? <h2>{title}</h2> : <h3>{title}</h3>}
+  </a>
+  <Datetime datetime={pubDatetime} {readingTime} />
+  <p>{description}</p>
+</li>
