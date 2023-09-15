@@ -1,11 +1,10 @@
 ---
-import type { CollectionEntry } from "astro:content";
-import { getCollection } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-import Card from "@components/Card.svelte";
+import Card from "@components/Card.astro";
 import getUniqueTags from "@utils/getUniqueTags";
 import getPostsByTag from "@utils/getPostsByTag";
 import getSortedPosts from "@utils/getSortedPosts";
@@ -41,7 +40,8 @@ const sortTagsPost = await getSortedPosts(tagPosts);
 
 <Layout title={`Tag:${tag} | ${SITE.title}`}>
   <Header activeNav="tags" />
-  <Main pageTitle={`Tag:${tag}`} pageDesc={`All the articles with the tag "${tag}".`}>
+  <Main pageTitle={[`Tag:`, `${tag}`]} titleTransition={tag} pageDesc={`All the articles with the tag "${tag}".`}>
+    <h1 slot="title" transition:name={tag}>{`Tag:${tag}`}</h1>
     <ul>
       {sortTagsPost.map(({ data }) => <Card href={`/posts/${slugify(data)}`} frontmatter={data} />)}
     </ul>

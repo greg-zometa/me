@@ -47,6 +47,7 @@ export default defineConfig({
     },
     extendDefaultPlugins: true
   },
+  scopedStyleStrategy: "where",
   vite: {
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"]

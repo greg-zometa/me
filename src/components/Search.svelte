@@ -33,7 +33,7 @@
       relativePathQuery += `?${searchParams.toString()}`;
     }
 
-    history.replaceState(null, "", relativePathQuery);
+    history.replaceState(history.state, "", relativePathQuery);
   }
 
   onMount(() => {
