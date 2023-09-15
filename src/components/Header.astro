@@ -157,7 +157,7 @@ const { activeNav } = Astro.props;
     @apply p-3 sm:p-1;
   }
   #theme-btn svg {
-    @apply scale-125 hover:rotate-12 sm:scale-100;
+    @apply scale-125 sm:scale-100;
   }
 
   .menu-icon line {
@@ -177,16 +177,16 @@ const { activeNav } = Astro.props;
 <script>
   function toggleNav() {
     // Toggle menu
-    const menuBtn = document.querySelector(".hamburger-menu");
-    const menuIcon = document.querySelector(".menu-icon");
-    const menuItems = document.querySelector("#menu-items");
+    const $menuBtn = document.querySelector(".hamburger-menu");
+    const $menuIcon = document.querySelector(".menu-icon");
+    const $menuItems = document.querySelector("#menu-items");
 
-    menuBtn?.addEventListener("click", () => {
-      const menuExpanded = menuBtn.getAttribute("aria-expanded") === "true";
-      menuIcon?.classList.toggle("is-active");
-      menuBtn.setAttribute("aria-expanded", menuExpanded ? "false" : "true");
-      menuBtn.setAttribute("aria-label", menuExpanded ? "Open Menu" : "Close Menu");
-      menuItems?.classList.toggle("display-none");
+    $menuBtn?.addEventListener("click", () => {
+      const menuExpanded = $menuBtn.getAttribute("aria-expanded") === "true";
+      $menuIcon?.classList.toggle("is-active");
+      $menuBtn.setAttribute("aria-expanded", menuExpanded ? "false" : "true");
+      $menuBtn.setAttribute("aria-label", menuExpanded ? "Open Menu" : "Close Menu");
+      $menuItems?.classList.toggle("hidden");
     });
   }
 
