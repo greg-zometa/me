@@ -29,7 +29,7 @@
     display: block;
   }
   body {
-    @apply flex min-h-screen flex-col bg-fill font-mono text-base
+    @apply flex min-h-screen flex-col bg-fill font-mono text-base transition-colors
     selection:bg-accent selection:bg-opacity-70 selection:text-inverted;
   }
   section,
