@@ -18,39 +18,47 @@ This post will cover various aspects of the **Hardware** section of the [CompTIA
 
 ## Table of contents
 
+## Overview
+
+The fundamental physical component within all of our computers is the motherboard. The motherboard is a computer's central communications backbone connectivity point, through which all components and external peripherals connect.
+
+Motherboards can be found in virtually all computers, especially desktop and laptop PCs. The components generally contains the CPU, connectivity to power, and additional slots for expanding the capabilities of the system.
+
 ## Form factors
 
-The fundamental physical component within all of our computers is the motherboard. The motherboard generally contains the CPU, spaces for memory. There’s connectivity to power. You’ve got additional slots that you can use to expand the capabilities of the system. And everything involving the entire process of using your computer begins and ends with the motherboard.
+There are different motherboards that have different sizes depending on the hardware's requirements. There’s usually a basic layout on motherboards regardless of the size, but the amount of expansion slots and the amount of additional memory slots will vary.
 
-As you can imagine, there are different motherboards that have different sizes depending on your requirements. We’ll look at some of the most popular sizes that are in use today. There’s usually a basic layout on these motherboards regardless of the size because most motherboards will include a CPU or slots for memory or expansion. But the amount of expansion slots and the amount of additional memory slots may vary depending on the size of the motherboard.
+[There are dozens of different motherboard form factors](https://en.wikipedia.org/wiki/Motherboard_form_factor). For the CompTIA exam, there are two primary motherboard families you need to know: [the ATX family](https://en.wikipedia.org/wiki/ATX) and [the ITX family](https://en.wikipedia.org/wiki/Mini-ITX).
 
-One thing that doesn’t seem to change much between motherboard versions, though, is the power connector. All of these power connectors are very standardized. And to keep compatibility through all of these different systems, you’ll find that most motherboards will use the same type of power connection. We generally choose a motherboard based on the size of the case we might own or how much future expansion we might need. And in some cases, we might choose a motherboard based on how much airflow is required to keep that system cool.
+### ATX
 
-If you look at Wikipedia, there are over 40 different sizes and types of motherboards. Thankfully, there are only two or three that are very popular, and generally, you’ll find motherboards that are relatively compatible between the different cases. The big difference will be how many features and how much room do you need for this motherboard.
+Short for advanced technology extended, **ATX** is the motherboard that you’d most likely find in a desktop computer. It has a lot of real estate, plenty of expansion slots, lots of memory, and there’s plenty of room inside of a desktop for this size of motherboard.
 
-The CompTIA exam objectives tend to focus on which motherboard you might choose for a particular task and how you might install that particular motherboard. You wouldn’t generally have to memorize exact dimensions of a particular motherboard models, and generally, you’re choosing between two or three different motherboard types to answer one of these questions. For example, which motherboard would you use if you’re putting together a media center? Maybe you have a video editing system, or maybe you’re using a thin client. There’s different motherboards and different sizes for each of these scenarios. So it’s useful to understand when you would use a particular motherboard for a particular task.
+First released in July 1995 by Intel, ATX has since had many revisions. The first was version 2.01 in February 1997, then 2.03 in May 2000, 2.1 in June 2002, and 2.2 in February 2004. If you’re buying a computer for a desktop today, you’re probably buying an ATX motherboard with a power connector that’s 20 or 24 pins in size, and there may be additional power on the motherboard for CPU.
 
-The CompTIA exam objectives focus on two different motherboard families. One is the ATX family, and the other is the ITX family. The standard ATX is the motherboard that you’d most likely find in a desktop computer. It has a lot of real estate, plenty of expansion slots, lots of memory, and there’s plenty of room inside of a desktop for this size of motherboard. You might use ATX on a desktop system, but a Mini-ITX motherboard might be perfect for the small form factor computer that you keep next to your television.
+### ITX
 
-These larger desktop motherboards are advanced technology extended motherboards or ATX. It’s a standard that’s been around since 1995, and it’s one that’s become very popular for desktop computers. If you’re buying a computer for a desktop today, you’re probably buying an ATX motherboard. There have been a number of updates to the ATX standard over the years. So the ATX motherboard you find today will probably have a power connector that’s 20 or 24 pins in size, and there may be additional power on the motherboard for CPU.
+Short for Information Technology eXtended, **ITX** is a small motherboard form factor from VIA Technologies released in November 2001 with the Mini-ITX. With the compact configuration of ITX motherboards, they are used in low-cost small setups found in cars, network devices, set-top boxes, and other small computers.
 
-If you need more of a smaller form factor for your motherboard, you might want to look at an ITX motherboard. This is a style of motherboard that was created by VIA Technologies in 2001, and it’s perfect for small form factors and smaller cases. Although this is relatively small compared to ATX, the screw holes in this motherboard are exactly the same as an ATX motherboard. So you could even install this very small motherboard into a much larger case that was originally designed for ATX.
-
-But the real value of these smaller motherboards is that you can fit them into much smaller cases which can then fit into much smaller areas. I mentioned earlier having a computer right next to your television, and in those cases, it would be nice to have something in a much smaller case instead of having a full size desktop system right next to your media center.
+Later versions of ITX include the Nano-ITX released in March 2003, the Mobile-ITX released in March 2004, and the Pico-ITX released in April 2007. An important feature of a variety of ITX motherboards are its low power consumption, using less than 25 watts of power, with some as few as five watts.
 
 ## Expansion slots
 
-If you look at a motherboard, there are a lot of different components that are attached to these systems. There’s CPU and memory and storage and expansion slots, and there needs to be some way that all of these different components can communicate with each other. There are also times when we might want to add additional functionality to our motherboard by adding an expansion card into one of the available slots. And that expansion card needs some way to communicate with the memory and the CPU.
+There are times when we might want to add additional functionality to our motherboard by adding an expansion card into one of the available slots. Alternatively known as a **bus slot** or **expansion port**, an **expansion slot** is a connection or port inside a computer on the motherboard or riser card. It provides an installation point for a hardware expansion card to be connected and communicate with the memory and the CPU.
 
-If you’re working with an older computer, you may see some expansion slots on that computer that are PCI. This is Peripheral Component Interconnect, and it’s a standard that’s been around since 1994. PCI has different bus sizes that could be used. There’s a 32-bit PCI bus and a 64-bit PCI bus. And these communicate using parallel communication.
+### PCI
 
-The 64-bit expansion slot is effectively the same thing. We still have parallel communication and sending all 64 bits across the bus at the same time. But obviously, the 64-bit bus is twice as large as the 32-bit bus. Physically, the 64-bit interfaces are also much larger than the 32-bit.
+If you’re working with an older computer, you may see some expansion slots that are **PCI**, **Peripheral Component Interconnect**. Peripheral Component Interconnect is a common connection interface for attaching computer peripherals to the motherboard. PCI was popular between 1995 and 2005 and was most often used to connect sound cards, network cards, and video cards.
 
-On newer computers, you probably won’t find a PCI bus. Instead, you’ll find the newer PCI express bus. You’ll sometimes see this written as PCIe with the lowercase e. This effectively replaces PCI, and it changes the way we communicate across this bus. Instead of a parallel connection, PCI express uses a serial connection. And the communication path that it uses to communicate between these PCI express devices is called a PCI express lane.
+A PCI bus lets you change different peripherals that are attached to the computer system. Usually, there are three or four PCI slots on a motherboard. With PCI, you can unplug the component you want to swap and plug in the new one in the PCI slot. If you have an open slot, you can add another peripheral like a second hard drive.
+
+Computers might have more than one type of bus to handle different traffic types. The PCI bus used to come in both 32-bit and 64-bit versions. PCI runs at 33 MHz or 66 MHz.
+
+### PCIe
+
+Modern computers mainly use other interface technologies like USB or [PCI Express](https://www.techtarget.com/searchdatacenter/definition/PCI-Express) (PCIe). Some desktop computers might have PCI slots on the motherboard to maintain backward compatibility. However, the devices that were attached as PCI expansion cards are now either integrated onto motherboards or attached by other connectors like PCIe.
 
 Just as you add more lanes to a highway to support more traffic, you can add more lanes to a PCI express bus to support the transfer of more data. You’ll see these lanes referred to as a 1, 2, 4, 8, 16, or 32 full-duplex lane. These are written with an x at the beginning, so you’ll sometimes see x1, x2, x4, and so on. Normally, we would pronounce this with the x being a by. So this is a by 1, by 2, by 8, or by 32, for example.
-
-You want to make sure that you have everything lined up properly with the card and that you’re not pushing too hard. If the card is not installing, then you should pull it back out, have a look at the different settings on your card and on the slot, and then try installing the card again. If you have everything aligned, then this card should slide into the slot very easily, and you can lock it in place with the screw connection on the case.
 
 ## Connectors
 
