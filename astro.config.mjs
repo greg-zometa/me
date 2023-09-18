@@ -15,9 +15,7 @@ export default defineConfig({
   site: SITE.website,
   integrations: [
     tailwind({
-      config: {
-        applyBaseStyles: false
-      }
+      applyBaseStyles: false
     }),
     serviceWorker(),
     sitemap(),
