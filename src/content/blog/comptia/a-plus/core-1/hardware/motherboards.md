@@ -58,25 +58,50 @@ Computers might have more than one type of bus to handle different traffic types
 
 Modern computers mainly use other interface technologies like USB or [PCI Express](https://www.techtarget.com/searchdatacenter/definition/PCI-Express) (PCIe). Some desktop computers might have PCI slots on the motherboard to maintain backward compatibility. However, the devices that were attached as PCI expansion cards are now either integrated onto motherboards or attached by other connectors like PCIe.
 
-Just as you add more lanes to a highway to support more traffic, you can add more lanes to a PCI express bus to support the transfer of more data. You’ll see these lanes referred to as a 1, 2, 4, 8, 16, or 32 full-duplex lane. These are written with an x at the beginning, so you’ll sometimes see x1, x2, x4, and so on. Normally, we would pronounce this with the x being a by. So this is a by 1, by 2, by 8, or by 32, for example.
+With PCIe, data is transferred over two signal pairs: two wires for transmitting and two wires for receiving. Each set of signal pairs is called a "lane," and each lane is capable of sending and receiving eight-bit data packets simultaneously between two points.
+
+PCIe can scale from **one to 32 separate lanes**; it is usually deployed with 1, 4, 8, 12, 16 or 32 lanes. The lane count of a PCIe card is a determining factor in its performance and therefore in its price. PCIe provides lower latency and higher data transfer rates than parallel busses such as PCI and PCI-X. Every device that's connected to a motherboard with a PCIe link has its own dedicated point-to-point connection. This means that devices are not competing for bandwidth because they are not sharing the same bus.
 
 ## Connectors
 
-One of the largest connectors on your motherboard is one that is providing power directly from the power supply to the motherboard. This provides main motherboard power at 3.3 volts plus or minus 5 volts and plus or minus 12 volts. Originally, this was a 20-pin connector. And as the years have gone by, we’ve needed some additional power for the motherboard.
+The motherboard connections go to the CPU, RAM, ROM, expansion slots, PCI slots, USB ports, and power. There are also motherboard connectors/controllers for devices such as the hard drive, mouse, and keyboard.
 
-So now, the standard size for this motherboard power connector is a 24-pin connector. If you have a motherboard with an older 20-pin connector, you can still plug in this 24-pin connector and use it. Some power supplies even have this connector modular, so it has 20 pins and then you can attach 4 more pins to it.
+All motherboards have **front panel connectors**, sometimes called **headers** or **pin headers**, that a PC case connects to. Front Panel Connectors connect the PC Case’s Power Switch, Reset Switch, and LED indicators to the motherboard.
 
-Before connecting the power supply to the motherboard, you want to first make sure that you’ve disconnected from all power sources and then connect that directly into the motherboard with the orientation that matches the keys on the individual pins. On this particular connector, there is a lock on the side of it that corresponds with this lip that is coming off the end of the connector so that, when you push it down into the connector, it locks in place. And this will not move out of that connection until you push down and unlock it from the power connector.
+There are five primary functions that almost all front panel headers have:
 
-Some motherboards will have different types of connections. They may be in a different layout, or they may be a different color. But all of this is exactly the same SATA connection, and you would use these connections for any of your storage devices. There may be situations where you don’t have any room to install a new drive inside of your computer case or perhaps you have an external drive that you would like to use.
+1. **Power Switch Pins** — Abbreviated as PWRSW or simply PW, these are two pins connecting to the Power Button cable from the PC case.
+2. **Reset Switch Pins** — These are two pins connecting to the PC case’s reset switch.
+3. **Power LED Pins** — These are three pins that connect to the LED light on the PC case, indicating whether the PC is on, off, or in sleep mode.
+4. **Hard Disk LED Pins** — These are two pins that indicate the activity of the hard disk by flashing repeatedly.
+5. **Speaker Pins** — There are four pins for the beep code speaker. Many PC Cases come with a **beep code speaker**. _Note that a beep code speaker is NOT the same as a stereo speaker._
 
-In those cases, you might want to use an eSATA connection for external Serial ATA. That external connection is usually provided with a built-in interface on the motherboard. Or in this particular example, it’s an expansion card that adds additional eSATA connectors to the back of this computer. This allows us to connect an external storage device, but we still have the same throughput and performance as an internal SATA connection.
+### Power
 
-Another important set of connectors on your motherboard are the headers. Sometimes, you’ll hear these referred to as “pin headers,” because they are groups of pins that are on the edge of the motherboard. There’s usually a single large connector or a number of smaller individual wires that would connect to all of these pin headers. These might provide power or have USB connectivity, or they might provide the button connectivity that you have on the outside of your computer case.
+A computer is composed of several electronic components that require power, with each part needing different voltages to work correctly. So, you need a power supply to deliver all these different power requirements.
 
-Many computer cases have an on/off button on the case. There might be a reset button, and there might be other controls as well. The way that you integrate those buttons with the motherboard itself is through connectors that are provided on the case. These connectors are even labeled. These are the connectors used for the reset switch.
+A **power supply unit** or **PSU**, is specifically designed for desktop computers to supply appropriate voltages for each PC component, such as CPU, GPU, motherboard, and storage drives. It does so by providing several power connectors with varying numbers of pins which can sometimes be split to support different motherboards and CPUs.
 
-You might also find on your motherboard an M.2 connector. This is on newer motherboards that can support connectivity using this M.2 standard. One very common use of these M.2 connectors is to plug in an SSD and be able to have all of your storage on this very small device connected to the motherboard. To use this, you would simply plug into the M.2 connector on the motherboard. You would push the drive all the way into the M.2 connector and then fasten it to the motherboard with a screw. This will ensure that whatever you’re connecting into that M,2 interface will be firmly fastened to the motherboard itself.
+**This table illustrates the most common PSU power connectors, including their names, function, and power specifications**:
+
+| Connector                        | Function                              | Voltage(s)           | Wattage |
+| -------------------------------- | ------------------------------------- | -------------------- | ------- |
+| 24-pin (20+4 pin) ATX main power | Supplies power to the motherboard     | +3.3V, +5V, and +12V | 300W    |
+| 4-pin ATX 12V power              | Supplies power to the low-powered CPU | +12V                 | 120W    |
+| 8-pin (4+4 pin) EPS12V           | Supplies Extra Power to the CPU       | +12V                 | 336W    |
+| 8-pin (6+2 pin) PCIe power       | Supplies power to graphics cards      | +12V                 | 150W    |
+| SATA power connector             | Supplies power to SATA drives         | +5V, +12V            | 54W     |
+| Molex power connector            | Supplies power to older IDE drives    | +5V, +12V            | 132W    |
+
+Before connecting the power supply to the motherboard, make sure all power sources are disconnected and then connect that directly into the motherboard with the orientation that matches the keys on the individual pins.
+
+### Memory
+
+Storage devices such as hard disk drives and solid state drives connect to the motherboard via SATA. There may be situations where you don’t have any room to install a new drive inside of your computer case or perhaps you have an external drive that you would like to use.
+
+In those cases, you might want to use an eSATA connection for external Serial ATA. That external connection is usually provided with a built-in interface on the motherboard. This allows us to connect an external storage device, but we still have the same throughput and performance as an internal SATA connection.
+
+You might also find on your motherboard an M.2 connector. This is on newer motherboards that can support connectivity using this M.2 standard. One very common use of these M.2 connectors is to plug in an SSD and be able to have all of your storage on this very small device connected to the motherboard.
 
 ## Compatibility
 
