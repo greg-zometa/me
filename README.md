@@ -29,7 +29,6 @@ This project was created from the [AstroPaper](https://github.com/satnaing/astro
 │   ├── content/
 │   │   |  blog/
 │   │   |    └── some-blog-posts.md
-│   │   └── _schemas.ts
 │   │   └── config.ts
 │   ├── layouts/
 │   └── pages/
