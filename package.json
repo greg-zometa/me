@@ -1,10 +1,10 @@
 {
   "name": "me",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"astro check --watch\" \"astro dev\"",
+    "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build && jampack ./dist",
     "preview": "astro preview",
@@ -41,7 +41,6 @@
     "@typescript-eslint/parser": "6.7.4",
     "astro-eslint-parser": "0.16.0",
     "astrojs-service-worker": "1.1.0",
-    "concurrently": "8.2.1",
     "eslint": "8.50.0",
     "eslint-plugin-astro": "0.29.1",
     "eslint-plugin-svelte": "2.33.2",

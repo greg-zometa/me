@@ -1,17 +1,19 @@
 ---
-import type { BlogFrontmatter } from "@content/_schemas";
+import type { CollectionEntry } from "astro:content";
+import { slugifyStr } from "@utils/slugify";
 import Datetime from "./Datetime.astro";
+
 export interface Props {
   href?: string;
-  frontmatter: BlogFrontmatter;
+  frontmatter: CollectionEntry<"blog">["data"];
   secHeading?: boolean;
 }
 const { href, frontmatter, secHeading = true } = Astro.props;
 const { title, pubDatetime, description, readingTime } = frontmatter;
 ---
 
-<li class="list-card">
-  <a href={href} transition:name={title}>
+<li class="list-card" transition:name={slugifyStr(title)}>
+  <a href={href}>
     {secHeading ? <h2>{title}</h2> : <h3>{title}</h3>}
   </a>
   <Datetime datetime={pubDatetime} {readingTime} />
