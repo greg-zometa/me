@@ -4,7 +4,7 @@
   </a>
 </h1>
 
-[![og-flag](./public/og.jpeg)](https://zometa.me)
+[![og-flag](./public/site-og.png)](https://zometa.me)
 
 Personal blog to share thoughts, notes, and shitsplain every now and then.
 

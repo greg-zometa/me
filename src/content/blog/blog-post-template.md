@@ -10,7 +10,7 @@ tags:
   - some
   - example
   - tags
-ogImage: "/og.jpeg"
+ogImage: "/site-og.png"
 ---
 
 Here are some rules/recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
