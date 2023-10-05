@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Greg Zometa",
   desc: "Personal blog to share thoughts, notes, and shitsplain every now and then.",
   title: "Greg Zometa",
-  ogImage: "og.jpeg",
+  ogImage: "site-og.png",
   lightAndDarkMode: true,
   postPerPage: 5
 };

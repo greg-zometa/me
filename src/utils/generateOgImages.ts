@@ -58,6 +58,6 @@ export const generatePostOgImages = async (post: CollectionEntry<"blog">) => {
 };
 
 export const generateSiteOgImages = async () => {
-  const svg = await satori(siteOgImg(COLOR_OPTIONS), SATORI_OPTIONS);
+  const svg = await satori(siteOgImg(true, COLOR_OPTIONS), SATORI_OPTIONS);
   return svgBufferToPngBuffer(svg);
 };

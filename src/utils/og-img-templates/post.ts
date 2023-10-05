@@ -83,7 +83,7 @@ export const postOgImg = (post: CollectionEntry<"blog">, { accent, border, fill,
                             style: {
                               textTransform: "uppercase",
                               letterSpacing: "0.4px",
-                              fontSize: "18px",
+                              fontSize: "24px",
                               fontWeight: "semibold",
                               color: textBase,
                               margin: 0
@@ -99,7 +99,8 @@ export const postOgImg = (post: CollectionEntry<"blog">, { accent, border, fill,
                     props: {
                       style: {
                         lineHeight: "40px",
-                        fontSize: "36px",
+                        letterSpacing: "-0.8px",
+                        fontSize: "48px",
                         fontWeight: "bold",
                         textAlign: "left",
                         color: textBase,
@@ -113,7 +114,7 @@ export const postOgImg = (post: CollectionEntry<"blog">, { accent, border, fill,
                     props: {
                       style: {
                         lineHeight: "24px",
-                        fontSize: "18px",
+                        fontSize: "24px",
                         letterSpacing: 0,
                         fontWeight: "semibold",
                         textAlign: "left",
@@ -128,7 +129,7 @@ export const postOgImg = (post: CollectionEntry<"blog">, { accent, border, fill,
                     props: {
                       style: {
                         lineHeight: "16px",
-                        fontSize: "12px",
+                        fontSize: "16px",
                         letterSpacing: "0.8px",
                         fontWeight: "semibold",
                         textAlign: "left",
@@ -164,8 +165,8 @@ export const postOgImg = (post: CollectionEntry<"blog">, { accent, border, fill,
                   // objectPosition: "center",
                   // aspectRatio: 16 / 9,
                   // position: "absolute",
-                  clipPath: "polygon(90 0, 840 0, 840 840, 0 630)",
-                  background: `linear-gradient(225deg, ${fill} 0%, ${border} 20%, ${accent} 100%)`
+                  clipPath: "polygon(157.5 0, 840 0, 840 840, 0 630)",
+                  background: `linear-gradient(270deg, ${fill} 0%, ${border} 20%, ${accent} 100%)`
                 }
               }
             }
