@@ -5,12 +5,12 @@ export const SITE: Site = {
   author: "Greg Zometa",
   desc: "Personal blog to share thoughts, notes, and shitsplain every now and then.",
   title: "Greg Zometa",
-  ogImage: "og.jpeg",
+  ogImage: "site-og.png",
   lightAndDarkMode: true,
   postPerPage: 5
 };
 
-export const LOCALE = ["en-EN"]; // set to [] to use the environment default
+export const LOCALE = ["en-US"]; // set to [] to use the environment default
 
 export const LOGO_IMAGE = {
   enable: true,

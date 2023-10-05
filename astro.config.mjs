@@ -15,9 +15,7 @@ export default defineConfig({
   site: SITE.website,
   integrations: [
     tailwind({
-      config: {
-        applyBaseStyles: false
-      }
+      applyBaseStyles: false
     }),
     serviceWorker(),
     sitemap(),
@@ -47,6 +45,7 @@ export default defineConfig({
     },
     extendDefaultPlugins: true
   },
+  scopedStyleStrategy: "where",
   vite: {
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"]

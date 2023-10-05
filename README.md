@@ -4,7 +4,7 @@
   </a>
 </h1>
 
-[![og-flag](./public/og.jpeg)](https://zometa.me)
+[![og-flag](./public/site-og.png)](https://zometa.me)
 
 Personal blog to share thoughts, notes, and shitsplain every now and then.
 
@@ -29,7 +29,6 @@ This project was created from the [AstroPaper](https://github.com/satnaing/astro
 │   ├── content/
 │   │   |  blog/
 │   │   |    └── some-blog-posts.md
-│   │   └── _schemas.ts
 │   │   └── config.ts
 │   ├── layouts/
 │   └── pages/
@@ -73,7 +72,7 @@ All commands are run from the root of the project, from a terminal:
 | Command            | Action                                                                                                                           |
 | :----------------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | `pnpm install`     | Installs dependencies                                                                                                            |
-| `pnpm run dev`     | Starts local dev server at `localhost:3000`                                                                                      |
+| `pnpm run dev`     | Starts local dev server at `localhost:4321`                                                                                      |
 | `pnpm run build`   | Build your production site to `./dist/`                                                                                          |
 | `pnpm run preview` | Preview your build locally, before deploying                                                                                     |
 | `pnpm run format`  | Format codes with Prettier                                                                                                       |
