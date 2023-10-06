@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "71df9bbc791028c7",
+        "id": "e046710d274f245d",
         "type": "tabs",
         "children": [
           {
-            "id": "34ea8e1afe7c29d7",
+            "id": "8547cb1bf6d4cd0c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
+                "file": "comptia/a-plus/core-1/hardware/motherboards.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
+                "file": "comptia/a-plus/core-1/hardware/motherboards.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/storage-devices.md",
+                "file": "comptia/a-plus/core-1/hardware/motherboards.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/storage-devices.md"
+                "file": "comptia/a-plus/core-1/hardware/motherboards.md"
+              }
+            }
+          },
+          {
+            "id": "495e55c7b7823564",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
               }
             }
           }
@@ -147,15 +157,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b35f97c5b833ee8f",
+  "active": "8547cb1bf6d4cd0c",
   "lastOpenFiles": [
+    "comptia/a-plus/core-1/hardware/storage-devices.md",
+    "comptia/a-plus/core-1/hardware/motherboards.md",
     "comptia/a-plus/core-1/hardware/memory.md",
     "comptia/a-plus/core-1/hardware/cables-and-adapters.md",
-    "comptia/a-plus/core-1/hardware/storage-devices.md",
     "comptia/a-plus/core-1/mobile-devices/device-connectivity.md",
     "comptia/a-plus/core-1/mobile-devices/device-configuration.md",
     "comptia/a-plus/core-1/hardware/power.md",
-    "comptia/a-plus/core-1/hardware/motherboards.md",
     "comptia/pentest",
     "comptia/linux",
     "comptia/network",
