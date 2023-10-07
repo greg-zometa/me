@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e046710d274f245d",
+        "id": "49f749709675a169",
         "type": "tabs",
         "children": [
           {
-            "id": "8547cb1bf6d4cd0c",
+            "id": "72ba9ffcbbb2ab92",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "comptia/a-plus/core-1/hardware/motherboards.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 327.5,
-    "collapsed": true
+    "width": 327.5
   },
   "right": {
     "id": "7fc5de755a2ffcc7",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/motherboards.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "comptia/a-plus/core-1/hardware/motherboards.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "comptia/a-plus/core-1/hardware/motherboards.md"
-              }
+              "state": {}
             }
           },
           {
@@ -157,10 +148,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8547cb1bf6d4cd0c",
+  "active": "72ba9ffcbbb2ab92",
   "lastOpenFiles": [
-    "comptia/a-plus/core-1/hardware/storage-devices.md",
+    "a-plus/core-1/hardware/cables-and-adapters.md",
+    "a-plus/core-1/hardware/storage-devices.md",
+    "a-plus/core-1/hardware/power.md",
+    "a-plus/core-1/hardware/motherboards.md",
+    "a-plus/core-1/hardware/memory.md",
     "comptia/a-plus/core-1/hardware/motherboards.md",
+    "comptia/a-plus/core-1/hardware/storage-devices.md",
     "comptia/a-plus/core-1/hardware/memory.md",
     "comptia/a-plus/core-1/hardware/cables-and-adapters.md",
     "comptia/a-plus/core-1/mobile-devices/device-connectivity.md",
@@ -190,10 +186,6 @@
     "customizing-astropaper-theme-color-schemes.md",
     "blog-post-template.md",
     "how-to-take-notes-to-learn-effectively.md",
-    "mobile-devices.md",
-    "2023-07-29.md",
-    "Untitled.canvas",
-    "terminal-development.md",
-    "rec-2.md"
+    "Untitled.canvas"
   ]
 }

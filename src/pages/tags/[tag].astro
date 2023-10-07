@@ -1,5 +1,6 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import type { PostsCollection } from "@types";
+import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
 import Header from "@components/Header.astro";
@@ -12,12 +13,12 @@ import slugify from "@utils/slugify";
 import { SITE } from "@config";
 
 export interface Props {
-  post: CollectionEntry<"blog">;
+  post: PostsCollection;
   tag: string;
 }
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
+  const posts = await Promise.all([await getCollection("blog"), await getCollection("comptia")].flat());
 
   const tags = getUniqueTags(posts);
 
@@ -31,7 +32,12 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.props;
 
-const posts = await getCollection("blog", ({ data }) => import.meta.env.MODE === "development" || !data.draft);
+const posts = await Promise.all(
+  [
+    await getCollection("blog", ({ data }) => import.meta.env.MODE === "development" || !data.draft),
+    await getCollection("comptia", ({ data }) => import.meta.env.MODE === "development" || !data.draft)
+  ].flat()
+);
 
 const tagPosts = getPostsByTag(posts, tag);
 

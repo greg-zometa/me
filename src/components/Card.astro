@@ -1,11 +1,11 @@
 ---
-import type { CollectionEntry } from "astro:content";
+import type { PostsCollection } from "@types";
 import { slugifyStr } from "@utils/slugify";
 import Datetime from "./Datetime.astro";
 
 export interface Props {
   href?: string;
-  frontmatter: CollectionEntry<"blog">["data"];
+  frontmatter: PostsCollection["data"];
   secHeading?: boolean;
 }
 const { href, frontmatter, secHeading = true } = Astro.props;

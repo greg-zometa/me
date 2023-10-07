@@ -1,4 +1,4 @@
-import type { CollectionEntry } from "astro:content";
+import type { PostsCollection } from "@types";
 import { Resvg } from "@resvg/resvg-js";
 import satori, { type SatoriOptions } from "satori";
 import { postOgImg, siteOgImg } from "./og-img-templates";
@@ -52,7 +52,7 @@ const svgBufferToPngBuffer = (svg: string) => {
   return pngData.asPng();
 };
 
-export const generatePostOgImages = async (post: CollectionEntry<"blog">) => {
+export const generatePostOgImages = async (post: PostsCollection) => {
   const svg = await satori(postOgImg(post, COLOR_OPTIONS), SATORI_OPTIONS);
   return svgBufferToPngBuffer(svg);
 };

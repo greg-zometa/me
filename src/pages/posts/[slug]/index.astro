@@ -1,5 +1,6 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import type { PostsCollection } from "@types";
+import { getCollection } from "astro:content";
 import Posts from "@layouts/Posts.astro";
 import PostDetails from "@layouts/PostDetails.astro";
 import getPageNumbers from "@utils/getPageNumbers";
@@ -9,11 +10,16 @@ import slugify from "@utils/slugify";
 import { SITE } from "@config";
 
 export interface Props {
-  post: CollectionEntry<"blog">;
+  post: PostsCollection;
 }
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog", ({ data }) => import.meta.env.MODE === "development" || !data.draft);
+  const posts = await Promise.all(
+    [
+      await getCollection("blog", ({ data }) => import.meta.env.MODE === "development" || !data.draft),
+      await getCollection("comptia", ({ data }) => import.meta.env.MODE === "development" || !data.draft)
+    ].flat()
+  );
 
   const postsWithRt = await getPostsWithRt(posts);
 
@@ -32,7 +38,7 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 const { post } = Astro.props;
 
-const posts = await getCollection("blog");
+const posts = await Promise.all([await getCollection("blog"), await getCollection("comptia")].flat());
 
 const sortedPosts = await getSortedPosts(posts);
 
