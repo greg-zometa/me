@@ -1,7 +1,7 @@
 import { defineCollection, z, type ImageFunction } from "astro:content";
 import { SITE } from "@config";
 
-const postSchema = (image: ImageFunction) =>
+const postSchema = ({ image }: { image: ImageFunction }) =>
   z.object({
     author: z.string().default(SITE.author),
     pubDatetime: z.date(),
@@ -21,14 +21,21 @@ const postSchema = (image: ImageFunction) =>
     canonicalURL: z.string().optional()
   });
 
-const blog = defineCollection({
-  type: "content",
-  schema: ({ image }) => postSchema(image)
-});
-
-const comptia = defineCollection({
-  type: "content",
-  schema: ({ image }) => postSchema(image)
-});
-
-export const collections = { blog, comptia };
+export const collections = {
+  blog: defineCollection({
+    type: "content",
+    schema: postSchema
+  }),
+  coding: defineCollection({
+    type: "content",
+    schema: postSchema
+  }),
+  comptia: defineCollection({
+    type: "content",
+    schema: postSchema
+  }),
+  "hack-the-box": defineCollection({
+    type: "content",
+    schema: postSchema
+  })
+};
