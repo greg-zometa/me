@@ -1,4 +1,4 @@
-import type { CollectionEntry } from "astro:content";
+import type { PostsCollection } from "@types";
 import { SITE } from "@config";
 
 interface ColorOptions {
@@ -8,7 +8,7 @@ interface ColorOptions {
   textBase: string;
 }
 
-export const postOgImg = (post: CollectionEntry<"blog">, { accent, border, fill, textBase }: ColorOptions) => ({
+export const postOgImg = (post: PostsCollection, { accent, border, fill, textBase }: ColorOptions) => ({
   type: "section",
   props: {
     style: { display: "flex", backgroundColor: fill, height: "100%" },

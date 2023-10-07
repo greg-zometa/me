@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { CollectionEntry } from "astro:content";
+  import type { PostsCollection } from "@types";
   import Fuse from "fuse.js";
   import { onMount } from "svelte";
   import { LOCALE } from "@config";
@@ -8,7 +8,7 @@
   export let searchList: {
     title: string;
     description: string;
-    data: CollectionEntry<"blog">["data"];
+    data: PostsCollection["data"];
   }[];
 
   let inputRef: HTMLInputElement;
@@ -16,7 +16,7 @@
   let searchResults: Fuse.FuseResult<{
     title: string;
     description: string;
-    data: CollectionEntry<"blog">["data"];
+    data: PostsCollection["data"];
   }>[] = [];
 
   $: {

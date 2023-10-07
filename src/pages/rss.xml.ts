@@ -5,7 +5,7 @@ import slugify from "@utils/slugify";
 import { SITE } from "@config";
 
 export async function GET() {
-  const posts = await getCollection("blog");
+  const posts = await Promise.all([await getCollection("blog"), await getCollection("comptia")].flat());
   const sortedPosts = await getSortedPosts(posts);
 
   return rss({

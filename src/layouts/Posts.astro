@@ -1,5 +1,5 @@
 ---
-import type { CollectionEntry } from "astro:content";
+import type { PostsCollection } from "@types";
 import { SITE } from "@config";
 import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
@@ -12,7 +12,7 @@ import slugify from "@utils/slugify";
 export interface Props {
   pageNum: number;
   totalPages: number;
-  posts: CollectionEntry<"blog">[];
+  posts: PostsCollection[];
 }
 
 const { pageNum, totalPages, posts } = Astro.props;

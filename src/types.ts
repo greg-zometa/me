@@ -1,3 +1,11 @@
+import { type CollectionEntry } from "astro:content";
+
+// TODO: Update when directories have posts
+// - search and update the promises in `posts` variables
+// - update CollectionEntry generic types from CollectionKey keys
+// CollectionEntry<"blog" | "coding" | "comptia" | "cybersecurity" | "ethical-hacking">
+export type PostsCollection = CollectionEntry<"blog" | "comptia">;
+
 export type Site = {
   website: string;
   author: string;

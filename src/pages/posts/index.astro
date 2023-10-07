@@ -5,7 +5,7 @@ import Posts from "@layouts/Posts.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import getPageNumbers from "@utils/getPageNumbers";
 
-const posts = await getCollection("blog");
+const posts = await Promise.all([await getCollection("blog"), await getCollection("comptia")].flat());
 
 const sortedPosts = await getSortedPosts(posts);
 
