@@ -34,7 +34,11 @@ export const collections = {
     type: "content",
     schema: postSchema
   }),
-  "hack-the-box": defineCollection({
+  cybersecurity: defineCollection({
+    type: "content",
+    schema: postSchema
+  }),
+  "ethical-hacking": defineCollection({
     type: "content",
     schema: postSchema
   })
