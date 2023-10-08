@@ -13,11 +13,11 @@ export interface Props {
 
 const { post } = Astro.props;
 
-const { title, author, description, ogImage, pubDatetime, readingTime, tags } = post.data;
+const { title, author, description, staticOgImg, pubDatetime, readingTime, tags } = post.data;
 
 const { Content } = await post.render();
 
-const ogImageUrl = typeof ogImage === "string" ? ogImage : ogImage?.src;
+const ogImageUrl = typeof staticOgImg === "string" ? staticOgImg : staticOgImg?.src;
 const ogUrl = new URL(ogImageUrl ?? `/posts/${slugifyStr(title)}.png`, Astro.url.origin).href;
 ---
 
