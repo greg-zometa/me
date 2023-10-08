@@ -1,7 +1,7 @@
 import type { PostsCollection } from "@types";
 import { Resvg } from "@resvg/resvg-js";
 import satori, { type SatoriOptions } from "satori";
-import { postOgImg, siteOgImg } from "./og-img-templates";
+import { postOgImg, siteOgImg } from "@assets/og-img-templates";
 
 const fetchFonts = async () => {
   // Regular Font
@@ -42,8 +42,7 @@ const SATORI_OPTIONS: SatoriOptions = {
 const COLOR_OPTIONS = {
   accent: "rgb(129, 140, 248)",
   border: "rgb(238, 242, 255)",
-  fill: "rgb(13, 13, 13)",
-  textBase: "rgb(242, 242, 242)"
+  fill: "rgb(13, 13, 13)"
 };
 
 const svgBufferToPngBuffer = (svg: string) => {

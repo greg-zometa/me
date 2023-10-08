@@ -27,7 +27,7 @@ This project was created from the [AstroPaper](https://github.com/satnaing/astro
 │   │   └── socialIcons.ts
 │   ├── components/
 │   ├── content/
-│   │   |  blog/
+│   │   |  **/
 │   │   |    └── some-blog-posts.md
 │   │   └── config.ts
 │   ├── layouts/
@@ -42,8 +42,6 @@ This project was created from the [AstroPaper](https://github.com/satnaing/astro
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
 Any static assets, like images, can be placed in the `public/` directory.
-
-All blog posts are stored in `src/content/blog` directory.
 
 ## 📖 Documentation
 
@@ -62,7 +60,7 @@ All blog posts are stored in `src/content/blog` directory.
 - **Icons**: [Boxicons](https://boxicons.com/) | [Tablers](https://tabler-icons.io/)
 - **Code Formatting**: [Prettier](https://prettier.io/)
 - **Deployment**: [Cloudflare Pages](https://pages.cloudflare.com/)
-- **Illustrations**: [Free SVG Illustration](https://freesvgillustration.com/)
+- **Illustrations**: [FreeImages](https://www.freeimages.com), [Pixabay](https://pixabay.com/), and [Unsplash](https://unsplash.com/)
 - **Linting**: [ESLint](https://eslint.org)
 
 ## 🧞 Commands

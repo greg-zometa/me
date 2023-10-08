@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "npm" # will detect that project is using pnpm
+    directory: "/"
+    schedule:
+      interval: "weekly"

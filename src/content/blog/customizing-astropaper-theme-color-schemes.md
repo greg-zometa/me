@@ -8,7 +8,7 @@ draft: true
 tags:
   - color-schemes
   - docs
-ogImage: "/site-og.png"
+staticOgImg: "/site-og.png"
 ---
 
 This post will explain how you can enable/disable light & dark mode for the website. Moreover, you'll learn how you can customize color schemes of the entire website.

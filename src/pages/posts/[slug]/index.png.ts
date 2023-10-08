@@ -7,8 +7,8 @@ import { slugifyStr } from "@utils/slugify";
 export async function getStaticPaths() {
   const posts = await Promise.all(
     [
-      await getCollection("blog").then((p) => p.filter(({ data }) => !data.draft && !data.ogImage)),
-      await getCollection("comptia").then((p) => p.filter(({ data }) => !data.draft && !data.ogImage))
+      await getCollection("blog").then((p) => p.filter(({ data }) => !data.draft && !data.staticOgImg)),
+      await getCollection("comptia").then((p) => p.filter(({ data }) => !data.draft && !data.staticOgImg))
     ].flat()
   );
 
