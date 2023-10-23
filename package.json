@@ -20,7 +20,7 @@
     "@astrojs/rss": "3.0.0",
     "@astrojs/svelte": "4.0.3",
     "@resvg/resvg-js": "2.6.0",
-    "astro": "3.2.3",
+    "astro": "3.3.3",
     "fuse.js": "6.6.2",
     "github-slugger": "2.0.0",
     "mdast-util-to-string": "4.0.0",
