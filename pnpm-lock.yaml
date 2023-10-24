@@ -59,8 +59,8 @@ devDependencies:
     specifier: 3.0.2
     version: 3.0.2
   '@astrojs/tailwind':
-    specifier: 5.0.1
-    version: 5.0.1(astro@3.3.3)(tailwindcss@3.3.3)
+    specifier: 5.0.2
+    version: 5.0.2(astro@3.3.3)(tailwindcss@3.3.3)
   '@divriots/jampack':
     specifier: 0.21.1
     version: 0.21.1(react-dom@16.14.0)(react@16.14.0)
@@ -267,10 +267,10 @@ packages:
       - vite
     dev: false
 
-  /@astrojs/tailwind@5.0.1(astro@3.3.3)(tailwindcss@3.3.3):
-    resolution: {integrity: sha512-HzguDH+q1v8NhZIu245UtXfz5tuy4IAd/TND92z5vyftYtGdjDLdBeHhMH4Wd91/0sIPPNRz9NUfToprI636YQ==}
+  /@astrojs/tailwind@5.0.2(astro@3.3.3)(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-oXqeqmBlkQmsltrsU9nEWeXOtrZIAHW8dcmX7BCdrjzPnU6dPwWzAwhddNQ9ihKiWwsLnlbwQZIo2CDigcZlIA==}
     peerDependencies:
-      astro: ^3.2.3
+      astro: ^3.2.4
       tailwindcss: ^3.0.24
     dependencies:
       astro: 3.3.3(typescript@5.2.2)
@@ -6124,7 +6124,7 @@ packages:
     dependencies:
       lilconfig: 2.1.0
       postcss: 8.4.25
-      yaml: 2.3.2
+      yaml: 2.3.3
 
   /postcss-load-config@4.0.1(postcss@8.4.31):
     resolution: {integrity: sha512-vEJIc8RdiBRu3oRAI0ymerOn+7rPuMvRXslTvZUKZonDHFIczxztIyJ1urxM1x9JXEikvpWWTUUqal5j/8QgvA==}
@@ -6140,7 +6140,7 @@ packages:
     dependencies:
       lilconfig: 2.1.0
       postcss: 8.4.31
-      yaml: 2.3.2
+      yaml: 2.3.3
     dev: true
 
   /postcss-nested@6.0.1(postcss@8.4.25):
@@ -8173,14 +8173,9 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /yaml@2.3.2:
-    resolution: {integrity: sha512-N/lyzTPaJasoDmfV7YTrYCI0G/3ivm/9wdG0aHuheKowWQwGTsK0Eoiw6utmzAnI6pkJa0DUVygvp3spqqEKXg==}
-    engines: {node: '>= 14'}
-
   /yaml@2.3.3:
     resolution: {integrity: sha512-zw0VAJxgeZ6+++/su5AFoqBbZbrEakwu+X0M5HmcwUiBL7AzcuPKjj5we4xfQLp78LkEMpD0cOnUhmgOVy3KdQ==}
     engines: {node: '>= 14'}
-    dev: true
 
   /yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
