@@ -15,16 +15,8 @@ This project was created from the [AstroPaper](https://github.com/satnaing/astro
 ```bash
 /
 ├── public/
-│   ├── assets/
-│   │   └── logo.svg
-│   │   └── logo.png
-│   └── favicon.svg
-│   └── astropaper-og.jpg
-│   └── robots.txt
-│   └── toggle-theme.js
 ├── src/
 │   ├── assets/
-│   │   └── socialIcons.ts
 │   ├── components/
 │   ├── content/
 │   │   |  **/
