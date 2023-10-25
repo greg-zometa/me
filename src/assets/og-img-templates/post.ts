@@ -170,7 +170,7 @@ export const postOgImg = (
                         position: "absolute"
                       }
                     : {}),
-                  clipPath: "polygon(157.5 0, 840 0, 840 840, 0 630)",
+                  clipPath: "polygon(157.5px 0, 840px 0, 840px 840px, 0 630px)",
                   background: `linear-gradient(270deg, ${fill} 0%, ${border} 20%, ${accent} 100%)`
                 }
               }
