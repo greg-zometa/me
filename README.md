@@ -52,7 +52,7 @@ Any static assets, like images, can be placed in the `public/` directory.
 - **Icons**: [Boxicons](https://boxicons.com/) | [Tablers](https://tabler-icons.io/)
 - **Code Formatting**: [Prettier](https://prettier.io/)
 - **Deployment**: [Cloudflare Pages](https://pages.cloudflare.com/)
-- **Illustrations**: [FreeImages](https://www.freeimages.com), [Pixabay](https://pixabay.com/), and [Unsplash](https://unsplash.com/)
+- **Illustrations**: [Unsplash](https://unsplash.com/)
 - **Linting**: [ESLint](https://eslint.org)
 
 ## 🧞 Commands
