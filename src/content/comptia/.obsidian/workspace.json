@@ -14,8 +14,19 @@
               "type": "empty",
               "state": {}
             }
+          },
+          {
+            "id": "5ad8143a9ab9a0d2",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -148,7 +159,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "72ba9ffcbbb2ab92",
+  "active": "5ad8143a9ab9a0d2",
   "lastOpenFiles": [
     "a-plus/core-1/hardware/cables-and-adapters.md",
     "a-plus/core-1/hardware/storage-devices.md",

@@ -5,7 +5,6 @@ pubDatetime: 2023-09-12T15:34:39.302Z
 postSlug: hardware-storage-devices
 dynamicOgImg: https://images.unsplash.com/photo-1484662020986-75935d2ebc66
 tags:
-  - comptia
   - a-plus
   - core-1
   - hardware

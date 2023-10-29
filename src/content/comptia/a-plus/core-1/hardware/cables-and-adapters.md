@@ -5,7 +5,6 @@ pubDatetime: 2023-09-05T15:16:47.538Z
 postSlug: hardware-cables-and-adapters
 dynamicOgImg: https://images.unsplash.com/photo-1683322499436-f4383dd59f5a
 tags:
-  - comptia
   - a-plus
   - core-1
   - hardware

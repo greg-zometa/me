@@ -4,7 +4,6 @@ description: Learn about DNS server configuration and virtual connections VLANs 
 pubDatetime: 2023-08-16T15:35:39.260Z
 postSlug: networking-connections
 tags:
-  - comptia
   - a-plus
   - core-1
   - networking

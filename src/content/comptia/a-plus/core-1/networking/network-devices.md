@@ -5,7 +5,6 @@ pubDatetime: 2023-08-03T04:03:27.106Z
 postSlug: networking-devices
 dynamicOgImg: https://images.unsplash.com/photo-1606420187127-dae7c868fa7a
 tags:
-  - comptia
   - a-plus
   - core-1
   - networking

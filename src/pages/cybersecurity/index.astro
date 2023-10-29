@@ -5,19 +5,10 @@ import Posts from "@layouts/Posts.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import getPageNumbers from "@utils/getPageNumbers";
 
-const posts = await Promise.all(
-  [
-    await getCollection("blog"),
-    await getCollection("coding"),
-    await getCollection("comptia"),
-    await getCollection("cybersecurity"),
-    await getCollection("ethical-hacking")
-  ].flat()
-);
-
+const posts = await getCollection("cybersecurity");
 const sortedPosts = await getSortedPosts(posts);
 const totalPages = getPageNumbers(sortedPosts.length);
 const paginatedPosts = sortedPosts.slice(0, SITE.postPerPage);
 ---
 
-<Posts posts={paginatedPosts} dir="posts" pageNum={1} totalPages={totalPages.length} />
+<Posts posts={paginatedPosts} dir="cybersecurity" pageNum={1} totalPages={totalPages.length} />

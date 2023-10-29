@@ -4,7 +4,6 @@ description: Learn about USB connections, serial interfaces, Bluetooth, and vari
 pubDatetime: 2023-08-02T06:36:17.783Z
 postSlug: mobile-devices-device-configuration
 tags:
-  - comptia
   - a-plus
   - core-1
   - mobile-devices
