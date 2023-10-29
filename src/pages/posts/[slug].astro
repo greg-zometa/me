@@ -22,15 +22,12 @@ export async function getStaticPaths() {
       await getCollection("ethical-hacking", ({ data }) => import.meta.env.MODE === "development" || !data.draft)
     ].flat()
   );
-  const postsWithRt = await getPostsWithRt(posts);
-  const postResult = postsWithRt.map((post) => ({
-    params: { slug: slugify(post.data) },
-    props: { post }
-  }));
-  const pagePaths = getPageNumbers(posts.length).map((pageNum) => ({
-    params: { slug: String(pageNum) }
-  }));
-  return [...postResult, ...pagePaths];
+
+  return [
+    ...getPageNumbers(posts.length).map((pageNum) => ({
+      params: { slug: String(pageNum) }
+    }))
+  ];
 }
 const { slug } = Astro.params;
 
