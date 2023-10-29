@@ -2,7 +2,7 @@ import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
 import type { PostsCollection } from "@types";
 import { generatePostOgImages } from "@utils/generateOgImages";
-import { slug as slugify } from "github-slugger";
+import { slugify } from "@utils/slugify";
 
 export async function getStaticPaths() {
   const posts = await getCollection("ethical-hacking").then((p) =>
@@ -10,7 +10,7 @@ export async function getStaticPaths() {
   );
 
   return posts.map((post) => ({
-    params: { slug: slugify(post.data.title) },
+    params: { slug: slugify(post.data) },
     props: post
   }));
 }

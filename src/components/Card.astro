@@ -1,6 +1,6 @@
 ---
 import type { PostsCollection } from "@types";
-import { slug as slugify } from "github-slugger";
+import { slugifyStr } from "@utils/slugify";
 import Datetime from "./Datetime.astro";
 
 export interface Props {
@@ -12,7 +12,7 @@ const { href, frontmatter, secHeading = true } = Astro.props;
 const { title, pubDatetime, description, readingTime } = frontmatter;
 ---
 
-<li class="list-card" transition:name={slugify(title)}>
+<li class="list-card" transition:name={slugifyStr(title)}>
   <a href={href}>
     {secHeading ? <h2>{title}</h2> : <h3>{title}</h3>}
   </a>

@@ -1,6 +1,6 @@
 import type { MarkdownInstance } from "astro";
 import type { PostsCollection } from "@types";
-import { slug as slugify } from "github-slugger";
+import { slugify } from "@utils/slugify";
 
 export const getReadingTime = async () => {
   // Get all posts using glob. This is to get the updated frontmatter
@@ -12,7 +12,7 @@ export const getReadingTime = async () => {
   await Promise.all(
     globPostsValues.map(async (globPost) => {
       const { frontmatter } = await globPost();
-      mapFrontmatter.set(slugify(frontmatter.postSlug), frontmatter.readingTime);
+      mapFrontmatter.set(slugify(frontmatter), frontmatter.readingTime);
     })
   );
 
@@ -22,7 +22,7 @@ export const getReadingTime = async () => {
 const getPostsWithRt = async (posts: PostsCollection[]) => {
   const mapFrontmatter = await getReadingTime();
   return posts.map((post) => {
-    post.data.readingTime = mapFrontmatter.get(slugify(post.data.postSlug));
+    post.data.readingTime = mapFrontmatter.get(slugify(post.data));
     return post;
   });
 };

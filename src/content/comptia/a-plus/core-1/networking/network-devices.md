@@ -2,7 +2,8 @@
 title: Network Devices
 description: Learn about networking devices and how they connect network infrastructures.
 pubDatetime: 2023-08-03T04:03:27.106Z
-postSlug: /comptia/networking-devices
+directory: comptia
+postSlug: networking-devices
 dynamicOgImg: https://images.unsplash.com/photo-1606420187127-dae7c868fa7a
 tags:
   - a-plus

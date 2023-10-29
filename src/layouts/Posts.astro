@@ -7,7 +7,7 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import Card from "@components/Card.astro";
 import LinkButton from "@components/LinkButton.astro";
-import { slug as slugify } from "github-slugger";
+import { slugify } from "@utils/slugify";
 
 export interface Props {
   dir: (typeof directories)[number] | "posts";
@@ -32,7 +32,7 @@ const nextDisabled = pageNum === totalPages;
   <Header activeNav={dir} />
   <Main pageTitle={title} pageDesc={`All ${dir === "posts" ? dir : `${dir.split("-").join(" ")} posts`}.`}>
     <ul>
-      {posts.map(({ data }) => <Card href={slugify(data.postSlug)} frontmatter={data} />)}
+      {posts.map(({ data }) => <Card href={`/${data.directory}/${slugify(data)}`} frontmatter={data} />)}
     </ul>
   </Main>
 

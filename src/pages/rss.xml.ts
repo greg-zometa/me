@@ -2,7 +2,7 @@ import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SITE } from "@config";
-import { slug as slugify } from "github-slugger";
+import { slugify } from "@utils/slugify";
 
 export async function GET() {
   const posts = await Promise.all(
@@ -21,7 +21,7 @@ export async function GET() {
     description: SITE.desc,
     site: SITE.website,
     items: sortedPosts.map(({ data }) => ({
-      link: slugify(data.postSlug),
+      link: `/${data.directory}/${slugify(data)}`,
       title: data.title,
       description: data.description,
       pubDate: new Date(data.pubDatetime)

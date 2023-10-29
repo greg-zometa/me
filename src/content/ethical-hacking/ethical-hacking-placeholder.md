@@ -2,7 +2,8 @@
 title: Ethical Hacking Placeholder
 description: TODO | Remove
 pubDatetime: 2023-10-28T05:56:48.830Z
-postSlug: /ethical-hacking/placeholder
+directory: ethical-hacking
+postSlug: placeholder
 draft: true
 tags:
   - docs

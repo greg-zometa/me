@@ -3,7 +3,8 @@ title: Blog post template
 description: This is an unpublished, reusable blog post template.
 pubDatetime: 2023-07-11T03:27:16.458Z
 author: Greg Zometa
-postSlug: /blog/unpublished-blog-post-template
+directory: blog
+postSlug: unpublished-blog-post-template
 featured: true
 draft: true
 tags:

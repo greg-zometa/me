@@ -2,7 +2,8 @@
 title: Cables and Adapters
 description: There's a lot to know about cables. Take my hand and let me walk you through the overwhelming amount of cables used in hardware.
 pubDatetime: 2023-09-05T15:16:47.538Z
-postSlug: /comptia/hardware-cables-and-adapters
+directory: comptia
+postSlug: hardware-cables-and-adapters
 dynamicOgImg: https://images.unsplash.com/photo-1683322499436-f4383dd59f5a
 tags:
   - a-plus

@@ -2,7 +2,8 @@
 title: Motherboards
 description: The motherboard is the backbone that ties the computer's components together at one spot and allows them to talk to each other. Without it, none of the computer pieces, such as the CPU, GPU, or hard drive, could interact. Learn about what the motherboard does and the must-know for it to work well.
 pubDatetime: 2023-10-06T04:23:48.651Z
-postSlug: /comptia/hardware-motherboards
+directory: comptia
+postSlug: hardware-motherboards
 dynamicOgImg: https://images.unsplash.com/photo-1562408590-e32931084e23
 tags:
   - a-plus

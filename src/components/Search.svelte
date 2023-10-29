@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { PostsCollection } from "@types";
   import Fuse from "fuse.js";
-  import { slug as slugify } from "github-slugger";
+  import { slugify } from "@utils/slugify";
   import { onMount } from "svelte";
   import { LOCALE } from "@config";
 
@@ -89,7 +89,7 @@
   <ul>
     {#each searchResults as { item: { data }, refIndex } (refIndex)}
       <li class="list-card">
-        <a href={slugify(data.postSlug)}>
+        <a href={`/${data.directory}/${slugify(data)}`}>
           <h2>
             {data.title}
           </h2>

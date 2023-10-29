@@ -2,7 +2,8 @@
 title: Internet Connections
 description: Learn about the many different technologies and network types that enable internet connections.
 pubDatetime: 2023-08-17T15:47:16.478Z
-postSlug: /comptia/networking-internet-connections
+directory: comptia
+postSlug: networking-internet-connections
 dynamicOgImg: https://images.unsplash.com/photo-1597733336794-12d05021d510
 tags:
   - a-plus

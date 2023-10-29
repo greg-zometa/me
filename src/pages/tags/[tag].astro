@@ -10,7 +10,7 @@ import getUniqueTags from "@utils/getUniqueTags";
 import getPostsByTag from "@utils/getPostsByTag";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SITE } from "@config";
-import { slug as slugify } from "github-slugger";
+import { slugify } from "@utils/slugify";
 
 export interface Props {
   post: PostsCollection;
@@ -60,7 +60,7 @@ const sortTagsPost = await getSortedPosts(tagPosts);
   <Main pageTitle={[`Tag:`, `${tag}`]} titleTransition={tag} pageDesc={`All posts with the tag "${tag}".`}>
     <h1 slot="title" transition:name={tag}>{`Tag:${tag}`}</h1>
     <ul>
-      {sortTagsPost.map(({ data }) => <Card href={slugify(data.postSlug)} frontmatter={data} />)}
+      {sortTagsPost.map(({ data }) => <Card href={`/${data.directory}/${slugify(data)}`} frontmatter={data} />)}
     </ul>
   </Main>
   <Footer />
