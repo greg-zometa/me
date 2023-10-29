@@ -2,6 +2,7 @@
 title: Ports and Protocols
 description: Learn about the Internet Protocol and port numbers that traverse the network.
 pubDatetime: 2023-08-03T04:03:27.106Z
+directory: comptia
 postSlug: networking-ports-and-protocols
 tags:
   - a-plus

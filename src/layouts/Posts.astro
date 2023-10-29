@@ -32,7 +32,7 @@ const nextDisabled = pageNum === totalPages;
   <Header activeNav={dir} />
   <Main pageTitle={title} pageDesc={`All ${dir === "posts" ? dir : `${dir.split("-").join(" ")} posts`}.`}>
     <ul>
-      {posts.map(({ data }) => <Card href={`/${dir}/${slugify(data)}`} frontmatter={data} />)}
+      {posts.map(({ data }) => <Card href={`/${data.directory}/${slugify(data)}`} frontmatter={data} />)}
     </ul>
   </Main>
 

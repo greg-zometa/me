@@ -2,6 +2,7 @@
 title: Storage Devices
 description: We rely on our storage devices for access to our most important documents. Learn about the many ways to store and access files on our computing devices.
 pubDatetime: 2023-09-12T15:34:39.302Z
+directory: comptia
 postSlug: hardware-storage-devices
 dynamicOgImg: https://images.unsplash.com/photo-1484662020986-75935d2ebc66
 tags:

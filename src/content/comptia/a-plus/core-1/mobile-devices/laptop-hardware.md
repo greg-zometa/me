@@ -2,6 +2,7 @@
 title: Laptop Hardware
 description: Learn about laptop hardware, storage options, and an overview of converting from traditional hard drives to high-speed SSD technology.
 pubDatetime: 2023-08-02T06:36:17.783Z
+directory: comptia
 postSlug: mobile-devices-laptop-hardware
 dynamicOgImg: https://images.unsplash.com/photo-1640207101284-42cc67bb2c47
 tags:

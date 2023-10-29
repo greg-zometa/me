@@ -12,7 +12,15 @@ import getSortedPosts from "@utils/getSortedPosts";
 import slugify from "@utils/slugify";
 // import { SOCIALS } from "@config";
 
-const posts = await Promise.all([await getCollection("blog"), await getCollection("comptia")].flat());
+const posts = await Promise.all(
+  [
+    await getCollection("blog"),
+    await getCollection("coding"),
+    await getCollection("comptia"),
+    await getCollection("cybersecurity"),
+    await getCollection("ethical-hacking")
+  ].flat()
+);
 
 const sortedPosts = await getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
@@ -62,7 +70,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
             <h2>Featured</h2>
             <ul>
               {featuredPosts.map(({ data }) => (
-                <Card href={`/posts/${slugify(data)}`} frontmatter={data} secHeading={false} />
+                <Card href={`/${data.directory}/${slugify(data)}`} frontmatter={data} secHeading={false} />
               ))}
             </ul>
           </section>
@@ -77,7 +85,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         {
           recentPosts.map(
             ({ data }, index) =>
-              index < 4 && <Card href={`/posts/${slugify(data)}`} frontmatter={data} secHeading={false} />
+              index < 4 && <Card href={`/${data.directory}/${slugify(data)}`} frontmatter={data} secHeading={false} />
           )
         }
       </ul>

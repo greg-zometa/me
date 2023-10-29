@@ -2,6 +2,7 @@
 title: Network Services
 description: Learn about services supporting, DNS, DHCP, printing, email, and more.
 pubDatetime: 2023-08-07T15:03:38.282Z
+directory: comptia
 postSlug: networking-services
 tags:
   - a-plus

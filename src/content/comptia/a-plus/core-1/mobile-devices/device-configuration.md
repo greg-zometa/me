@@ -2,6 +2,7 @@
 title: Device Configuration
 description: Learn about USB connections, serial interfaces, Bluetooth, and various mobile device accessories.
 pubDatetime: 2023-08-02T06:36:17.783Z
+directory: comptia
 postSlug: mobile-devices-device-configuration
 tags:
   - a-plus

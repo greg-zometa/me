@@ -2,6 +2,7 @@
 title: Hardware Memory
 description: Memory is a critical resource for our computing devices. Learn about the various hardware and software capabilities of memory management.
 pubDatetime: 2023-09-06T13:11:44.077Z
+directory: comptia
 postSlug: hardware-memory
 dynamicOgImg: https://images.unsplash.com/photo-1518770660439-4636190af475
 tags:

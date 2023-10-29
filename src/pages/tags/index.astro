@@ -8,7 +8,15 @@ import Tag from "@components/Tag.astro";
 import getUniqueTags from "@utils/getUniqueTags";
 import { SITE } from "@config";
 
-const posts = await Promise.all([await getCollection("blog"), await getCollection("comptia")].flat());
+const posts = await Promise.all(
+  [
+    await getCollection("blog"),
+    await getCollection("coding"),
+    await getCollection("comptia"),
+    await getCollection("cybersecurity"),
+    await getCollection("ethical-hacking")
+  ].flat()
+);
 
 let tags = getUniqueTags(posts);
 ---

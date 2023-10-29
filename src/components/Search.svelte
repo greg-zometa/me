@@ -89,7 +89,7 @@
   <ul>
     {#each searchResults as { item: { data }, refIndex } (refIndex)}
       <li class="list-card">
-        <a href={`/posts/${slugify(data)}`}>
+        <a href={`/${data.directory}/${slugify(data)}`}>
           <h2>
             {data.title}
           </h2>

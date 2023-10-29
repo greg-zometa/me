@@ -6,11 +6,14 @@ const postSchema = ({ image }: { image: ImageFunction }) =>
     author: z.string().default(SITE.author),
     pubDatetime: z.date(),
     title: z.string(),
-    readingTime: z.string().optional(),
-    postSlug: z.string().optional(),
-    featured: z.boolean().optional(),
-    draft: z.boolean().optional(),
+    description: z.string(),
+    directory: z.string(),
     tags: z.array(z.string()).default(["others"]),
+    canonicalURL: z.string().optional(),
+    readingTime: z.string().optional(),
+    featured: z.boolean().optional(),
+    postSlug: z.string().optional(),
+    draft: z.boolean().optional(),
     staticOgImg: image()
       .refine((img) => img.width >= 1200 && img.height >= 630, {
         message: "OpenGraph image must be at least 1200 X 630 pixels!"
@@ -22,9 +25,7 @@ const postSchema = ({ image }: { image: ImageFunction }) =>
         message: "OpenGraph image must be at least 1200 X 630 pixels!"
       })
       .or(z.string())
-      .optional(),
-    description: z.string(),
-    canonicalURL: z.string().optional()
+      .optional()
   });
 
 export const collections = {

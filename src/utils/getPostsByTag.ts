@@ -1,7 +1,7 @@
 import type { PostsCollection } from "@types";
-import { slugifyAll } from "./slugify";
+import { slugifyStr } from "./slugify";
 
 const getPostsByTag = (posts: PostsCollection[], tag: string) =>
-  posts.filter((post) => slugifyAll(post.data.tags).includes(tag));
+  posts.filter((post) => post.data.tags.map((str) => slugifyStr(str)).includes(tag));
 
 export default getPostsByTag;

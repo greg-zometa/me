@@ -2,6 +2,7 @@
 title: Network Connections
 description: Learn about DNS server configuration and virtual connections VLANs and VPNs.
 pubDatetime: 2023-08-16T15:35:39.260Z
+directory: comptia
 postSlug: networking-connections
 tags:
   - a-plus
