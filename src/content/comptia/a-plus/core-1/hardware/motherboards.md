@@ -5,7 +5,6 @@ pubDatetime: 2023-10-06T04:23:48.651Z
 postSlug: hardware-motherboards
 dynamicOgImg: https://images.unsplash.com/photo-1562408590-e32931084e23
 tags:
-  - comptia
   - a-plus
   - core-1
   - hardware

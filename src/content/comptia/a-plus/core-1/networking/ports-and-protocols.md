@@ -4,7 +4,6 @@ description: Learn about the Internet Protocol and port numbers that traverse th
 pubDatetime: 2023-08-03T04:03:27.106Z
 postSlug: networking-ports-and-protocols
 tags:
-  - comptia
   - a-plus
   - core-1
   - networking

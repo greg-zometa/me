@@ -4,7 +4,6 @@ description: Learn about LCD display types, backlights, Wi-Fi antennas, digitize
 pubDatetime: 2023-08-02T06:36:17.783Z
 postSlug: mobile-devices-laptop-display
 tags:
-  - comptia
   - a-plus
   - core-1
   - mobile-devices

@@ -1,20 +1,11 @@
 ---
 import { LOGO_IMAGE, SITE } from "@config";
+import { directories } from "@types";
 import { Image } from "astro:assets";
 import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 
-const navItems = [
-  "blog",
-  "coding",
-  "comptia",
-  "cybersecurity",
-  "ethical-hacking",
-  "posts",
-  "tags",
-  "about",
-  "search"
-] as const;
+const navItems = [...directories, "posts", "tags", "about", "search"] as const;
 
 export interface Props {
   activeNav?: (typeof navItems)[number];

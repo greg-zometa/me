@@ -6,7 +6,6 @@ postSlug: hardware-power
 featured: true
 draft: true
 tags:
-  - comptia
   - a-plus
   - core-1
   - hardware

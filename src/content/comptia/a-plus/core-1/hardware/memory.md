@@ -5,7 +5,6 @@ pubDatetime: 2023-09-06T13:11:44.077Z
 postSlug: hardware-memory
 dynamicOgImg: https://images.unsplash.com/photo-1518770660439-4636190af475
 tags:
-  - comptia
   - a-plus
   - core-1
   - hardware

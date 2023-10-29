@@ -5,7 +5,6 @@ pubDatetime: 2023-08-17T15:47:16.478Z
 postSlug: networking-internet-connections
 dynamicOgImg: https://images.unsplash.com/photo-1597733336794-12d05021d510
 tags:
-  - comptia
   - a-plus
   - core-1
   - networking

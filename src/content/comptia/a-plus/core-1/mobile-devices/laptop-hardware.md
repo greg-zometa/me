@@ -5,7 +5,6 @@ pubDatetime: 2023-08-02T06:36:17.783Z
 postSlug: mobile-devices-laptop-hardware
 dynamicOgImg: https://images.unsplash.com/photo-1640207101284-42cc67bb2c47
 tags:
-  - comptia
   - a-plus
   - core-1
   - mobile-devices

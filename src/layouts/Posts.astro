@@ -1,5 +1,5 @@
 ---
-import type { PostsCollection } from "@types";
+import type { PostsCollection, directories } from "@types";
 import { SITE } from "@config";
 import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
@@ -10,23 +10,29 @@ import LinkButton from "@components/LinkButton.astro";
 import slugify from "@utils/slugify";
 
 export interface Props {
+  dir: (typeof directories)[number] | "posts";
   pageNum: number;
   totalPages: number;
   posts: PostsCollection[];
 }
 
-const { pageNum, totalPages, posts } = Astro.props;
+const { dir, pageNum, totalPages, posts } = Astro.props;
+
+const title = dir
+  .split("-")
+  .map((word) => word[0].toUpperCase() + word.slice(1))
+  .join(" ");
 
 const moreThanOnePage = totalPages > 1;
 const prevDisabled = pageNum === 1;
 const nextDisabled = pageNum === totalPages;
 ---
 
-<Layout title={`Posts | ${SITE.title}`}>
-  <Header activeNav="posts" />
-  <Main pageTitle="Posts" pageDesc="All the articles I've posted.">
+<Layout title={`${title} | ${SITE.title}`}>
+  <Header activeNav={dir} />
+  <Main pageTitle={title} pageDesc={`All ${dir === "posts" ? dir : `${dir.split("-").join(" ")} posts`}.`}>
     <ul>
-      {posts.map(({ data }) => <Card href={`/posts/${slugify(data)}`} frontmatter={data} />)}
+      {posts.map(({ data }) => <Card href={`/${dir}/${slugify(data)}`} frontmatter={data} />)}
     </ul>
   </Main>
 
@@ -35,7 +41,7 @@ const nextDisabled = pageNum === totalPages;
       <nav class="pagination-wrapper" aria-label="Pagination">
         <LinkButton
           disabled={prevDisabled}
-          href={`/posts/${pageNum - 1 === 1 ? "" : pageNum - 1}`}
+          href={`/${dir}/${pageNum - 1 === 1 ? "" : pageNum - 1}`}
           className={`ml-4 select-none${
             prevDisabled ? " pointer-events-none select-none opacity-50 hover:text-base group-hover:fill-base" : ""
           }`}
@@ -48,7 +54,7 @@ const nextDisabled = pageNum === totalPages;
         </LinkButton>
         <LinkButton
           disabled={nextDisabled}
-          href={`/posts/${pageNum + 1}`}
+          href={`/${dir}/${pageNum + 1}`}
           className={`ml-4 select-none${
             nextDisabled ? " pointer-events-none select-none opacity-50 hover:text-base group-hover:fill-base" : ""
           }`}

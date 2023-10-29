@@ -4,7 +4,6 @@ description: Learn about IP address assignments and network configurations.
 pubDatetime: 2023-08-14T21:39:32.804Z
 postSlug: networking-configurations
 tags:
-  - comptia
   - a-plus
   - core-1
   - networking
