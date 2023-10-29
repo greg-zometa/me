@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { PostsCollection } from "@types";
   import Fuse from "fuse.js";
-  import { slugify } from "@utils/slugify";
+  import slugify from "@utils/slugify";
   import { onMount } from "svelte";
   import { LOCALE } from "@config";
 

@@ -1,6 +1,6 @@
 import type { MarkdownInstance } from "astro";
 import type { PostsCollection } from "@types";
-import { slugify } from "@utils/slugify";
+import slugify from "@utils/slugify";
 
 export const getReadingTime = async () => {
   // Get all posts using glob. This is to get the updated frontmatter
