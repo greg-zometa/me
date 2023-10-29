@@ -2,7 +2,7 @@
 title: Wireless Networks
 description: Learn about the different types of wireless networks to connect devices and their standards.
 pubDatetime: 2023-08-04T05:56:27.316Z
-postSlug: networking-wireless-protocols
+postSlug: /comptia/networking-wireless-protocols
 dynamicOgImg: https://images.unsplash.com/photo-1561474119-1b76f3a79816
 tags:
   - a-plus

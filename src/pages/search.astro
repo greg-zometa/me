@@ -11,7 +11,10 @@ import SearchBar from "@components/Search.svelte";
 const posts = await Promise.all(
   [
     await getCollection("blog", ({ data }) => import.meta.env.MODE === "development" || !data.draft),
-    await getCollection("comptia", ({ data }) => import.meta.env.MODE === "development" || !data.draft)
+    await getCollection("coding", ({ data }) => import.meta.env.MODE === "development" || !data.draft),
+    await getCollection("comptia", ({ data }) => import.meta.env.MODE === "development" || !data.draft),
+    await getCollection("cybersecurity", ({ data }) => import.meta.env.MODE === "development" || !data.draft),
+    await getCollection("ethical-hacking", ({ data }) => import.meta.env.MODE === "development" || !data.draft)
   ].flat()
 );
 

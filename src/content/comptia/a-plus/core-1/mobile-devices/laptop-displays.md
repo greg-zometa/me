@@ -2,7 +2,7 @@
 title: Laptop Displays
 description: Learn about LCD display types, backlights, Wi-Fi antennas, digitizers, and more.
 pubDatetime: 2023-08-02T06:36:17.783Z
-postSlug: mobile-devices-laptop-display
+postSlug: /comptia/mobile-devices-laptop-display
 tags:
   - a-plus
   - core-1

@@ -6,8 +6,8 @@ import PostDetails from "@layouts/PostDetails.astro";
 import getPageNumbers from "@utils/getPageNumbers";
 import getPostsWithRt from "@utils/getPostsWithRt";
 import getSortedPosts from "@utils/getSortedPosts";
-import slugify from "@utils/slugify";
 import { SITE } from "@config";
+import { slug as slugify } from "github-slugger";
 
 export interface Props {
   post: PostsCollection;
@@ -18,7 +18,7 @@ export async function getStaticPaths() {
   const postsWithRt = await getPostsWithRt(posts);
 
   const postResult = postsWithRt.map((post) => ({
-    params: { slug: slugify(post.data) },
+    params: { slug: slugify(post.data.postSlug) },
     props: { post }
   }));
 

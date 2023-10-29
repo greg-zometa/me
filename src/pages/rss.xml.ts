@@ -1,11 +1,19 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 import getSortedPosts from "@utils/getSortedPosts";
-import slugify from "@utils/slugify";
 import { SITE } from "@config";
+import { slug as slugify } from "github-slugger";
 
 export async function GET() {
-  const posts = await Promise.all([await getCollection("blog"), await getCollection("comptia")].flat());
+  const posts = await Promise.all(
+    [
+      await getCollection("blog"),
+      await getCollection("coding"),
+      await getCollection("comptia"),
+      await getCollection("cybersecurity"),
+      await getCollection("ethical-hacking")
+    ].flat()
+  );
   const sortedPosts = await getSortedPosts(posts);
 
   return rss({
@@ -13,7 +21,7 @@ export async function GET() {
     description: SITE.desc,
     site: SITE.website,
     items: sortedPosts.map(({ data }) => ({
-      link: `posts/${slugify(data)}`,
+      link: slugify(data.postSlug),
       title: data.title,
       description: data.description,
       pubDate: new Date(data.pubDatetime)

@@ -2,7 +2,7 @@
 title: Device Connectivity
 description: Learn about cellular standards, mobile device connectivity, and mobile device configurations.
 pubDatetime: 2023-08-02T06:36:17.783Z
-postSlug: mobile-devices-device-connectivity
+postSlug: /comptia/mobile-devices-device-connectivity
 tags:
   - a-plus
   - core-1

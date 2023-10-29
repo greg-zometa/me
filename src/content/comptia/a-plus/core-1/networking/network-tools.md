@@ -2,7 +2,7 @@
 title: Network Tools
 description: Learn about cable crimpers, WiFi analyzers, tone generators, cable testers, and more.
 pubDatetime: 2023-08-21T05:12:41.573Z
-postSlug: networking-tools
+postSlug: /comptia/networking-tools
 tags:
   - a-plus
   - core-1
