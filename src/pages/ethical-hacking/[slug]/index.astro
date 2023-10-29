@@ -6,8 +6,8 @@ import PostDetails from "@layouts/PostDetails.astro";
 import getPageNumbers from "@utils/getPageNumbers";
 import getPostsWithRt from "@utils/getPostsWithRt";
 import getSortedPosts from "@utils/getSortedPosts";
-import { SITE } from "@config";
 import { slugify } from "@utils/slugify";
+import { SITE } from "@config";
 
 export interface Props {
   post: PostsCollection;

@@ -3,10 +3,8 @@ import type { PostsCollection } from "@types";
 import { getCollection } from "astro:content";
 import Posts from "@layouts/Posts.astro";
 import getPageNumbers from "@utils/getPageNumbers";
-import getPostsWithRt from "@utils/getPostsWithRt";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SITE } from "@config";
-import { slugify } from "@utils/slugify";
 
 export interface Props {
   post: PostsCollection;
