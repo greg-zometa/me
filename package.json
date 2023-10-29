@@ -12,7 +12,7 @@
     "astro": "astro",
     "clean": "rm -rf .astro .jampack dist node_modules",
     "format": "prettier --write \"**/*.{astro,html,js,json,md,mdx,svelte,ts}\" --cache",
-    "lint": "eslint \"src/**/*.{astro,svelte,ts}\" --config .eslintrc --cache",
+    "lint": "eslint \"**/*.{astro,svelte,ts}\" --config .eslintrc --cache",
     "prepare": "husky install"
   },
   "dependencies": {

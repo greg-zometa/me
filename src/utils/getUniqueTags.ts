@@ -1,5 +1,5 @@
 import type { PostsCollection } from "@types";
-import { slugifyStr } from "@utils/slugify";
+import { slugifyStr } from "./slugify";
 
 const getUniqueTags = (posts: PostsCollection[]) => {
   const filteredPosts = posts.filter(({ data }) => import.meta.env.MODE === "development" || !data.draft);
