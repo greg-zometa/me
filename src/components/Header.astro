@@ -81,7 +81,7 @@ const { activeNav } = Astro.props;
 
                   return (
                     <li class={isPosts ? "-order-1 sm:order-none" : ""}>
-                      <a href={`/${navItem}`} class={activeNav === navItem ? "active " : ""}>
+                      <a href={`/${navItem}`} class={activeNav === navItem ? "active" : ""}>
                         {isPosts
                           ? "All Posts"
                           : navItem

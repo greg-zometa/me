@@ -1,5 +1,6 @@
 import { defineCollection, z, type ImageFunction } from "astro:content";
 import { SITE } from "@config";
+import { directories } from "@types";
 
 const postSchema = ({ image }: { image: ImageFunction }) =>
   z.object({
@@ -7,7 +8,7 @@ const postSchema = ({ image }: { image: ImageFunction }) =>
     pubDatetime: z.date(),
     title: z.string(),
     description: z.string(),
-    directory: z.string(),
+    directory: z.enum(directories),
     tags: z.array(z.string()).default(["others"]),
     canonicalURL: z.string().optional(),
     readingTime: z.string().optional(),

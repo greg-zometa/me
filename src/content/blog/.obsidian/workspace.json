@@ -65,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "50a5626cb6e86b44",
@@ -138,6 +138,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "55fecb04d622a51b",
-  "lastOpenFiles": []
+  "active": "97f23ab235a5a2bf",
+  "lastOpenFiles": ["site-updates-2.1.md", "rant-web-development.md", "customizing-astropaper-theme-color-schemes.md"]
 }
