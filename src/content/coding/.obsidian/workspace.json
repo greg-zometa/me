@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d197afc47bb66e0f",
+        "id": "05bb7d65e7bb10ee",
         "type": "tabs",
         "children": [
           {
-            "id": "92bb5d479807dcd0",
+            "id": "f4299fcd91ee4bdb",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -16,12 +16,12 @@
             }
           },
           {
-            "id": "aad1b40a030feb16",
+            "id": "78e07d84b1a8cbeb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "coding-placeholder.md",
+                "file": "general/what-is-dart-good-for.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "coding-placeholder.md",
+                "file": "general/what-is-dart-good-for.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "coding-placeholder.md",
+                "file": "general/what-is-dart-good-for.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "coding-placeholder.md"
+                "file": "general/what-is-dart-good-for.md"
               }
             }
           }
@@ -155,6 +155,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aad1b40a030feb16",
-  "lastOpenFiles": ["coding-placeholder.md"]
+  "active": "78e07d84b1a8cbeb",
+  "lastOpenFiles": [
+    "general/what-is-dart-good-for.md",
+    "challenges",
+    "zig/ecosystem",
+    "zig/snippets",
+    "zig/tutorials",
+    "rust/ecosystem",
+    "rust/snippets",
+    "rust/tutorials",
+    "python/ecosystem",
+    "python/snippets",
+    "python/tutorials",
+    "coding-placeholder.md"
+  ]
 }
