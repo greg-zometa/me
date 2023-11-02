@@ -17,7 +17,7 @@ After nearly a decade since it's release, Dart has primarily been used to develo
 
 ## Table of contents
 
-## A bit of context on Flutter
+## A bit of context with Flutter
 
 While the Dart language is the primary focus of this post, I want you to consider Flutter as the primary fall back for Dart development. Specifically, I want you to consider **how Flutter shapes the intention of the Dart language**.
 
@@ -63,7 +63,9 @@ While these frameworks have worked very hard to build mobile UI with native elem
 
 ### The solution: build (Flutter) apps for any screen
 
-According to the [Dart dev site](https://dart.dev/overview), _"Dart is a client-optimized language for developing fast apps on any platform. Its goal is to offer the most productive programming language for multi-platform development..."_
+According to [the Flutter home page](https://flutter.dev/), _"Flutter is an open source framework by Google for building beautiful, natively compiled, multi-platform applications from a single codebase."_ Unlike web-based, hybrid frameworks, **Flutter doesn’t rely on web browser technology**. Instead, it utilizes the Dart language to draw widgets. Widgets in the Flutter framework can be visual, stateful, and interactive. For example, Flutter comes with pre-built widgets to build Android (Material Design) and iOS (Cupertino) UI layouts and themes.
+
+While developers write code in Dart, under the hood, the Flutter engine uses a combination of C, C++, and [Skia](https://skia.org/) to render the UI on the targeted device.
 
 Flutter was made after Dart 1.0. [Codenamed "Sky"](https://www.youtube.com/watch?v=PnIWl33YMwA), Flutter wouldn't be considered stable until 3 years later at [Flutter Live 2018](https://www.youtube.com/watch?v=kpcjBD1XDwU)
 
