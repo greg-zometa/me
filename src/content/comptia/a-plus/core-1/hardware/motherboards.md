@@ -27,7 +27,7 @@ Motherboards can be found in virtually all computers, especially desktop and lap
 
 There are different motherboards that have different sizes depending on the hardware's requirements. There’s usually a basic layout on motherboards regardless of the size, but the amount of expansion slots and the amount of additional memory slots will vary.
 
-[There are dozens of different motherboard form factors](https://en.wikipedia.org/wiki/Motherboard_form_factor). For the CompTIA exam, there are two primary motherboard families you need to know: [the ATX family](https://en.wikipedia.org/wiki/ATX) and [the ITX family](https://en.wikipedia.org/wiki/Mini-ITX).
+[There are dozens of different motherboard form factors](https://wikipedia.org/wiki/Motherboard_form_factor). For the CompTIA exam, there are two primary motherboard families you need to know: [the ATX family](https://wikipedia.org/wiki/ATX) and [the ITX family](https://wikipedia.org/wiki/Mini-ITX).
 
 ### ATX
 
