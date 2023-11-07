@@ -11,14 +11,6 @@
             "id": "f4299fcd91ee4bdb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "78e07d84b1a8cbeb",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
                 "file": "general/what-is-dart-good-for.md",
@@ -27,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -156,8 +147,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "78e07d84b1a8cbeb",
+  "active": "acf53e73fb6ee3bb",
   "lastOpenFiles": [
+    "a-problem-as-old-as-learn-once-write-anywhere.md",
     "general/what-is-dart-good-for.md",
     "challenges",
     "zig/ecosystem",
