@@ -3,7 +3,6 @@ title: What is Dart good for?
 description: After nearly a decade since it's release, Dart has primarily been used to develop multi-platform apps with the Flutter framework. I ask the hard question, what else is it good for?
 pubDatetime: 2023-11-07T10:00:00.000
 directory: coding
-draft: true
 dynamicOgImg: https://images.unsplash.com/photo-1582172958571-208b55ba4bab
 tags:
   - dart
