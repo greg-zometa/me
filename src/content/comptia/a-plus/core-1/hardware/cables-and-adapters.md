@@ -119,7 +119,7 @@ However, it is important to note that fiber optics do have disadvantages users s
 
 ANSI/TIA-568 is a technical standard for commercial building cabling for telecommunications products and services. The title of the standard is Commercial Building Telecommunications Cabling Standard and is published by the [Telecommunications Industry Association](https://tiaonline.org/) (TIA), a body accredited by the [American National Standards Institute](https://ansi.org/) (ANSI).
 
-Perhaps the best-known features of ANSI/TIA-568 are the pin and pair assignments for eight-conductor 100-ohm balanced [twisted pair](https://en.wikipedia.org/wiki/Twisted_pair "Twisted pair") cabling. These assignments are named _T568A_ and _T568B_.
+Perhaps the best-known features of ANSI/TIA-568 are the pin and pair assignments for eight-conductor 100-ohm balanced [twisted pair](https://wikipedia.org/wiki/Twisted_pair "Twisted pair") cabling. These assignments are named _T568A_ and _T568B_.
 
 This part of the 568 standard provides the colors that we’ll use for our ethernet RJ45 connector or a punch down block 8P8C connectors. These are 8 position 8 conductor.
 

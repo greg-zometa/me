@@ -30,7 +30,7 @@ While I could have generated pages using a single [dynamic route](https://docs.a
 Pages were broken up for two reasons:
 
 1. **Faster build times** — While I am still doing dynamic routing, the pages have been broken up to target an individual subdirectory which should require less computation time versus a catch all solution.
-2. **Easier maintenance** — While the code for the pages are the same and breaks [the DRY rule](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) the long term is that each page is fully customizable, and I wouldn't have to write weird edge cases that abstracts individual subdirectories from all of them.
+2. **Easier maintenance** — While the code for the pages are the same and breaks [the DRY rule](https://wikipedia.org/wiki/Don%27t_repeat_yourself) the long term is that each page is fully customizable, and I wouldn't have to write weird edge cases that abstracts individual subdirectories from all of them.
 
 While this is able to generate posts for each individual subdirectory I still wanted to show **all posts**. This would be handled with the `posts` directory in `pages`, but also came with another challenge.
 
