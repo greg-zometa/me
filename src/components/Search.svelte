@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { PostsCollection } from "@types";
-  import Fuse from "fuse.js";
+  import Fuse, { type FuseResult } from "fuse.js";
   import { onMount } from "svelte";
   import { LOCALE } from "@config";
   import slugify from "@utils/slugify";
@@ -13,7 +13,7 @@
 
   let inputRef: HTMLInputElement;
   let inputVal = "";
-  let searchResults: Fuse.FuseResult<{
+  let searchResults: FuseResult<{
     title: string;
     description: string;
     data: PostsCollection["data"];
