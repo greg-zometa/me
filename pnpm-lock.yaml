@@ -12,8 +12,8 @@ dependencies:
     specifier: 4.0.1
     version: 4.0.1
   '@astrojs/svelte':
-    specifier: 5.0.0
-    version: 5.0.0(astro@4.0.3)(svelte@4.2.8)(typescript@5.3.3)(vite@5.0.6)
+    specifier: 5.0.2
+    version: 5.0.2(astro@4.0.3)(svelte@4.2.8)(typescript@5.3.3)(vite@5.0.6)
   '@resvg/resvg-js':
     specifier: 2.6.0
     version: 2.6.0
@@ -242,11 +242,11 @@ packages:
       zod: 3.22.4
     dev: true
 
-  /@astrojs/svelte@5.0.0(astro@4.0.3)(svelte@4.2.8)(typescript@5.3.3)(vite@5.0.6):
-    resolution: {integrity: sha512-v8AZU9hSP4JuESDv5pev8S4eZQXulIoS/gBJbhAEBWfkANptsc7CP/qjWk83KWidNXX8hfVLI4VNlShWo3ADRw==}
+  /@astrojs/svelte@5.0.2(astro@4.0.3)(svelte@4.2.8)(typescript@5.3.3)(vite@5.0.6):
+    resolution: {integrity: sha512-B5h7sRXFmNvZucQlhz8MBsrsYfmVYCtcBUdDGe4ndJyBpD+klvmw31NGqhQp4z6HqxwbSWgaAvjXt/A76cgLIA==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
-      astro: ^4.0.0-beta.0
+      astro: ^4.0.0
       svelte: ^4.0.0 || ^5.0.0-next.1
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.0.1(svelte@4.2.8)(vite@5.0.6)
@@ -5576,6 +5576,7 @@ packages:
   /node-abi@3.52.0:
     resolution: {integrity: sha512-JJ98b02z16ILv7859irtXn4oUaFWADtvkzy2c0IAatNVX2Mc9Yoh8z6hZInn3QwvMEYhHuQloYi+TTQy67SIdQ==}
     engines: {node: '>=10'}
+    requiresBuild: true
     dependencies:
       semver: 7.5.4
 
