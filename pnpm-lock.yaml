@@ -13,13 +13,13 @@ dependencies:
     version: 4.0.1
   '@astrojs/svelte':
     specifier: 5.0.3
-    version: 5.0.3(astro@4.0.8)(svelte@4.2.8)(typescript@5.3.3)(vite@5.0.10)
+    version: 5.0.3(astro@4.1.1)(svelte@4.2.8)(typescript@5.3.3)(vite@5.0.10)
   '@resvg/resvg-js':
     specifier: 2.6.0
     version: 2.6.0
   astro:
-    specifier: 4.0.8
-    version: 4.0.8(typescript@5.3.3)
+    specifier: 4.1.1
+    version: 4.1.1(typescript@5.3.3)
   fuse.js:
     specifier: 7.0.0
     version: 7.0.0
@@ -60,7 +60,7 @@ devDependencies:
     version: 3.0.4
   '@astrojs/tailwind':
     specifier: 5.1.0
-    version: 5.1.0(astro@4.0.8)(tailwindcss@3.4.0)
+    version: 5.1.0(astro@4.1.1)(tailwindcss@3.4.0)
   '@divriots/jampack':
     specifier: 0.23.1
     version: 0.23.1(react-dom@16.14.0)(react@16.14.0)
@@ -75,7 +75,7 @@ devDependencies:
     version: 0.16.0
   astrojs-service-worker:
     specifier: 2.0.0
-    version: 2.0.0(astro@4.0.8)
+    version: 2.0.0(astro@4.1.1)
   eslint:
     specifier: 8.56.0
     version: 8.56.0
@@ -239,7 +239,7 @@ packages:
       zod: 3.22.4
     dev: true
 
-  /@astrojs/svelte@5.0.3(astro@4.0.8)(svelte@4.2.8)(typescript@5.3.3)(vite@5.0.10):
+  /@astrojs/svelte@5.0.3(astro@4.1.1)(svelte@4.2.8)(typescript@5.3.3)(vite@5.0.10):
     resolution: {integrity: sha512-6TUBRUxmsEczKPBT6oDUAfvzuFCmITuhZfKPT5ZtOOyj9XOVnEnj/Iobd3ajKUbpWNYX7qZVAd1KMkmJc1Nhsg==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -247,7 +247,7 @@ packages:
       svelte: ^4.0.0 || ^5.0.0-next.1
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.0.1(svelte@4.2.8)(vite@5.0.10)
-      astro: 4.0.8(typescript@5.3.3)
+      astro: 4.1.1(typescript@5.3.3)
       svelte: 4.2.8
       svelte2tsx: 0.6.27(svelte@4.2.8)(typescript@5.3.3)
     transitivePeerDependencies:
@@ -256,13 +256,13 @@ packages:
       - vite
     dev: false
 
-  /@astrojs/tailwind@5.1.0(astro@4.0.8)(tailwindcss@3.4.0):
+  /@astrojs/tailwind@5.1.0(astro@4.1.1)(tailwindcss@3.4.0):
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.0.8(typescript@5.3.3)
+      astro: 4.1.1(typescript@5.3.3)
       autoprefixer: 10.4.16(postcss@8.4.32)
       postcss: 8.4.32
       postcss-load-config: 4.0.2(postcss@8.4.32)
@@ -2894,8 +2894,8 @@ packages:
       - supports-color
     dev: true
 
-  /astro@4.0.8(typescript@5.3.3):
-    resolution: {integrity: sha512-LwbYUfdrfys5mtI6cA5V8UvPRUVVTRQ68uF1ylrEge6BkPcHHJ7qCYLNdjnNPxZDR9bWi1awILJESB6j+w0P4w==}
+  /astro@4.1.1(typescript@5.3.3):
+    resolution: {integrity: sha512-p/S1Ns4+yVh2lEsFW9hkJNRbnPfFWZ+1Wv7DSR3mDnabgCs49T7EbvOy8YIlLo0gtPAjI+b+4OEKRsxtBay2aA==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
@@ -2911,6 +2911,8 @@ packages:
       '@babel/types': 7.23.6
       '@types/babel__core': 7.20.5
       acorn: 8.11.2
+      aria-query: 5.3.0
+      axobject-query: 4.0.0
       boxen: 7.1.1
       chokidar: 3.5.3
       ci-info: 4.0.0
@@ -2983,12 +2985,12 @@ packages:
       synckit: 0.8.8
     dev: true
 
-  /astrojs-service-worker@2.0.0(astro@4.0.8):
+  /astrojs-service-worker@2.0.0(astro@4.1.1):
     resolution: {integrity: sha512-pVlWNA1H2QlV3pRH5vXkdxkkhlU3zVZ2F72j5jxWQDL5BJEM2xhp0+46GB/FTMzsHYgSr7jy8PNodvFoTn7XQg==}
     peerDependencies:
       astro: '>=4.0.0'
     dependencies:
-      astro: 4.0.8(typescript@5.3.3)
+      astro: 4.1.1(typescript@5.3.3)
       workbox-build: 6.6.0
     transitivePeerDependencies:
       - '@types/babel__core'
@@ -3027,6 +3029,11 @@ packages:
 
   /axobject-query@3.2.1:
     resolution: {integrity: sha512-jsyHu61e6N4Vbz/v18DHwWYKK0bSWLqn47eeDSKPB7m8tqMHF9YJ+mhIk2lVteyZrY8tnSj/jHOv4YiTCuCJgg==}
+    dependencies:
+      dequal: 2.0.3
+
+  /axobject-query@4.0.0:
+    resolution: {integrity: sha512-+60uv1hiVFhHZeO+Lz0RYzsVHy5Wr1ayX0mwda9KPDVLNJgZ1T9Ny7VmFbLDzxsH0D87I86vgj3gFrjTJUYznw==}
     dependencies:
       dequal: 2.0.3
 
