@@ -1,6 +1,6 @@
-import { defineCollection, z, type ImageFunction } from "astro:content";
 import { SITE } from "@config";
 import { directories } from "@types";
+import { type ImageFunction, defineCollection, z } from "astro:content";
 
 const postSchema = ({ image }: { image: ImageFunction }) =>
   z.object({

@@ -1,5 +1,5 @@
-import type { MarkdownInstance } from "astro";
 import type { PostsCollection } from "@types";
+import type { MarkdownInstance } from "astro";
 import slugify from "./slugify";
 
 export const getReadingTime = async () => {

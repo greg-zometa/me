@@ -1,5 +1,5 @@
-import type { PostsCollection } from "@types";
 import { SITE } from "@config";
+import type { PostsCollection } from "@types";
 
 interface ColorOptions {
   accent: string;

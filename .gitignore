@@ -4,7 +4,6 @@ dist/
 
 # cache
 *.cache
-.eslintcache
 
 # dependencies
 node_modules/

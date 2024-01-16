@@ -50,24 +50,22 @@ Any static assets, like images, can be placed in the `public/` directory.
 - **Styling**: [TailwindCSS](https://tailwindcss.com/)
 - **Fuzzy Search**: [FuseJS](https://fusejs.io/)
 - **Icons**: [Boxicons](https://boxicons.com/) | [Tablers](https://tabler-icons.io/)
-- **Code Formatting**: [Prettier](https://prettier.io/)
+- **Code Formatting & Linting**: [Biome](https://biomejs.dev/)
 - **Deployment**: [Cloudflare Pages](https://pages.cloudflare.com/)
 - **Illustrations**: [Unsplash](https://unsplash.com/)
-- **Linting**: [ESLint](https://eslint.org)
 
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
 | Command            | Action                                                                                                                           |
-| :----------------- | :------------------------------------------------------------------------------------------------------------------------------- |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | `pnpm install`     | Installs dependencies                                                                                                            |
 | `pnpm run dev`     | Starts local dev server at `localhost:4321`                                                                                      |
 | `pnpm run build`   | Build your production site to `./dist/`                                                                                          |
 | `pnpm run preview` | Preview your build locally, before deploying                                                                                     |
-| `pnpm run format`  | Format codes with Prettier                                                                                                       |
+| `pnpm run check`   | Runs Biome to format and lint code                                                                                               |
 | `pnpm run sync`    | Generates TypeScript types for all Astro modules. [Learn more](https://docs.astro.build/en/reference/cli-reference/#astro-sync). |
-| `pnpm run lint`    | Lint with ESLint                                                                                                                 |
 
 ## 📜 License
 

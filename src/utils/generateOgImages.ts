@@ -1,7 +1,7 @@
-import type { PostsCollection } from "@types";
-import { Resvg } from "@resvg/resvg-js";
-import satori, { type SatoriOptions } from "satori";
 import { postOgImg, siteOgImg } from "@assets/og-img-templates";
+import { Resvg } from "@resvg/resvg-js";
+import type { PostsCollection } from "@types";
+import satori, { type SatoriOptions } from "satori";
 
 const fetchFonts = async () => {
   // Regular Font
