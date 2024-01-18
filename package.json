@@ -43,7 +43,7 @@
     "lint-staged": "15.2.0"
   },
   "lint-staged": {
-    "*.{astro,html,json,md,mdx,svelte,ts}": [
+    "*.{astro,css,html,svelte,ts}": [
       "biome check --apply ."
     ]
   },
